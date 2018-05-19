@@ -1,2 +1,4 @@
 os: osx
 language: cpp
+script:
+  - xcodebuild -project polyroot.xcodeproj -scheme polyroot
