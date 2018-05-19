@@ -10,29 +10,29 @@
 	<string>polyroot</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>22575FC3-1BCD-479A-A00C-0B2E46FDF73B</key>
+		<key>BAB1D8B95A934AE384A081CED8DF34FB03E2D193</key>
 		<string>https://github.com/mrtkp9993/Cpp-Examples.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>polyroot/polyroot.xcodeproj/project.xcworkspace</string>
+	<string>polyroot/polyroot.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>22575FC3-1BCD-479A-A00C-0B2E46FDF73B</key>
+		<key>BAB1D8B95A934AE384A081CED8DF34FB03E2D193</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/mrtkp9993/Cpp-Examples.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>22575FC3-1BCD-479A-A00C-0B2E46FDF73B</string>
+	<string>BAB1D8B95A934AE384A081CED8DF34FB03E2D193</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>22575FC3-1BCD-479A-A00C-0B2E46FDF73B</string>
+			<string>BAB1D8B95A934AE384A081CED8DF34FB03E2D193</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Cpp-Examples</string>
 		</dict>

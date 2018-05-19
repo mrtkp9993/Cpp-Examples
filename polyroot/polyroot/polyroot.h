@@ -5,7 +5,7 @@
 //
 
 #ifndef __polyroot__polyroot__
-#define __polyroot__polyroot__s
+#define __polyroot__polyroot__
 
 #include <vector>
 
