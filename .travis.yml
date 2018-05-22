@@ -2,3 +2,4 @@ os: osx
 language: cpp
 script:
   - xcodebuild -project polyroot/polyroot.xcodeproj -scheme polyroot
+  - xcodebuild -project finiteDifferences/finiteDifferences.xcodeproj -scheme finiteDifferences
