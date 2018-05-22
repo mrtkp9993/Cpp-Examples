@@ -1,4 +1,5 @@
 os: osx
+osx_image: xcode9.3
 language: cpp
 script:
   - xcodebuild -project polyroot/polyroot.xcodeproj -scheme polyroot
