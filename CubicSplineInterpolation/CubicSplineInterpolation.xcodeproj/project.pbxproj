@@ -243,6 +243,7 @@
 		C120912820B72A2600811070 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M947GQGASZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -252,6 +253,7 @@
 		C120912920B72A2600811070 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M947GQGASZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
