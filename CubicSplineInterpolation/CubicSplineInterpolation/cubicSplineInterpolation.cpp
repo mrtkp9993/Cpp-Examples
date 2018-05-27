@@ -18,11 +18,10 @@ Solution natCubicSplineInterpolation(Inputs inputs) {
     std::vector<double> x = inputs.x;
     std::vector<double> y = inputs.y;
     Solution sol;
-    sol.a.resize(n);
+    sol.a = y;
     sol.b.resize(n);
     sol.c.resize(n);
     sol.d.resize(n);
-    sol.a = y;
     // STEP 1
     std::vector<double> h (n, 0.0);
     for (int i = 0; i < n; i++) {
