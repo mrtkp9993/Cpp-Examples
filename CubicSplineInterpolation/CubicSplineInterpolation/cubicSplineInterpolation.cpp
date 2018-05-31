@@ -10,7 +10,6 @@
 
 #include "cubicSplineInterpolation.hpp"
 #include <iostream>
-#include <limits>
 #include <vector>
 
 Solution natCubicSplineInterpolation(Inputs inputs) {
@@ -65,5 +64,3 @@ Solution natCubicSplineInterpolation(Inputs inputs) {
     }
     return sol;
 }
-
-
