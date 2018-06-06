@@ -6,3 +6,4 @@ script:
   - xcodebuild -project finiteDifferences/finiteDifferences.xcodeproj -scheme finiteDifferences
   - xcodebuild -project CubicSplineInterpolation/CubicSplineInterpolation.xcodeproj -scheme CubicSplineInterpolation
   - xcodebuild -project CompositeSimpsonsRule/CompositeSimpsonsRule.xcodeproj -scheme CompositeSimpsonsRule
+  - xcodebuild -project EigenExamples/EigenExamples.xcodeproj - scheme EigenExamples
