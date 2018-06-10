@@ -7,3 +7,4 @@ script:
   - xcodebuild -project CubicSplineInterpolation/CubicSplineInterpolation.xcodeproj -scheme CubicSplineInterpolation
   - xcodebuild -project CompositeSimpsonsRule/CompositeSimpsonsRule.xcodeproj -scheme CompositeSimpsonsRule
   - xcodebuild -project EigenExamples/EigenExamples.xcodeproj -scheme EigenExamples
+  - xcodebuild -project FixedPointIteration/FixedPointIteration.xcodeproj -scheme FixedPointIteration
