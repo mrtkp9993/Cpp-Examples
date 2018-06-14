@@ -7,3 +7,4 @@
 * FixedPointIteration: Fixed-Point Iteration, Algorithm 2.2 on Numerical Analysis, Ninth Edition, Burden, Faires.
 * FiniteDifferences: [MathWorld](http://mathworld.wolfram.com/ForwardDifference.html).
 * Polyroot: Algorithm 2.3.1 (Quadratic Equation) on Scientific Computing Vol. I - Linear and Nonlinear Equations, Trangenstein.
+* RandomNumberGenerators: Some random number generator implementations ([LCG](https://www.wikiwand.com/en/Linear_congruential_generator)).
