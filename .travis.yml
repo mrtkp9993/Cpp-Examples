@@ -9,3 +9,4 @@ script:
   - xcodebuild -project EigenExamples/EigenExamples.xcodeproj -scheme EigenExamples
   - xcodebuild -project FixedPointIteration/FixedPointIteration.xcodeproj -scheme FixedPointIteration
   - xcodebuild -project RandomNumberGenerators/RandomNumberGenerators.xcodeproj -scheme RandomNumberGenerators
+  - xcodebuild -project RungeKutta/RungeKutta.xcodeproj -scheme RungeKutta
