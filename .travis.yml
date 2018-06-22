@@ -10,3 +10,4 @@ script:
   - xcodebuild -project FixedPointIteration/FixedPointIteration.xcodeproj -scheme FixedPointIteration
   - xcodebuild -project RandomNumberGenerators/RandomNumberGenerators.xcodeproj -scheme RandomNumberGenerators
   - xcodebuild -project RungeKutta/RungeKutta.xcodeproj -scheme RungeKutta
+  - xcodebuild -project GoldenSectionSearch/GoldenSectionSearch.xcodeproj -scheme GoldenSectionSearch
