@@ -8,4 +8,4 @@
 * FiniteDifferences: [MathWorld](http://mathworld.wolfram.com/ForwardDifference.html).
 * Polyroot: Algorithm 2.3.1 (Quadratic Equation) on Scientific Computing Vol. I - Linear and Nonlinear Equations, Trangenstein.
 * RandomNumberGenerators: Some random number generator implementations ([LCG](https://www.wikiwand.com/en/Linear_congruential_generator)).
-* RungeKutta: RK4 algorithm implementation. Algorithm 5.2 (Quadratic Equation) on Scientific Computing Vol. I - Linear and Nonlinear Equations, Trangenstein.
+* RungeKutta: RK4 algorithm implementation. Algorithm 5.2 on Numerical Analysis, Ninth Edition, Burden, Faires.
