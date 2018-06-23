@@ -11,6 +11,7 @@
 #include <functional>
 #include <iostream>
 
-double compositeSimpsons(double a, double b, unsigned long n, std::function<double(double)> func);
+double compositeSimpsons(double a, double b, unsigned long n,
+                         std::function<double(double)> func);
 
 #endif /* CompositeSimpsonsRule_hpp */

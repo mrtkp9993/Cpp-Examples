@@ -14,6 +14,7 @@
 #include <functional>
 #include <iostream>
 
-double RK4(double a, double b, unsigned int N, double init, std::function<double(double, double)> func);
+double RK4(double a, double b, unsigned int N, double init,
+           std::function<double(double, double)> func);
 
 #endif /* RungeKutta_hpp */

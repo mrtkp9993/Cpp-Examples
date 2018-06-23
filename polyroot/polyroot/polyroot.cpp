@@ -7,8 +7,8 @@
 //  written by Trangenstein, John A.
 
 #include "polyroot.h"
-#include <cmath>  // abs, ceil, log, max, pow
-#include <limits> // infinity, quite_NAN
+#include <cmath>   // abs, ceil, log, max, pow
+#include <limits>  // infinity, quite_NAN
 
 std::vector<double> polyroot(std::vector<double> coef) {
   std::vector<double> roots = {std::numeric_limits<double>::infinity(),
@@ -20,7 +20,7 @@ std::vector<double> polyroot(std::vector<double> coef) {
   if (sigma == 0.0) {
     roots = {
         std::numeric_limits<double>::quiet_NaN(),
-        std::numeric_limits<double>::quiet_NaN()}; // All Scalars are solutions
+        std::numeric_limits<double>::quiet_NaN()};  // All Scalars are solutions
   } else {
     // Scale by power of 2 to avoid rounding errors
     sigma = std::pow(2.0, std::ceil(std::log(sigma) / std::log(2.0)));
@@ -34,16 +34,16 @@ std::vector<double> polyroot(std::vector<double> coef) {
     if (std::abs(a) == 0) {
       if (std::abs(b) == 0) {
         roots = {std::numeric_limits<double>::quiet_NaN(),
-                 std::numeric_limits<double>::quiet_NaN()}; // no solutions
+                 std::numeric_limits<double>::quiet_NaN()};  // no solutions
       } else {
         roots = {std::numeric_limits<double>::quiet_NaN(),
-                 c / b}; // one solution
+                 c / b};  // one solution
       }
 
     } else {
       b = (-b) / (2.0 * a);
       c /= a;
-      double delta = b * b - c; // discriminant
+      double delta = b * b - c;  // discriminant
       if (delta >= 0.0) {
         // two real roots
         double sqrt_delta = std::sqrt(delta);

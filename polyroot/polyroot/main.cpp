@@ -4,8 +4,8 @@
 //
 //
 
-#include "polyroot.h"
 #include <iostream>
+#include "polyroot.h"
 
 int main(int argc, const char *argv[]) {
   // Coefficents are hard-coded.

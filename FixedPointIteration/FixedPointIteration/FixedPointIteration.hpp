@@ -14,6 +14,7 @@
 #include <functional>
 #include <iostream>
 
-double fixedPointIter(double p0, double tol, unsigned long N0, std::function<double(double)> g);
+double fixedPointIter(double p0, double tol, unsigned long N0,
+                      std::function<double(double)> g);
 
 #endif /* FixedPointIteration_hpp */

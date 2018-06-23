@@ -13,10 +13,11 @@
 #include <functional>
 
 struct Result {
-    double a;
-    double b;
+  double a;
+  double b;
 };
 
-Result GoldenSectionSearch(double a, double b, double tol, std::function<double(double)> func);
+Result GoldenSectionSearch(double a, double b, double tol,
+                           std::function<double(double)> func);
 
 #endif /* GoldenSectionSearch_hpp */
