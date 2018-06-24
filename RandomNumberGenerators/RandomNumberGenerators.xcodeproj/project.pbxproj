@@ -28,6 +28,7 @@
 		C1538FAE20D2D71900FB89D5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C1538FB520D2D74500FB89D5 /* LCG.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LCG.cpp; sourceTree = "<group>"; };
 		C1538FB620D2D74500FB89D5 /* LCG.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LCG.hpp; sourceTree = "<group>"; };
+		C1DABE7120E0176E00F45861 /* devrandom.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = devrandom.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 				C1538FAE20D2D71900FB89D5 /* main.cpp */,
 				C1538FB520D2D74500FB89D5 /* LCG.cpp */,
 				C1538FB620D2D74500FB89D5 /* LCG.hpp */,
+				C1DABE7120E0176E00F45861 /* devrandom.hpp */,
 			);
 			path = RandomNumberGenerators;
 			sourceTree = "<group>";

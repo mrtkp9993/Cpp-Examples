@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include "LCG.hpp"
+#include "devrandom.hpp"
 
 int main(int argc, const char* argv[]) {
   // Linear congruential generator
@@ -13,5 +14,9 @@ int main(int argc, const char* argv[]) {
   for (int i = 0; i < rndInt.size(); i++) {
     std::cout << rndInt[i] << std::endl;
   }
+  // /dev/random
+  devrandom<int>();
+  devrandom<float>();
+  devrandom<char>();
   return 0;
 }
