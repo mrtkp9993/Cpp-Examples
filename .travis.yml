@@ -5,4 +5,4 @@ os: osx
 osx_image: xcode9.3
 
 script:
-  - sh build_scripts/build.sh
+  - sh build_scripts_ci/build.sh
