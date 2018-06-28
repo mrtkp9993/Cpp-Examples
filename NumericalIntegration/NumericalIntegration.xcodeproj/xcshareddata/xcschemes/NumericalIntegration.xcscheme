@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C1F41F0920C1C2AA005CEB03"
-               BuildableName = "CompositeSimpsonsRule"
-               BlueprintName = "CompositeSimpsonsRule"
-               ReferencedContainer = "container:CompositeSimpsonsRule.xcodeproj">
+               BuildableName = "NumericalIntegration"
+               BlueprintName = "NumericalIntegration"
+               ReferencedContainer = "container:NumericalIntegration.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C1F41F0920C1C2AA005CEB03"
-            BuildableName = "CompositeSimpsonsRule"
-            BlueprintName = "CompositeSimpsonsRule"
-            ReferencedContainer = "container:CompositeSimpsonsRule.xcodeproj">
+            BuildableName = "NumericalIntegration"
+            BlueprintName = "NumericalIntegration"
+            ReferencedContainer = "container:NumericalIntegration.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C1F41F0920C1C2AA005CEB03"
-            BuildableName = "CompositeSimpsonsRule"
-            BlueprintName = "CompositeSimpsonsRule"
-            ReferencedContainer = "container:CompositeSimpsonsRule.xcodeproj">
+            BuildableName = "NumericalIntegration"
+            BlueprintName = "NumericalIntegration"
+            ReferencedContainer = "container:NumericalIntegration.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C1F41F0920C1C2AA005CEB03"
-            BuildableName = "CompositeSimpsonsRule"
-            BlueprintName = "CompositeSimpsonsRule"
-            ReferencedContainer = "container:CompositeSimpsonsRule.xcodeproj">
+            BuildableName = "NumericalIntegration"
+            BlueprintName = "NumericalIntegration"
+            ReferencedContainer = "container:NumericalIntegration.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

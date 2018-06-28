@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C1F41F0E20C1C2AA005CEB03 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1F41F0D20C1C2AA005CEB03 /* main.cpp */; };
-		C1F41F1620C1C2D7005CEB03 /* CompositeSimpsonsRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1F41F1420C1C2D7005CEB03 /* CompositeSimpsonsRule.cpp */; };
+		C1F41F1620C1C2D7005CEB03 /* NumericalIntegration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1F41F1420C1C2D7005CEB03 /* NumericalIntegration.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C1F41F0A20C1C2AA005CEB03 /* CompositeSimpsonsRule */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CompositeSimpsonsRule; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1F41F0A20C1C2AA005CEB03 /* NumericalIntegration */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NumericalIntegration; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F41F0D20C1C2AA005CEB03 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		C1F41F1420C1C2D7005CEB03 /* CompositeSimpsonsRule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CompositeSimpsonsRule.cpp; sourceTree = "<group>"; };
-		C1F41F1520C1C2D7005CEB03 /* CompositeSimpsonsRule.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CompositeSimpsonsRule.hpp; sourceTree = "<group>"; };
+		C1F41F1420C1C2D7005CEB03 /* NumericalIntegration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NumericalIntegration.cpp; sourceTree = "<group>"; };
+		C1F41F1520C1C2D7005CEB03 /* NumericalIntegration.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NumericalIntegration.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +44,7 @@
 		C1F41F0120C1C2AA005CEB03 = {
 			isa = PBXGroup;
 			children = (
-				C1F41F0C20C1C2AA005CEB03 /* CompositeSimpsonsRule */,
+				C1F41F0C20C1C2AA005CEB03 /* NumericalIntegration */,
 				C1F41F0B20C1C2AA005CEB03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,27 +52,27 @@
 		C1F41F0B20C1C2AA005CEB03 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C1F41F0A20C1C2AA005CEB03 /* CompositeSimpsonsRule */,
+				C1F41F0A20C1C2AA005CEB03 /* NumericalIntegration */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C1F41F0C20C1C2AA005CEB03 /* CompositeSimpsonsRule */ = {
+		C1F41F0C20C1C2AA005CEB03 /* NumericalIntegration */ = {
 			isa = PBXGroup;
 			children = (
 				C1F41F0D20C1C2AA005CEB03 /* main.cpp */,
-				C1F41F1420C1C2D7005CEB03 /* CompositeSimpsonsRule.cpp */,
-				C1F41F1520C1C2D7005CEB03 /* CompositeSimpsonsRule.hpp */,
+				C1F41F1420C1C2D7005CEB03 /* NumericalIntegration.cpp */,
+				C1F41F1520C1C2D7005CEB03 /* NumericalIntegration.hpp */,
 			);
-			path = CompositeSimpsonsRule;
+			path = NumericalIntegration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C1F41F0920C1C2AA005CEB03 /* CompositeSimpsonsRule */ = {
+		C1F41F0920C1C2AA005CEB03 /* NumericalIntegration */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C1F41F1120C1C2AA005CEB03 /* Build configuration list for PBXNativeTarget "CompositeSimpsonsRule" */;
+			buildConfigurationList = C1F41F1120C1C2AA005CEB03 /* Build configuration list for PBXNativeTarget "NumericalIntegration" */;
 			buildPhases = (
 				C1F41F0620C1C2AA005CEB03 /* Sources */,
 				C1F41F0720C1C2AA005CEB03 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = CompositeSimpsonsRule;
+			name = NumericalIntegration;
 			productName = CompositeSimpsonsRule;
-			productReference = C1F41F0A20C1C2AA005CEB03 /* CompositeSimpsonsRule */;
+			productReference = C1F41F0A20C1C2AA005CEB03 /* NumericalIntegration */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C1F41F0520C1C2AA005CEB03 /* Build configuration list for PBXProject "CompositeSimpsonsRule" */;
+			buildConfigurationList = C1F41F0520C1C2AA005CEB03 /* Build configuration list for PBXProject "NumericalIntegration" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C1F41F0920C1C2AA005CEB03 /* CompositeSimpsonsRule */,
+				C1F41F0920C1C2AA005CEB03 /* NumericalIntegration */,
 			);
 		};
 /* End PBXProject section */
@@ -124,7 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1F41F0E20C1C2AA005CEB03 /* main.cpp in Sources */,
-				C1F41F1620C1C2D7005CEB03 /* CompositeSimpsonsRule.cpp in Sources */,
+				C1F41F1620C1C2D7005CEB03 /* NumericalIntegration.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +263,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C1F41F0520C1C2AA005CEB03 /* Build configuration list for PBXProject "CompositeSimpsonsRule" */ = {
+		C1F41F0520C1C2AA005CEB03 /* Build configuration list for PBXProject "NumericalIntegration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1F41F0F20C1C2AA005CEB03 /* Debug */,
@@ -272,7 +272,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C1F41F1120C1C2AA005CEB03 /* Build configuration list for PBXNativeTarget "CompositeSimpsonsRule" */ = {
+		C1F41F1120C1C2AA005CEB03 /* Build configuration list for PBXNativeTarget "NumericalIntegration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1F41F1220C1C2AA005CEB03 /* Debug */,

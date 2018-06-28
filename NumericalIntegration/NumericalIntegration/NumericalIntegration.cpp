@@ -1,12 +1,9 @@
 //
-//  CompositeSimpsonsRule.cpp
-//  CompositeSimpsonsRule
-//
 //
 //  Algorithm 4.1 (Numerical Analysis, Ninth Edition, Burden, Faires)
 //  Composite Simpson's Rule
 
-#include "CompositeSimpsonsRule.hpp"
+#include "NumericalIntegration.hpp"
 
 double compositeSimpsons(double a, double b, unsigned long n,
                          std::function<double(double)> func) {

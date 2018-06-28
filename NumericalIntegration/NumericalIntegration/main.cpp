@@ -1,12 +1,12 @@
 //
 //  main.cpp
-//  CompositeSimpsonsRule
+//  Numerical Integration
 //
 //
 
 #include <cmath>
 #include <iostream>
-#include "CompositeSimpsonsRule.hpp"
+#include "NumericalIntegration.hpp"
 
 int main(int argc, const char* argv[]) {
   double a = 0.0;
