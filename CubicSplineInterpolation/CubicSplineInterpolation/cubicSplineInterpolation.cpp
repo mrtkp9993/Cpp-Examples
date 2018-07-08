@@ -12,7 +12,7 @@
 #include <iostream>
 #include <vector>
 
-Solution natCubicSplineInterpolation(Inputs inputs) {
+Solution natCubicSplineInterpolation(const Inputs& inputs) {
   unsigned long n = inputs.n;
   std::vector<double> x = inputs.x;
   std::vector<double> y = inputs.y;

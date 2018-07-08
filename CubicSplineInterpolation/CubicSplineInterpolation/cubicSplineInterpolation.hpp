@@ -23,6 +23,6 @@ struct Solution {
   std::vector<double> d{0.0};
 };
 
-Solution natCubicSplineInterpolation(Inputs inputs);
+Solution natCubicSplineInterpolation(const Inputs& inputs);
 
 #endif /* cubicSplineInterpolation_hpp */

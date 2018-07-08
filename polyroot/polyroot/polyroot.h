@@ -9,6 +9,6 @@
 
 #include <vector>
 
-std::vector<double> polyroot(std::vector<double> coef);
+std::vector<double> polyroot(const std::vector<double>& coef);
 
 #endif /* defined(__polyroot__polyroot__) */

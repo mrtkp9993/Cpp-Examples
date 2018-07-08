@@ -9,6 +9,7 @@
 
 #include <vector>
 
-std::vector<double> forwardDifference(std::vector<double> arr, int order);
+std::vector<double> forwardDifference(const std::vector<double>& arr,
+                                      const int& order);
 
 #endif /* finiteDifferences_hpp */

@@ -9,8 +9,8 @@
 
 #include "FixedPointIteration.hpp"
 
-double fixedPointIter(double p0, double tol, unsigned long N0,
-                      std::function<double(double)> g) {
+double fixedPointIter(double p0, const double& tol, const unsigned long& N0,
+                      const std::function<double(double)>& g) {
   unsigned long i = 1;
   bool rootFound = false;
   while (i <= N0) {

@@ -10,8 +10,9 @@
 
 void formattedPrint(double t, double w);
 
-double RK4(double a, double b, unsigned int N, double init,
-           std::function<double(double, double)> func) {
+double RK4(const double& a, const double& b, const unsigned int& N,
+           const double& init,
+           const std::function<double(double, double)>& func) {
   // STEP 1
   double h = (b - a) / N;
   double t = a;

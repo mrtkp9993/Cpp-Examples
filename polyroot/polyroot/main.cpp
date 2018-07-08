@@ -14,7 +14,7 @@ int main(int argc, const char *argv[]) {
   double c = -1;
   std::vector<double> coef = {a, b, c};
   std::vector<double> roots = polyroot(coef);
-  int rootSize = roots.size();
+  const unsigned long rootSize = roots.size();
   for (int i = 0; i < rootSize; i++) {
     std::cout << roots.at(i) << "\n" << std::endl;
   }

@@ -10,7 +10,7 @@
 #include <cmath>   // abs, ceil, log, max, pow
 #include <limits>  // infinity, quite_NAN
 
-std::vector<double> polyroot(std::vector<double> coef) {
+std::vector<double> polyroot(const std::vector<double>& coef) {
   std::vector<double> roots = {std::numeric_limits<double>::infinity(),
                                std::numeric_limits<double>::infinity()};
   double a = coef.at(0);

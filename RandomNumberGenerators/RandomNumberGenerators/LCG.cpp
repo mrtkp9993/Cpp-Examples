@@ -6,7 +6,8 @@
 
 #include "LCG.hpp"
 
-std::vector<int> lcg(int seed, int mod, int mult, int incr, int count) {
+std::vector<int> lcg(const int& seed, const int& mod, const int& mult,
+                     const int& incr, const int& count) {
   assert(mod > 0);
   assert(0 < mult < mod);
   assert(0 <= incr < mod);

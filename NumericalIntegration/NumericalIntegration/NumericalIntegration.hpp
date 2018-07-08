@@ -11,12 +11,14 @@
 #include <functional>
 #include <iostream>
 
-double compositeSimpsons(double a, double b, unsigned long n,
-                         std::function<double(double)> func);
+double compositeSimpsons(const double& a, const double& b,
+                         const unsigned long& n,
+                         const std::function<double(double)>& func);
 
-double doubleIntegral(double a, double b, unsigned long m, unsigned long n,
-                      std::function<double(double)> c,
-                      std::function<double(double)> d,
-                      std::function<double(double, double)> func);
+double doubleIntegral(const double& a, const double& b, const unsigned long& m,
+                      const unsigned long& n,
+                      const std::function<double(double)>& c,
+                      const std::function<double(double)>& d,
+                      const std::function<double(double, double)>& func);
 
 #endif /* NumericalIntegration_hpp */

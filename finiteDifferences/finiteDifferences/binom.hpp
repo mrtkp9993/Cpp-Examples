@@ -9,6 +9,6 @@
 
 #include <stdio.h>
 
-double binomCoef(unsigned long n, unsigned long k);
+double binomCoef(const unsigned long& n, const unsigned long& k);
 
 #endif /* binom_hpp */

@@ -6,8 +6,8 @@
 
 #include "GoldenSectionSearch.hpp"
 
-Result GoldenSectionSearch(double a, double b, double tol,
-                           std::function<double(double)> func) {
+Result GoldenSectionSearch(double a, double b, const double& tol,
+                           const std::function<double(double)>& func) {
   assert(a < b);
   assert(tol > 0);
   Result result;

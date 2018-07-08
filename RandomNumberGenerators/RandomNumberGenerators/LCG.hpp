@@ -11,6 +11,7 @@
 #include <cmath>
 #include <vector>
 
-std::vector<int> lcg(int seed, int mod, int mult, int incr, int count);
+std::vector<int> lcg(const int& seed, const int& mod, const int& mult,
+                     const int& incr, const int& count);
 
 #endif /* LCG_hpp */

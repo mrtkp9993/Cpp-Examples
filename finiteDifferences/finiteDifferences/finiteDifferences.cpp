@@ -10,7 +10,8 @@
 #include <vector>
 #include "binom.hpp"
 
-std::vector<double> forwardDifference(std::vector<double> arr, int order) {
+std::vector<double> forwardDifference(const std::vector<double>& arr,
+                                      const int& order) {
   if (order < 0)
     throw std::invalid_argument("Order must be equal or greater than zero.");
   if (order > arr.size())

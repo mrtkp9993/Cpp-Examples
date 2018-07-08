@@ -5,8 +5,9 @@
 
 #include "NumericalIntegration.hpp"
 
-double compositeSimpsons(double a, double b, unsigned long n,
-                         std::function<double(double)> func) {
+double compositeSimpsons(const double& a, const double& b,
+                         const unsigned long& n,
+                         const std::function<double(double)>& func) {
   double X = 0.0;
   double XI = 0.0;
   // STEP 1
@@ -31,10 +32,11 @@ double compositeSimpsons(double a, double b, unsigned long n,
   return XI;
 }
 
-double doubleIntegral(double a, double b, unsigned long m, unsigned long n,
-                      std::function<double(double)> c,
-                      std::function<double(double)> d,
-                      std::function<double(double, double)> func) {
+double doubleIntegral(const double& a, const double& b, const unsigned long& m,
+                      const unsigned long& n,
+                      const std::function<double(double)>& c,
+                      const std::function<double(double)>& d,
+                      const std::function<double(double, double)>& func) {
   assert(m % 2 == 0);
   assert(n % 2 == 0);
   double J = 0.0;

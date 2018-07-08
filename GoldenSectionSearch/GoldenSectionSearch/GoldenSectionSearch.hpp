@@ -17,7 +17,7 @@ struct Result {
   double b;
 };
 
-Result GoldenSectionSearch(double a, double b, double tol,
-                           std::function<double(double)> func);
+Result GoldenSectionSearch(double a, double b, const double& tol,
+                           const std::function<double(double)>& func);
 
 #endif /* GoldenSectionSearch_hpp */
