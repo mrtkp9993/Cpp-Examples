@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/muratkoptur/Desktop/github/Cpp-Examples/BBPTypeFormula/BBPTypeFormula.h
+cassert
+-
+cmath
+-
+vector
+-
+
+/Users/muratkoptur/Desktop/github/Cpp-Examples/BBPTypeFormula/main.cpp
+iomanip
+-
+iostream
+-
+BBPTypeFormula.h
+/Users/muratkoptur/Desktop/github/Cpp-Examples/BBPTypeFormula/BBPTypeFormula.h
+
