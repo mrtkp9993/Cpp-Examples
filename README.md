@@ -1,6 +1,6 @@
 # C++ Examples
-[![Build Status](https://travis-ci.org/mrtkp9993/Cpp-Examples.svg?branch=master)](https://travis-ci.org/mrtkp9993/Cpp-Examples)
 ***
+* BBPTypeFormula: Calculate BBP-Type formulas.
 * NumericalIntegration: Composite Simpson's Rule, Algorithm 4.1, Simpson's Double Integral, Algorithm 4.4 on Numerical Analysis, Ninth Edition, Burden, Faires.
 * CubicSplineInterpolation: Natural Cubic Spline, Algorithm 3.4 on Numerical Analysis, Ninth Edition, Burden, Faires.
 * EigenExamples: Some examples with [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) C++ template library for linear algebra.
