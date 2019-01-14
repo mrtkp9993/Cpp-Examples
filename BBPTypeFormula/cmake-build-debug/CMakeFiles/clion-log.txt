@@ -1,4 +1,0 @@
-"/Users/muratkoptur/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/183.4886.39/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/muratkoptur/Desktop/github/Cpp-Examples/BBPTypeFormula
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/muratkoptur/Desktop/github/Cpp-Examples/BBPTypeFormula/cmake-build-debug

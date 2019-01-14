@@ -6,7 +6,7 @@
  *
  * Author: Murat Koptur
  * GitHub: mrtkp9993
- * 
+ *
  */
 
 #include "BBPTypeFormula.h"
