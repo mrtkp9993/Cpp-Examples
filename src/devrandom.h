@@ -4,8 +4,8 @@
 //
 //
 
-#ifndef devrandom_hpp
-#define devrandom_hpp
+#ifndef DEVRANDOM_H
+#define DEVRANDOM_H
 
 #include <stdio.h>
 #include <fstream>
@@ -30,4 +30,4 @@ T devrandom() {
   return random_value;
 }
 
-#endif /* devrandom_hpp */
+#endif /* DEVRANDOM_H */

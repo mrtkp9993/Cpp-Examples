@@ -4,8 +4,8 @@
 //
 //
 
-#ifndef cubicSplineInterpolation_hpp
-#define cubicSplineInterpolation_hpp
+#ifndef CUBICSPLINEINTERPOLATION_H
+#define CUBICSPLINEINTERPOLATION_H
 
 #include <stdio.h>
 #include <vector>
@@ -25,4 +25,4 @@ struct Solution {
 
 Solution natCubicSplineInterpolation(const Inputs& inputs);
 
-#endif /* cubicSplineInterpolation_hpp */
+#endif /* CUBICSPLINEINTERPOLATION_H */

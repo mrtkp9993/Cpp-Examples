@@ -4,12 +4,12 @@
 //
 //
 
-#ifndef finiteDifferences_hpp
-#define finiteDifferences_hpp
+#ifndef FINITEDIFFRENCES_H
+#define FINITEDIFFRENCES_H
 
 #include <vector>
 
 std::vector<double> forwardDifference(const std::vector<double>& arr,
                                       const int& order);
 
-#endif /* finiteDifferences_hpp */
+#endif /* FINITEDIFFRENCES_H */

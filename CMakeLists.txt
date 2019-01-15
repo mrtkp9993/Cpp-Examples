@@ -8,6 +8,10 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 file(GLOB sourcefiles src/*.cpp src/*.h)
 include_directories(lib)
 
+set(CATCH_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/lib)
+add_library(Catch INTERFACE)
+target_include_directories(Catch INTERFACE ${CATCH_INCLUDE_DIR})
+
 add_executable(BBP ${sourcefiles} examples/BBPTypeFormula/main.cpp)
 add_executable(CubicSplineInterpolation ${sourcefiles} examples/CubicSplineInterpolation/main.cpp)
 add_executable(EigenExamples ${sourcefiles} examples/EigenExamples/main.cpp)
@@ -18,3 +22,7 @@ add_executable(NumericalIntegration ${sourcefiles} examples/NumericalIntegration
 add_executable(PolynomialRoot ${sourcefiles} examples/polyroot/main.cpp)
 add_executable(RandomNumberGeneration ${sourcefiles} examples/RandomNumberGenerators/main.cpp)
 add_executable(RungeKuttaMethod ${sourcefiles} examples/RungeKutta/main.cpp)
+
+set(TEST_SOURCES ${PROJECT_SOURCE_DIR}/tests/testmain.cpp)
+add_executable(tests ${sourcefiles} ${TEST_SOURCES})
+target_link_libraries(tests Catch)

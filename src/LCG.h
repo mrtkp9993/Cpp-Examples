@@ -3,8 +3,9 @@
 //  RandomNumberGenerators
 //
 
-#ifndef LCG_hpp
-#define LCG_hpp
+#ifndef LCG_H
+
+#define LCG_H
 
 #include <stdio.h>
 #include <cassert>
@@ -14,4 +15,4 @@
 std::vector<int> lcg(const int& seed, const int& mod, const int& mult,
                      const int& incr, const int& count);
 
-#endif /* LCG_hpp */
+#endif /* LCG_H */

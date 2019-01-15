@@ -4,8 +4,8 @@
 //
 //
 
-#ifndef NumericalIntegration_hpp
-#define NumericalIntegration_hpp
+#ifndef NUMERICALINTEGRATION_H
+#define NUMERICALINTEGRATION_H
 
 #include <stdio.h>
 #include <functional>
@@ -21,4 +21,4 @@ double doubleIntegral(const double& a, const double& b, const unsigned long& m,
                       const std::function<double(double)>& d,
                       const std::function<double(double, double)>& func);
 
-#endif /* NumericalIntegration_hpp */
+#endif /* NUMERICALINTEGRATION_H */
