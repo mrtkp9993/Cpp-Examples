@@ -34,3 +34,5 @@
 # Ignore these folders
 cmake-build-debug/
 .idea/
+.vscode/
+build/
