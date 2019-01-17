@@ -14,7 +14,7 @@
 long double P(const int &s, const int &b, const int &n, const std::vector<int> &A, const int &n_iter) {
     assert(n == A.size());
 
-    auto result = 0.0;
+    long double result = 0.0;
 
     for (int k = 0; k <= n_iter; k++) {
         auto inv_bk = 1 / std::pow(b, k);
