@@ -3,7 +3,7 @@
 //  Algorithm 4.1 (Numerical Analysis, Ninth Edition, Burden, Faires)
 //  Composite Simpson's Rule
 
-#include "NumericalIntegration.h"
+#include "numericalIntegration.h"
 
 double compositeSimpsons(const double& a, const double& b,
                          const unsigned long& n,

@@ -6,7 +6,7 @@
 
 #include <iomanip>
 #include <iostream>
-#include "../../src/GoldenSectionSearch.h"
+#include "../../src/goldenSectionSearch.h"
 
 int main(int argc, const char* argv[]) {
   // define problem

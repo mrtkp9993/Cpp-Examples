@@ -5,7 +5,7 @@
 //
 
 #include <iostream>
-#include "../../src/RungeKutta.h"
+#include "../../src/rungeKutta.h"
 
 int main(int argc, const char* argv[]) {
   // define problem

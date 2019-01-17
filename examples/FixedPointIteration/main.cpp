@@ -5,7 +5,7 @@
 //
 
 #include <iostream>
-#include "../../src/FixedPointIteration.h"
+#include "../../src/fixedPointIteration.h"
 
 int main(int argc, const char* argv[]) {
   // Calculate g(x) = x - (x^2 - 2) / (2*x)

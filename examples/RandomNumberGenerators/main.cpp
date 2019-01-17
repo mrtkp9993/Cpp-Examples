@@ -5,7 +5,7 @@
 //
 
 #include <iostream>
-#include "../../src/LCG.h"
+#include "../../src/lcg.h"
 #include "../../src/devrandom.h"
 
 int main(int argc, const char* argv[]) {

@@ -6,7 +6,7 @@
 
 #include <cmath>
 #include <iostream>
-#include "../../src/NumericalIntegration.h"
+#include "../../src/numericalIntegration.h"
 
 int main(int argc, const char* argv[]) {
   // Composite Simpson

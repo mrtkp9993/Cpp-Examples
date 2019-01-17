@@ -4,7 +4,7 @@
 //
 //
 
-#include "LCG.h"
+#include "lcg.h"
 
 std::vector<int> lcg(const int& seed, const int& mod, const int& mult,
                      const int& incr, const int& count) {

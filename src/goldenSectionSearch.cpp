@@ -4,7 +4,7 @@
 //
 //
 
-#include "GoldenSectionSearch.h"
+#include "goldenSectionSearch.h"
 
 Result GoldenSectionSearch(double a, double b, const double& tol,
                            const std::function<double(double)>& func) {

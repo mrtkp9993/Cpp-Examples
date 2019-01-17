@@ -6,7 +6,7 @@
 //  Algorithm 5.2 (Numerical Analysis, Ninth Edition, Burden, Faires)
 //  Runge-Kutta Order Four
 
-#include "RungeKutta.h"
+#include "rungeKutta.h"
 
 void formattedPrint(double t, double w);
 

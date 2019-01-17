@@ -7,7 +7,7 @@
 //  Fixed-Point Iteration
 //  To ind a solution to p = g(p) given an initial approximation p_0.
 
-#include "FixedPointIteration.h"
+#include "fixedPointIteration.h"
 
 double fixedPointIter(double p0, const double& tol, const unsigned long& N0,
                       const std::function<double(double)>& g) {
