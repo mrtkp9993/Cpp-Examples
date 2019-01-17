@@ -13,7 +13,7 @@
 
 template <typename T>
 T devrandom() {
-  T random_value;
+  T random_value{};
   size_t size = sizeof(random_value);
   std::ifstream random("/dev/random", std::ios::in | std::ios::binary);
   if (random) {
