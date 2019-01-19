@@ -5,9 +5,6 @@
 //
 
 #include "finiteDifferences.h"
-#include <cmath>
-#include <limits>
-#include <vector>
 #include "binom.h"
 
 std::vector<double> forwardDifference(const std::vector<double>& arr,

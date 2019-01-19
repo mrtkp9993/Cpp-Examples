@@ -5,5 +5,5 @@ compiler:
   - gcc
 
 script:
-  - cmake . && make && ./bin/tests
+  - cmake . && make && ./bin/tests && ./clang-format.sh
   
