@@ -25,3 +25,8 @@ add_executable(RungeKuttaMethod ${sourcefiles} examples/RungeKutta/main.cpp)
 set(TEST_SOURCES ${PROJECT_SOURCE_DIR}/tests/testmain.cpp)
 add_executable(tests ${sourcefiles} ${TEST_SOURCES})
 target_link_libraries(tests Catch)
+set_target_properties(tests
+        PROPERTIES
+        COMPILE_FLAGS "-ftest-coverage -fprofile-arcs"
+        LINK_FLAGS    "-lgcov --coverage"
+        )
