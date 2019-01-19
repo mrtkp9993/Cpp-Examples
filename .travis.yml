@@ -4,6 +4,20 @@ compiler:
   - clang
   - gcc
 
+addons:
+  apt:
+    packages: lcov
+
+env:
+  -CODECOV_TOKEN="f3a691e9-6e4a-4a12-a14c-e8bf4075c019"
+
 script:
   - cmake . && make && ./bin/tests && ./clang-format.sh
-  
+
+after_success:
+# Create lcov report
+- lcov --capture --directory . --output-file coverage.info
+- lcov --remove coverage.info '/usr/*' --output-file coverage.info # filter system-files
+- lcov --list coverage.info # debug info
+# Uploading report to CodeCov
+- bash <(curl -s https://codecov.io/bash) -f coverage.info || echo "Codecov did not collect coverage reports"
