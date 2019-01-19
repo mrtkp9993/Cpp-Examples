@@ -7,7 +7,8 @@
 #ifndef NUMERICALINTEGRATION_H
 #define NUMERICALINTEGRATION_H
 
-#include <stdio.h>
+#include <cassert>
+#include <cstdio>
 #include <functional>
 #include <iostream>
 
