@@ -28,5 +28,11 @@ int main(int argc, const char* argv[]) {
     return 2 * y * std::sin(x) + std::pow(std::cos(x), 2);
   };
   doubleIntegral(a1, b1, m1, n1, c, d, func1);
+  // Monte-Carlo Integration
+  double a2 = 0.8;
+  double b2 = 3;
+  unsigned long n2 = 10000;
+  std::function<double(double)> func2 = [](double x){return 1 / (1 + std::sinh(2*x)*std::pow(std::log(x), 2));};
+  monteCarloIntegration(a2, b2, n2, func2);
   return 0;
 }
