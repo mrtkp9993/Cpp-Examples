@@ -83,3 +83,22 @@ double doubleIntegral(const double& a, const double& b, const unsigned long& m,
   std::cout << "Approximation to integral: " << J << std::endl;
   return J;
 }
+
+double monteCarloIntegration(const double& a, const double& b,
+                             const unsigned long& n,
+                             std::function<double(double)>& func) {
+  std::vector<double> X(n,0);
+  for (unsigned int i = 0; i < n; i++){
+    X[i] = runif(a, b);
+  }
+
+  double sum = 0;
+  for (auto xi: X) {
+    sum += func(xi);
+  }
+
+  auto result = (b - a) / n * sum;
+
+  std::cout << "Approximation to integral: " << result << std::endl;
+  return result;
+}

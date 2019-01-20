@@ -11,6 +11,8 @@
 #include <cstdio>
 #include <functional>
 #include <iostream>
+#include <numeric>
+#include "statistics.h"
 
 double compositeSimpsons(const double& a, const double& b,
                          const unsigned long& n,
@@ -21,5 +23,9 @@ double doubleIntegral(const double& a, const double& b, const unsigned long& m,
                       const std::function<double(double)>& c,
                       const std::function<double(double)>& d,
                       const std::function<double(double, double)>& func);
+
+double monteCarloIntegration(const double& a, const double& b,
+                             const unsigned long& n,
+                             std::function<double(double)>& func);
 
 #endif /* NUMERICALINTEGRATION_H */

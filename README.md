@@ -16,6 +16,7 @@ Currently I implemented following functions & algorithms:
 * Jarque–Bera test
 * Linear Congruent Generator
 * Metropolis-Hastings Algorithm
+* Monte-Carlo Integration
 * Runge-Kutta 4th Order (RK4)
 * Quadratic Formula
 * Uniform & Normal Random Number Generators
