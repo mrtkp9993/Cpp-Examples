@@ -2,6 +2,7 @@
 #define STATISTICS_H
 
 #include <cmath>
+#include <cstdlib>
 #include <numeric>
 #include <vector>
 
