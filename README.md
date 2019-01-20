@@ -9,12 +9,13 @@
 Currently I implemented following functions & algorithms:
 
 * BBP Type Formula
+* Composite Simpson & Double Simpson
+* /dev/random Generator
 * Fixed Point Iteration
 * Golden Section Search
-* Composite Simpson & Double Simpson
-* Runge-Kutta 4th Order (RK4)
 * Linear Congruent Generator
-* /dev/random Generator
+* Metropolis-Hastings Algorithm
+* Runge-Kutta 4th Order (RK4)
 * Quadratic Formula
 
 

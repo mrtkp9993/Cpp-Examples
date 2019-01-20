@@ -17,7 +17,7 @@ long double P(const int &s, const int &b, const int &n,
 
   long double result = 0.0;
 
-  for (int k = 0; k <= n_iter; k++) {
+  for (unsigned int k = 0; k <= n_iter; k++) {
     auto inv_bk = 1 / std::pow(b, k);
     auto inner_sum = 0.0;
     for (int j = 1; j <= n; j++) {
