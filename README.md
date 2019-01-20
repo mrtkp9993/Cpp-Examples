@@ -13,10 +13,12 @@ Currently I implemented following functions & algorithms:
 * /dev/random Generator
 * Fixed Point Iteration
 * Golden Section Search
+* Jarque–Bera test
 * Linear Congruent Generator
 * Metropolis-Hastings Algorithm
 * Runge-Kutta 4th Order (RK4)
 * Quadratic Formula
+* Uniform & Normal Random Number Generators
 
 
 ### Examples
