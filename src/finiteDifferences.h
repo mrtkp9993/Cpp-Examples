@@ -9,8 +9,8 @@
 
 #include <cmath>
 #include <limits>
-#include <vector>
 #include <stdexcept>
+#include <vector>
 
 std::vector<double> forwardDifference(const std::vector<double>& arr,
                                       const int& order);

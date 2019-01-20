@@ -32,7 +32,9 @@ int main(int argc, const char* argv[]) {
   double a2 = 0.8;
   double b2 = 3;
   unsigned long n2 = 10000;
-  std::function<double(double)> func2 = [](double x){return 1 / (1 + std::sinh(2*x)*std::pow(std::log(x), 2));};
+  std::function<double(double)> func2 = [](double x) {
+    return 1 / (1 + std::sinh(2 * x) * std::pow(std::log(x), 2));
+  };
   monteCarloIntegration(a2, b2, n2, func2);
   return 0;
 }

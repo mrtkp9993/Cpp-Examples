@@ -8,7 +8,6 @@
 double compositeSimpsons(const double& a, const double& b,
                          const unsigned long& n,
                          const std::function<double(double)>& func) {
-  double X = 0.0;
   double XI = 0.0;
   // STEP 1
   double h = (b - a) / n;
@@ -19,7 +18,7 @@ double compositeSimpsons(const double& a, const double& b,
   // STEP 3
   for (int i = 1; i <= n - 1; i++) {
     // STEP 4
-    X = a + i * h;
+    double X = a + i * h;
     // STEP 5
     if (i % 2 == 0) {
       XI2 = XI2 + func(X);
@@ -87,13 +86,13 @@ double doubleIntegral(const double& a, const double& b, const unsigned long& m,
 double monteCarloIntegration(const double& a, const double& b,
                              const unsigned long& n,
                              std::function<double(double)>& func) {
-  std::vector<double> X(n,0);
-  for (unsigned int i = 0; i < n; i++){
+  std::vector<double> X(n, 0);
+  for (unsigned int i = 0; i < n; i++) {
     X[i] = runif(a, b);
   }
 
   double sum = 0;
-  for (auto xi: X) {
+  for (auto xi : X) {
     sum += func(xi);
   }
 

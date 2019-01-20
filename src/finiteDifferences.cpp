@@ -9,12 +9,16 @@
 
 std::vector<double> forwardDifference(const std::vector<double>& arr,
                                       const int& order) {
-  if (order < 0)
+  if (order < 0) {
     throw std::invalid_argument("Order must be equal or greater than zero.");
-  if (order > arr.size())
+  }
+  if (order > arr.size()) {
     throw std::invalid_argument(
         "Order must be equal or smaller than input array's size.");
-  if (order == 0) return arr;
+  }
+  if (order == 0) {
+    return arr;
+  };
   int outArrSize = (int)arr.size() - order;
   std::vector<double> outArr(outArrSize, 0.0);
   for (int n = 0; n < outArrSize; n++) {
