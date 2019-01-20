@@ -1,3 +1,4 @@
+#include <iostream>
 #include "../../src/metropolisHastings.h"
 
 double target(const double& x) { return x < 0 ? 0 : std::exp(-x); }
@@ -7,6 +8,5 @@ int main() {
   for (auto num : nums) {
     std::cout << num << std::endl;
   }
-
   return 0;
 }
