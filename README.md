@@ -25,7 +25,7 @@ You can find examples in `examples/` folder.
 
 ### Contribute
 
-I'm waiting for your contributions on the following topics:
+You can contribute on the following topics:
 
 * Linear Algebra
 * Optimization
