@@ -8,9 +8,11 @@
 #include "../src/fixedPointIteration.h"
 #include "../src/goldenSectionSearch.h"
 #include "../src/lcg.h"
+#include "../src/metropolisHastings.h"
 #include "../src/numericalIntegration.h"
 #include "../src/polyroot.h"
 #include "../src/rungeKutta.h"
+#include "../src/statistics.h"
 #include "Catch2/catch.hpp"
 
 TEST_CASE("BBP-Type formula", "[bbp]") {
@@ -87,6 +89,17 @@ TEST_CASE("Double Simpson", "[dsi]") {
   REQUIRE(std::abs(res - 0.51) < 1e-2);
 }
 
+TEST_CASE("Monte Carlo Integration", "mci") {
+    double a2 = 0.8;
+    double b2 = 3;
+    unsigned long n2 = 10000;
+    std::function<double(double)> func2 = [](double x) {
+        return 1 / (1 + std::sinh(2 * x) * std::pow(std::log(x), 2));
+    };
+    double res = monteCarloIntegration(a2, b2, n2, func2);
+    REQUIRE(std::abs(res - 0.67) < 1e-2);
+}
+
 TEST_CASE("Polynomial roots", "[pol]") {
   double a = 1;
   double b = -1;
@@ -107,4 +120,12 @@ TEST_CASE("Runge Kutta method", "[rk4]") {
   };
   double w = RK4(a, b, N, init, func);
   REQUIRE(std::abs(w - 5.30) < 1e-2);
+}
+
+TEST_CASE("Normal random generator", "[nor]") {
+  std::vector<double> nums(1000, 0);
+  for (unsigned int i = 0; i < nums.size(); i++) {
+    nums[i] = rnorm();
+  }
+  REQUIRE(jb_test(nums) == true);
 }
