@@ -89,17 +89,6 @@ TEST_CASE("Double Simpson", "[dsi]") {
   REQUIRE(std::abs(res - 0.51) < 1e-2);
 }
 
-TEST_CASE("Monte Carlo Integration", "mci") {
-    double a2 = 0.8;
-    double b2 = 3;
-    unsigned long n2 = 50000;
-    std::function<double(double)> func2 = [](double x) {
-        return 1 / (1 + std::sinh(2 * x) * std::pow(std::log(x), 2));
-    };
-    double res = monteCarloIntegration(a2, b2, n2, func2);
-    REQUIRE(std::abs(res - 0.67) < 1e-2);
-}
-
 TEST_CASE("Polynomial roots", "[pol]") {
   double a = 1;
   double b = -1;
