@@ -4,7 +4,6 @@
 #include "../src/bbpTypeFormula.h"
 #include "../src/binom.h"
 #include "../src/devrandom.h"
-#include "../src/finiteDifferences.h"
 #include "../src/fixedPointIteration.h"
 #include "../src/goldenSectionSearch.h"
 #include "../src/lcg.h"
@@ -29,12 +28,6 @@ TEST_CASE("/dev/random RNG", "[dev]") {
   auto randDouble = devrandom<double>();
   REQUIRE(sizeof(randInt) == 4);
   REQUIRE(sizeof(randDouble) == 8);
-}
-
-TEST_CASE("Finite differences", "[dif]") {
-  std::vector<double> arr = {10.0, 14.5, 22.0};
-  std::vector<double> diff = forwardDifference(arr, 1);
-  REQUIRE(diff == std::vector<double>{4.5, 7.5});
 }
 
 TEST_CASE("Fixed point iteration", "[fpi]") {

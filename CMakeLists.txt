@@ -14,7 +14,6 @@ target_include_directories(Catch INTERFACE ${CATCH_INCLUDE_DIR})
 
 add_executable(BBP ${sourcefiles} examples/BBPTypeFormula/main.cpp)
 add_executable(EigenExamples ${sourcefiles} examples/EigenExamples/main.cpp)
-add_executable(FiniteDifferences ${sourcefiles} examples/finiteDifferences/main.cpp)
 add_executable(FixedPointIteration ${sourcefiles} examples/FixedPointIteration/main.cpp)
 add_executable(GoldenSectionSearch ${sourcefiles} examples/GoldenSectionSearch/main.cpp)
 add_executable(MetropolisHastings ${sourcefiles} examples/MetropolisHastings/main.cpp)
