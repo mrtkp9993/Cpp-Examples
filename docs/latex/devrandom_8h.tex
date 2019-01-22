@@ -1,0 +1,47 @@
+\hypertarget{devrandom_8h}{}\section{src/devrandom.h File Reference}
+\label{devrandom_8h}\index{src/devrandom.h@{src/devrandom.h}}
+
+
+Generate random numbers/strings from /dev/random.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{devrandom_8h_ad3a63441da329a84f7ceb34aa1487400}{devrandom}} ()
+\begin{DoxyCompactList}\small\item\em A function template which takes a type as argument and returns an random element of that type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Generate random numbers/strings from /dev/random. 
+
+/dev/random is special file that serve as pseudorandom number generator. They allow access to environmental noise collected from device drivers and other sources.
+
+\begin{DoxyAuthor}{Author}
+Murat Koptur \href{mailto:mkoptur3@gmail.com}{\texttt{ mkoptur3@gmail.\+com}}
+\end{DoxyAuthor}
+Last updated\+: 22/\+Jan/2019. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{devrandom_8h_ad3a63441da329a84f7ceb34aa1487400}\label{devrandom_8h_ad3a63441da329a84f7ceb34aa1487400}} 
+\index{devrandom.h@{devrandom.h}!devrandom@{devrandom}}
+\index{devrandom@{devrandom}!devrandom.h@{devrandom.h}}
+\subsubsection{\texorpdfstring{devrandom()}{devrandom()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T devrandom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A function template which takes a type as argument and returns an random element of that type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & A type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Random element. 
+\end{DoxyReturn}

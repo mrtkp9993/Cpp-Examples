@@ -10,7 +10,7 @@
  * equation.
  *
  * Algorithm 2.2 (Numerical Analysis, Ninth Edition, Burden, Faires)
-
+ *
  * @author Murat Koptur <mkoptur3@gmail.com>
  *
  * Last updated: 22/Jan/2019.
@@ -24,7 +24,6 @@
 #include <cmath>
 #include <functional>
 #include <iostream>
-
 
 /**
  * @brief Find a solution to p = g(p) given an initial approximation p0.

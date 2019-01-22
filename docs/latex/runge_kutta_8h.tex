@@ -1,0 +1,55 @@
+\hypertarget{runge_kutta_8h}{}\section{src/runge\+Kutta.h File Reference}
+\label{runge_kutta_8h}\index{src/rungeKutta.h@{src/rungeKutta.h}}
+
+
+Runge-\/\+Kutta Order Four.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{runge_kutta_8h_a1da8984d31b556d9ca1a2b25424007d5}{R\+K4}} (const double \&a, const double \&b, const unsigned int \&N, const double \&init, const std\+::function$<$ double(double, double)$>$ \&func)
+\begin{DoxyCompactList}\small\item\em Runge-\/\+Kutta Order Four. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Runge-\/\+Kutta Order Four. 
+
+Runge-\/\+Kutta methods are a family of implicit and explicit iterative methods, which include the well-\/known routine called the Euler Method, used in temporal discretization for the approximate solutions of ordinary differential equations.
+
+\begin{DoxyAuthor}{Author}
+Murat Koptur \href{mailto:mkoptur3@gmail.com}{\texttt{ mkoptur3@gmail.\+com}}
+\end{DoxyAuthor}
+Last updated\+: 22/\+Jan/2019. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{runge_kutta_8h_a1da8984d31b556d9ca1a2b25424007d5}\label{runge_kutta_8h_a1da8984d31b556d9ca1a2b25424007d5}} 
+\index{rungeKutta.h@{rungeKutta.h}!RK4@{RK4}}
+\index{RK4@{RK4}!rungeKutta.h@{rungeKutta.h}}
+\subsubsection{\texorpdfstring{RK4()}{RK4()}}
+{\footnotesize\ttfamily double R\+K4 (\begin{DoxyParamCaption}\item[{const double \&}]{a,  }\item[{const double \&}]{b,  }\item[{const unsigned int \&}]{N,  }\item[{const double \&}]{init,  }\item[{const std\+::function$<$ double(double, double)$>$ \&}]{func }\end{DoxyParamCaption})}
+
+
+
+Runge-\/\+Kutta Order Four. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Endpoint. \\
+\hline
+{\em b} & Endpoint. \\
+\hline
+{\em N} & Iteration count. \\
+\hline
+{\em init} & Initial condition. \\
+\hline
+{\em func} & A function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Approximation to exact solution. 
+\end{DoxyReturn}

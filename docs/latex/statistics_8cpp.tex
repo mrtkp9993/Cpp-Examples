@@ -1,0 +1,112 @@
+\hypertarget{statistics_8cpp}{}\section{src/statistics.cpp File Reference}
+\label{statistics_8cpp}\index{src/statistics.cpp@{src/statistics.cpp}}
+
+
+Statistics related functions.  
+
+
+{\ttfamily \#include \char`\"{}statistics.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{statistics_8cpp_a2e6dd2f921b9f3f702d0c086e62912df}{runif}} (const double \&a, const double \&b)
+\begin{DoxyCompactList}\small\item\em Uniform number generator. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{statistics_8cpp_a6a9887bcb814e2d103fe60a9988bbbd0}{rnorm}} (const double \&mean, const double \&sd)
+\begin{DoxyCompactList}\small\item\em Normal number generator with Box–\+Muller transform. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{statistics_8cpp_aee334d3af1786d2e88e91f54280baf1f}{pchisq}} (const double \&stat, const unsigned int \&k)
+\begin{DoxyCompactList}\small\item\em Chi-\/\+Squared distribution. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{statistics_8cpp_a94cd222fbd61842fd4dadd5db30401fc}{jb\+\_\+test}} (const std\+::vector$<$ double $>$ \&x)
+\begin{DoxyCompactList}\small\item\em Jarque–\+Bera test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Statistics related functions. 
+
+\begin{DoxyAuthor}{Author}
+Murat Koptur \href{mailto:mkoptur3@gmail.com}{\texttt{ mkoptur3@gmail.\+com}}
+\end{DoxyAuthor}
+Last updated\+: 22/\+Jan/2019. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{statistics_8cpp_a94cd222fbd61842fd4dadd5db30401fc}\label{statistics_8cpp_a94cd222fbd61842fd4dadd5db30401fc}} 
+\index{statistics.cpp@{statistics.cpp}!jb\_test@{jb\_test}}
+\index{jb\_test@{jb\_test}!statistics.cpp@{statistics.cpp}}
+\subsubsection{\texorpdfstring{jb\_test()}{jb\_test()}}
+{\footnotesize\ttfamily bool jb\+\_\+test (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x }\end{DoxyParamCaption})}
+
+
+
+Jarque–\+Bera test. 
+
+Jarque–\+Bera test is a goodness-\/of-\/fit test of whether sample data have the skewness and kurtosis matching a normal distribution.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Vector of numbers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean which indicates that x is normally distributed or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{statistics_8cpp_aee334d3af1786d2e88e91f54280baf1f}\label{statistics_8cpp_aee334d3af1786d2e88e91f54280baf1f}} 
+\index{statistics.cpp@{statistics.cpp}!pchisq@{pchisq}}
+\index{pchisq@{pchisq}!statistics.cpp@{statistics.cpp}}
+\subsubsection{\texorpdfstring{pchisq()}{pchisq()}}
+{\footnotesize\ttfamily double pchisq (\begin{DoxyParamCaption}\item[{const double \&}]{stat,  }\item[{const unsigned int \&}]{k }\end{DoxyParamCaption})}
+
+
+
+Chi-\/\+Squared distribution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stat} & Test statistic. \\
+\hline
+{\em k} & Degrees of freedom.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A probability. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{statistics_8cpp_a6a9887bcb814e2d103fe60a9988bbbd0}\label{statistics_8cpp_a6a9887bcb814e2d103fe60a9988bbbd0}} 
+\index{statistics.cpp@{statistics.cpp}!rnorm@{rnorm}}
+\index{rnorm@{rnorm}!statistics.cpp@{statistics.cpp}}
+\subsubsection{\texorpdfstring{rnorm()}{rnorm()}}
+{\footnotesize\ttfamily double rnorm (\begin{DoxyParamCaption}\item[{const double \&}]{mean,  }\item[{const double \&}]{sd }\end{DoxyParamCaption})}
+
+
+
+Normal number generator with Box–\+Muller transform. 
+
+Box–\+Muller transform is a pseudo-\/random number sampling method for generating pairs of independent, standard, normally distributed (zero expectation, unit variance) random numbers, given a source of uniformly distributed random numbers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mean} & Mean of distribution. \\
+\hline
+{\em sd} & Standart deviation of distribution.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{statistics_8cpp_a2e6dd2f921b9f3f702d0c086e62912df}\label{statistics_8cpp_a2e6dd2f921b9f3f702d0c086e62912df}} 
+\index{statistics.cpp@{statistics.cpp}!runif@{runif}}
+\index{runif@{runif}!statistics.cpp@{statistics.cpp}}
+\subsubsection{\texorpdfstring{runif()}{runif()}}
+{\footnotesize\ttfamily double runif (\begin{DoxyParamCaption}\item[{const double \&}]{a,  }\item[{const double \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Uniform number generator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Lower bound. \\
+\hline
+{\em b} & Upper bound.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random number between \mbox{[}a, b\mbox{]}. 
+\end{DoxyReturn}

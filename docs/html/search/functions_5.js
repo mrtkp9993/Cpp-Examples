@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['p',['P',['../bbp_type_formula_8cpp.html#ae62fb58bcce511f4070b17f29008ad7d',1,'P(const int &amp;s, const int &amp;b, const int &amp;n, const std::vector&lt; int &gt; &amp;A, const int &amp;n_iter):&#160;bbpTypeFormula.cpp'],['../bbp_type_formula_8h.html#ae62fb58bcce511f4070b17f29008ad7d',1,'P(const int &amp;s, const int &amp;b, const int &amp;n, const std::vector&lt; int &gt; &amp;A, const int &amp;n_iter):&#160;bbpTypeFormula.cpp']]]
+  ['jb_5ftest',['jb_test',['../statistics_8cpp.html#a94cd222fbd61842fd4dadd5db30401fc',1,'jb_test(const std::vector&lt; double &gt; &amp;x):&#160;statistics.cpp'],['../statistics_8h.html#a94cd222fbd61842fd4dadd5db30401fc',1,'jb_test(const std::vector&lt; double &gt; &amp;x):&#160;statistics.cpp']]]
 ];

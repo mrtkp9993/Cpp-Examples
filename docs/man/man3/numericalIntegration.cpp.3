@@ -1,0 +1,117 @@
+.TH "src/numericalIntegration.cpp" 3 "Tue Jan 22 2019" "Cpp Examples" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/numericalIntegration.cpp \- Numerical integration methods\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'numericalIntegration\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "double \fBcompositeSimpsons\fP (const double &a, const double &b, const unsigned long &n, const std::function< double(double)> &func)"
+.br
+.RI "Composite Simpson’s Integration\&. "
+.ti -1c
+.RI "double \fBdoubleIntegral\fP (const double &a, const double &b, const unsigned long &m, const unsigned long &n, const std::function< double(double)> &c, const std::function< double(double)> &d, const std::function< double(double, double)> &func)"
+.br
+.RI "Double Simpson’s Integration\&. "
+.ti -1c
+.RI "double \fBmonteCarloIntegration\fP (const double &a, const double &b, const unsigned long &n, std::function< double(double)> &func)"
+.br
+.RI "Monte-Carlo Integration\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Numerical integration methods\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Murat Koptur mkoptur3@gmail.com
+.RE
+.PP
+Last updated: 22/Jan/2019\&. 
+.SH "Function Documentation"
+.PP 
+.SS "double compositeSimpsons (const double & a, const double & b, const unsigned long & n, const std::function< double(double)> & func)"
+
+.PP
+Composite Simpson’s Integration\&. Composite Simpson is a method for the numerical approximation of definite integrals\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Endpoint\&. 
+.br
+\fIb\fP Endpoint\&. 
+.br
+\fIn\fP Iteration count\&. 
+.br
+\fIfunc\fP The function that will be integrated\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Approximation to integral\&. 
+.RE
+.PP
+
+.SS "double doubleIntegral (const double & a, const double & b, const unsigned long & m, const unsigned long & n, const std::function< double(double)> & c, const std::function< double(double)> & d, const std::function< double(double, double)> & func)"
+
+.PP
+Double Simpson’s Integration\&. Double Simpson is a method for the numerical approximation of double integrals\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Endpoint\&. 
+.br
+\fIb\fP Endpoint\&. 
+.br
+\fIm\fP Iteration count\&. 
+.br
+\fIn\fP Iteration count\&. 
+.br
+\fIc\fP A function\&. 
+.br
+\fId\fP A function\&. 
+.br
+\fIfunc\fP The function that will be integrated\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Approximation to integral\&. 
+.RE
+.PP
+
+.SS "double monteCarloIntegration (const double & a, const double & b, const unsigned long & n, std::function< double(double)> & func)"
+
+.PP
+Monte-Carlo Integration\&. Monte-Carlo Integration is a technique for numerical integration using random numbers\&. It is a particular Monte Carlo method that numerically computes a definite integral\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Endpoint\&. 
+.br
+\fIb\fP Endpoint\&. 
+.br
+\fIn\fP Iteration count\&. 
+.br
+\fIfunc\fP The function that will be integrated\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Approximation to integral\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cpp Examples from the source code\&.

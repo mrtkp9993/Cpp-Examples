@@ -11,9 +11,14 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "goldenSectionSearch.h", "golden_section_search_8h.html", "golden_section_search_8h" ],
     [ "lcg.cpp", "lcg_8cpp.html", "lcg_8cpp" ],
     [ "lcg.h", "lcg_8h.html", "lcg_8h" ],
-    [ "metropolisHastings.h", "metropolis_hastings_8h_source.html", null ],
-    [ "numericalIntegration.h", "numerical_integration_8h_source.html", null ],
-    [ "polyroot.h", "polyroot_8h_source.html", null ],
-    [ "rungeKutta.h", "runge_kutta_8h_source.html", null ],
-    [ "statistics.h", "statistics_8h_source.html", null ]
+    [ "metropolisHastings.cpp", "metropolis_hastings_8cpp.html", "metropolis_hastings_8cpp" ],
+    [ "metropolisHastings.h", "metropolis_hastings_8h.html", "metropolis_hastings_8h" ],
+    [ "numericalIntegration.cpp", "numerical_integration_8cpp.html", "numerical_integration_8cpp" ],
+    [ "numericalIntegration.h", "numerical_integration_8h.html", "numerical_integration_8h" ],
+    [ "polyroot.cpp", "polyroot_8cpp.html", "polyroot_8cpp" ],
+    [ "polyroot.h", "polyroot_8h.html", "polyroot_8h" ],
+    [ "rungeKutta.cpp", "runge_kutta_8cpp.html", "runge_kutta_8cpp" ],
+    [ "rungeKutta.h", "runge_kutta_8h.html", "runge_kutta_8h" ],
+    [ "statistics.cpp", "statistics_8cpp.html", "statistics_8cpp" ],
+    [ "statistics.h", "statistics_8h.html", "statistics_8h" ]
 ];

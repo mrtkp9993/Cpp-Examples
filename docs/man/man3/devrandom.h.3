@@ -1,0 +1,57 @@
+.TH "src/devrandom.h" 3 "Tue Jan 22 2019" "Cpp Examples" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/devrandom.h \- Generate random numbers/strings from /dev/random\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <iostream>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename T > T \fBdevrandom\fP ()"
+.br
+.RI "A function template which takes a type as argument and returns an random element of that type\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Generate random numbers/strings from /dev/random\&. 
+
+/dev/random is special file that serve as pseudorandom number generator\&. They allow access to environmental noise collected from device drivers and other sources\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Murat Koptur mkoptur3@gmail.com
+.RE
+.PP
+Last updated: 22/Jan/2019\&. 
+.SH "Function Documentation"
+.PP 
+.SS "template<typename T > T devrandom ()"
+
+.PP
+A function template which takes a type as argument and returns an random element of that type\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIT\fP A type\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Random element\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cpp Examples from the source code\&.

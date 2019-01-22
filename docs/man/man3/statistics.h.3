@@ -1,0 +1,103 @@
+.TH "src/statistics.h" 3 "Tue Jan 22 2019" "Cpp Examples" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/statistics.h \- Statistics related functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cmath>\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+\fC#include <numeric>\fP
+.br
+\fC#include <vector>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "double \fBrunif\fP (const double &a=0, const double &b=1)"
+.br
+.RI "Uniform number generator\&. "
+.ti -1c
+.RI "double \fBrnorm\fP (const double &mean=0, const double &sd=1)"
+.br
+.RI "Normal number generator with Box–Muller transform\&. "
+.ti -1c
+.RI "bool \fBjb_test\fP (const std::vector< double > &x)"
+.br
+.RI "Jarque–Bera test\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Statistics related functions\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Murat Koptur mkoptur3@gmail.com
+.RE
+.PP
+Last updated: 22/Jan/2019\&. 
+.SH "Function Documentation"
+.PP 
+.SS "bool jb_test (const std::vector< double > & x)"
+
+.PP
+Jarque–Bera test\&. Jarque–Bera test is a goodness-of-fit test of whether sample data have the skewness and kurtosis matching a normal distribution\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP Vector of numbers\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A boolean which indicates that x is normally distributed or not\&. 
+.RE
+.PP
+
+.SS "double rnorm (const double & mean, const double & sd)"
+
+.PP
+Normal number generator with Box–Muller transform\&. Box–Muller transform is a pseudo-random number sampling method for generating pairs of independent, standard, normally distributed (zero expectation, unit variance) random numbers, given a source of uniformly distributed random numbers\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fImean\fP Mean of distribution\&. 
+.br
+\fIsd\fP Standart deviation of distribution\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A random number\&. 
+.RE
+.PP
+
+.SS "double runif (const double & a, const double & b)"
+
+.PP
+Uniform number generator\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Lower bound\&. 
+.br
+\fIb\fP Upper bound\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A random number between [a, b]\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cpp Examples from the source code\&.

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['lcg',['lcg',['../lcg_8cpp.html#af6d01b7bf51eb2d0133955f7c70e4179',1,'lcg(const int &amp;seed, const int &amp;mod, const int &amp;mult, const int &amp;incr, const int &amp;count):&#160;lcg.cpp'],['../lcg_8h.html#af6d01b7bf51eb2d0133955f7c70e4179',1,'lcg(const int &amp;seed, const int &amp;mod, const int &amp;mult, const int &amp;incr, const int &amp;count):&#160;lcg.cpp']]],
-  ['lcg_2ecpp',['lcg.cpp',['../lcg_8cpp.html',1,'']]],
-  ['lcg_2eh',['lcg.h',['../lcg_8h.html',1,'']]]
+  ['generate',['generate',['../metropolis_hastings_8cpp.html#aa6831799e1b408a3f06b882855c000c1',1,'generate(const std::function&lt; double(double)&gt; &amp;target, const unsigned int &amp;count, const unsigned int &amp;burn_in_period):&#160;metropolisHastings.cpp'],['../metropolis_hastings_8h.html#aa6831799e1b408a3f06b882855c000c1',1,'generate(const std::function&lt; double(double)&gt; &amp;target, const unsigned int &amp;count, const unsigned int &amp;burn_in_period):&#160;metropolisHastings.cpp']]],
+  ['goldensectionsearch',['GoldenSectionSearch',['../golden_section_search_8cpp.html#ab01babfdb5290cb35ee93894ee2f5d36',1,'GoldenSectionSearch(double a, double b, const double &amp;tol, const std::function&lt; double(double)&gt; &amp;func):&#160;goldenSectionSearch.cpp'],['../golden_section_search_8h.html#ab01babfdb5290cb35ee93894ee2f5d36',1,'GoldenSectionSearch(double a, double b, const double &amp;tol, const std::function&lt; double(double)&gt; &amp;func):&#160;goldenSectionSearch.cpp']]],
+  ['goldensectionsearch_2ecpp',['goldenSectionSearch.cpp',['../golden_section_search_8cpp.html',1,'']]],
+  ['goldensectionsearch_2eh',['goldenSectionSearch.h',['../golden_section_search_8h.html',1,'']]]
 ];

@@ -1,0 +1,55 @@
+\hypertarget{lcg_8h}{}\section{src/lcg.h File Reference}
+\label{lcg_8h}\index{src/lcg.h@{src/lcg.h}}
+
+
+Linear Congruential Generator.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{lcg_8h_af6d01b7bf51eb2d0133955f7c70e4179}{lcg}} (const int \&seed, const int \&mod, const int \&mult, const int \&incr, const int \&count)
+\begin{DoxyCompactList}\small\item\em Linear Congruential Generator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Linear Congruential Generator. 
+
+Linear Congruential Generator is an algorithm that yields a sequence of pseudo–randomized numbers calculated with a discontinuous piecewise linear equation. The method represents one of the oldest and best–known pseudorandom number generator algorithms.
+
+\begin{DoxyAuthor}{Author}
+Murat Koptur \href{mailto:mkoptur3@gmail.com}{\texttt{ mkoptur3@gmail.\+com}}
+\end{DoxyAuthor}
+Last updated\+: 22/\+Jan/2019. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{lcg_8h_af6d01b7bf51eb2d0133955f7c70e4179}\label{lcg_8h_af6d01b7bf51eb2d0133955f7c70e4179}} 
+\index{lcg.h@{lcg.h}!lcg@{lcg}}
+\index{lcg@{lcg}!lcg.h@{lcg.h}}
+\subsubsection{\texorpdfstring{lcg()}{lcg()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ lcg (\begin{DoxyParamCaption}\item[{const int \&}]{seed,  }\item[{const int \&}]{mod,  }\item[{const int \&}]{mult,  }\item[{const int \&}]{incr,  }\item[{const int \&}]{count }\end{DoxyParamCaption})}
+
+
+
+Linear Congruential Generator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seed} & Seed. \\
+\hline
+{\em mod} & Modulus. \\
+\hline
+{\em mult} & Multiplier. \\
+\hline
+{\em incr} & Increment. \\
+\hline
+{\em count} & Count of generated numbers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of generated numbers. 
+\end{DoxyReturn}

@@ -1,0 +1,52 @@
+\hypertarget{fixed_point_iteration_8cpp}{}\section{src/fixed\+Point\+Iteration.cpp File Reference}
+\label{fixed_point_iteration_8cpp}\index{src/fixedPointIteration.cpp@{src/fixedPointIteration.cpp}}
+
+
+Fixed point iteration.  
+
+
+{\ttfamily \#include \char`\"{}fixed\+Point\+Iteration.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{fixed_point_iteration_8cpp_a1db79d1e5c1ff40829e6f530c43b7f50}{fixed\+Point\+Iter}} (double p0, const double \&tol, const unsigned long \&N0, const std\+::function$<$ double(double)$>$ \&g)
+\begin{DoxyCompactList}\small\item\em Find a solution to p = g(p) given an initial approximation p0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fixed point iteration. 
+
+Fixed Point Iteration is a method of computing fixed points of iterated functions. We can write an equation f(x)=0 in x=g(x) form and we can find this equation’s fixed point and solve first equation.
+
+Algorithm 2.\+2 (Numerical Analysis, Ninth Edition, Burden, Faires)
+
+\begin{DoxyAuthor}{Author}
+Murat Koptur \href{mailto:mkoptur3@gmail.com}{\texttt{ mkoptur3@gmail.\+com}}
+\end{DoxyAuthor}
+Last updated\+: 22/\+Jan/2019. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{fixed_point_iteration_8cpp_a1db79d1e5c1ff40829e6f530c43b7f50}\label{fixed_point_iteration_8cpp_a1db79d1e5c1ff40829e6f530c43b7f50}} 
+\index{fixedPointIteration.cpp@{fixedPointIteration.cpp}!fixedPointIter@{fixedPointIter}}
+\index{fixedPointIter@{fixedPointIter}!fixedPointIteration.cpp@{fixedPointIteration.cpp}}
+\subsubsection{\texorpdfstring{fixedPointIter()}{fixedPointIter()}}
+{\footnotesize\ttfamily double fixed\+Point\+Iter (\begin{DoxyParamCaption}\item[{double}]{p0,  }\item[{const double \&}]{tol,  }\item[{const unsigned long \&}]{N0,  }\item[{const std\+::function$<$ double(double)$>$ \&}]{g }\end{DoxyParamCaption})}
+
+
+
+Find a solution to p = g(p) given an initial approximation p0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p0} & Initial approximation. \\
+\hline
+{\em tol} & Tolerance. \\
+\hline
+{\em N0} & Maximum number of iterations. \\
+\hline
+{\em g} & The function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Approximate solution p or message of failure.. 
+\end{DoxyReturn}

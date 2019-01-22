@@ -1,15 +1,29 @@
-//
-//  polyroot.cpp
-//  polyroot
-//
-//  This function implements Algorithm 2.3.1 (Quadratic Equation) in
-//  Scientific Computing Vol. I - Linear and Nonlinear Equations book
-//  written by Trangenstein, John A.
+/**
+ * @file polyroot.cpp
+ *
+ * @brief Quadratic formula.
+ *
+ * Quadratic Formula  is the solution of
+ * the quadratic equation.
+ *
+ * @author Murat Koptur <mkoptur3@gmail.com>
+ *
+ * Last updated: 22/Jan/2019.
+ *
+ */
 
 #include "polyroot.h"
 #include <cmath>   // abs, ceil, log, max, pow
 #include <limits>  // infinity, quite_NAN
 
+/**
+ * @brief Quadratic formula.
+ *
+ * @param coef Coefficient vector.
+ *
+ * @return Roots of quadratic equation.
+ *
+ */
 std::vector<double> polyroot(const std::vector<double>& coef) {
   std::vector<double> roots = {std::numeric_limits<double>::infinity(),
                                std::numeric_limits<double>::infinity()};

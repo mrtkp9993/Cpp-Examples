@@ -1,0 +1,93 @@
+\hypertarget{statistics_8h}{}\section{src/statistics.h File Reference}
+\label{statistics_8h}\index{src/statistics.h@{src/statistics.h}}
+
+
+Statistics related functions.  
+
+
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{statistics_8h_a91b9dc30beddd03f49087ff2bd5ef38f}{runif}} (const double \&a=0, const double \&b=1)
+\begin{DoxyCompactList}\small\item\em Uniform number generator. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{statistics_8h_abac9db6ef7119dfc256987d6058fa30e}{rnorm}} (const double \&mean=0, const double \&sd=1)
+\begin{DoxyCompactList}\small\item\em Normal number generator with Box–\+Muller transform. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{statistics_8h_a94cd222fbd61842fd4dadd5db30401fc}{jb\+\_\+test}} (const std\+::vector$<$ double $>$ \&x)
+\begin{DoxyCompactList}\small\item\em Jarque–\+Bera test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Statistics related functions. 
+
+\begin{DoxyAuthor}{Author}
+Murat Koptur \href{mailto:mkoptur3@gmail.com}{\texttt{ mkoptur3@gmail.\+com}}
+\end{DoxyAuthor}
+Last updated\+: 22/\+Jan/2019. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{statistics_8h_a94cd222fbd61842fd4dadd5db30401fc}\label{statistics_8h_a94cd222fbd61842fd4dadd5db30401fc}} 
+\index{statistics.h@{statistics.h}!jb\_test@{jb\_test}}
+\index{jb\_test@{jb\_test}!statistics.h@{statistics.h}}
+\subsubsection{\texorpdfstring{jb\_test()}{jb\_test()}}
+{\footnotesize\ttfamily bool jb\+\_\+test (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x }\end{DoxyParamCaption})}
+
+
+
+Jarque–\+Bera test. 
+
+Jarque–\+Bera test is a goodness-\/of-\/fit test of whether sample data have the skewness and kurtosis matching a normal distribution.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Vector of numbers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean which indicates that x is normally distributed or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{statistics_8h_abac9db6ef7119dfc256987d6058fa30e}\label{statistics_8h_abac9db6ef7119dfc256987d6058fa30e}} 
+\index{statistics.h@{statistics.h}!rnorm@{rnorm}}
+\index{rnorm@{rnorm}!statistics.h@{statistics.h}}
+\subsubsection{\texorpdfstring{rnorm()}{rnorm()}}
+{\footnotesize\ttfamily double rnorm (\begin{DoxyParamCaption}\item[{const double \&}]{mean,  }\item[{const double \&}]{sd }\end{DoxyParamCaption})}
+
+
+
+Normal number generator with Box–\+Muller transform. 
+
+Box–\+Muller transform is a pseudo-\/random number sampling method for generating pairs of independent, standard, normally distributed (zero expectation, unit variance) random numbers, given a source of uniformly distributed random numbers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mean} & Mean of distribution. \\
+\hline
+{\em sd} & Standart deviation of distribution.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{statistics_8h_a91b9dc30beddd03f49087ff2bd5ef38f}\label{statistics_8h_a91b9dc30beddd03f49087ff2bd5ef38f}} 
+\index{statistics.h@{statistics.h}!runif@{runif}}
+\index{runif@{runif}!statistics.h@{statistics.h}}
+\subsubsection{\texorpdfstring{runif()}{runif()}}
+{\footnotesize\ttfamily double runif (\begin{DoxyParamCaption}\item[{const double \&}]{a,  }\item[{const double \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Uniform number generator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Lower bound. \\
+\hline
+{\em b} & Upper bound.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random number between \mbox{[}a, b\mbox{]}. 
+\end{DoxyReturn}

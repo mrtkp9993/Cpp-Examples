@@ -1,0 +1,50 @@
+\hypertarget{golden_section_search_8cpp}{}\section{src/golden\+Section\+Search.cpp File Reference}
+\label{golden_section_search_8cpp}\index{src/goldenSectionSearch.cpp@{src/goldenSectionSearch.cpp}}
+
+
+Golden Section Search.  
+
+
+{\ttfamily \#include \char`\"{}golden\+Section\+Search.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_result}{Result}} \mbox{\hyperlink{golden_section_search_8cpp_ab01babfdb5290cb35ee93894ee2f5d36}{Golden\+Section\+Search}} (double a, double b, const double \&tol, const std\+::function$<$ double(double)$>$ \&func)
+\begin{DoxyCompactList}\small\item\em Golden Section Search. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Golden Section Search. 
+
+The golden-\/section search is a technique for finding the extremum (minimum or maximum) of a strictly unimodal function by successively narrowing the range of values inside which the extremum is known to exist. The technique derives its name from the fact that the algorithm maintains the function values for triples of points whose distances form a golden ratio.
+
+\begin{DoxyAuthor}{Author}
+Murat Koptur \href{mailto:mkoptur3@gmail.com}{\texttt{ mkoptur3@gmail.\+com}}
+\end{DoxyAuthor}
+Last updated\+: 22/\+Jan/2019. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{golden_section_search_8cpp_ab01babfdb5290cb35ee93894ee2f5d36}\label{golden_section_search_8cpp_ab01babfdb5290cb35ee93894ee2f5d36}} 
+\index{goldenSectionSearch.cpp@{goldenSectionSearch.cpp}!GoldenSectionSearch@{GoldenSectionSearch}}
+\index{GoldenSectionSearch@{GoldenSectionSearch}!goldenSectionSearch.cpp@{goldenSectionSearch.cpp}}
+\subsubsection{\texorpdfstring{GoldenSectionSearch()}{GoldenSectionSearch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_result}{Result}} Golden\+Section\+Search (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{const double \&}]{tol,  }\item[{const std\+::function$<$ double(double)$>$ \&}]{func }\end{DoxyParamCaption})}
+
+
+
+Golden Section Search. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Lower bound. \\
+\hline
+{\em b} & Upper bound. \\
+\hline
+{\em tol} & Tolerance. \\
+\hline
+{\em func} & The function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The interval with d-\/c$<$=tol. 
+\end{DoxyReturn}
