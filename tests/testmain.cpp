@@ -3,6 +3,7 @@
 #include <cmath>
 #include "../src/bbpTypeFormula.h"
 #include "../src/binom.h"
+#include "../src/brentSalaminFormula.h"
 #include "../src/devrandom.h"
 #include "../src/fixedPointIteration.h"
 #include "../src/goldenSectionSearch.h"
@@ -22,6 +23,11 @@ TEST_CASE("BBP-Type formula", "[bbp]") {
 }
 
 TEST_CASE("Binom formula", "[bnm]") { REQUIRE(binomCoef(4, 2) == 6); }
+
+TEST_CASE("Brent-Salamin Formula", "[bsf]") {
+  auto appr_pi = calc_pi<long double>(15);
+  REQUIRE(std::abs(M_PI - appr_pi) < 1e-17);
+}
 
 TEST_CASE("/dev/random RNG", "[dev]") {
   auto randInt = devrandom<int>();

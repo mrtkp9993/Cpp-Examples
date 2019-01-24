@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.0)
 set(CMAKE_CXX_STANDARD 11)
 
 project(numericCpp)
@@ -13,6 +13,7 @@ add_library(Catch INTERFACE)
 target_include_directories(Catch INTERFACE ${CATCH_INCLUDE_DIR})
 
 add_executable(BBP ${sourcefiles} examples/BBPTypeFormula/main.cpp)
+add_executable(BrentSalaminFormula ${sourcefiles} examples/BrentSalaminFormula/main.cpp)
 add_executable(EigenExamples ${sourcefiles} examples/EigenExamples/main.cpp)
 add_executable(FixedPointIteration ${sourcefiles} examples/FixedPointIteration/main.cpp)
 add_executable(GoldenSectionSearch ${sourcefiles} examples/GoldenSectionSearch/main.cpp)

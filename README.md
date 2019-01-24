@@ -9,6 +9,7 @@
 Currently I implemented following functions & algorithms:
 
 * BBP Type Formula
+* Brent-Salamin Formula
 * Composite Simpson & Double Simpson
 * /dev/random Generator
 * Fixed Point Iteration
