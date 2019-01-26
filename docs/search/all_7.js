@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['lcg',['lcg',['../lcg_8cpp.html#af6d01b7bf51eb2d0133955f7c70e4179',1,'lcg(const int &amp;seed, const int &amp;mod, const int &amp;mult, const int &amp;incr, const int &amp;count):&#160;lcg.cpp'],['../lcg_8h.html#af6d01b7bf51eb2d0133955f7c70e4179',1,'lcg(const int &amp;seed, const int &amp;mod, const int &amp;mult, const int &amp;incr, const int &amp;count):&#160;lcg.cpp']]],
-  ['lcg_2ecpp',['lcg.cpp',['../lcg_8cpp.html',1,'']]],
-  ['lcg_2eh',['lcg.h',['../lcg_8h.html',1,'']]]
+  ['jb_5ftest',['jb_test',['../statistics_8cpp.html#a94cd222fbd61842fd4dadd5db30401fc',1,'jb_test(const std::vector&lt; double &gt; &amp;x):&#160;statistics.cpp'],['../statistics_8h.html#a94cd222fbd61842fd4dadd5db30401fc',1,'jb_test(const std::vector&lt; double &gt; &amp;x):&#160;statistics.cpp']]]
 ];

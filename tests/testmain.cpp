@@ -7,6 +7,7 @@
 #include "../src/devrandom.h"
 #include "../src/fixedPointIteration.h"
 #include "../src/goldenSectionSearch.h"
+#include "../src/integerFactorization.h"
 #include "../src/lcg.h"
 #include "../src/metropolisHastings.h"
 #include "../src/numericalIntegration.h"
@@ -116,4 +117,8 @@ TEST_CASE("Normal random generator", "[nor]") {
     nums[i] = rnorm();
   }
   REQUIRE(jb_test(nums) == true);
+}
+
+TEST_CASE("Pollard rho algorithm", "[rho]") {
+  REQUIRE(rho<long>(455459) == 743);
 }
