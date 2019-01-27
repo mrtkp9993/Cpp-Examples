@@ -17,6 +17,7 @@ add_executable(BrentSalaminFormula ${sourcefiles} examples/BrentSalaminFormula/m
 add_executable(EigenExamples ${sourcefiles} examples/EigenExamples/main.cpp)
 add_executable(FixedPointIteration ${sourcefiles} examples/FixedPointIteration/main.cpp)
 add_executable(GoldenSectionSearch ${sourcefiles} examples/GoldenSectionSearch/main.cpp)
+add_executable(Knapsack ${sourcefiles} examples/Knapsack/main.cpp)
 add_executable(IntegerFactorization ${sourcefiles} examples/IntegerFactorization/main.cpp)
 add_executable(MetropolisHastings ${sourcefiles} examples/MetropolisHastings/main.cpp)
 add_executable(NumericalIntegration ${sourcefiles} examples/NumericalIntegration/main.cpp)

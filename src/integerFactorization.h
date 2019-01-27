@@ -49,7 +49,6 @@ T gcd(T x, T y) {
   return (y == 0) ? x : gcd(y, x % y);
 }
 
-
 /**
  * @brief Pollard rho algorithm.
  * @tparam T A type.

@@ -8,6 +8,7 @@
 
 Currently I implemented following functions & algorithms:
 
+* 0-1 Knapsack Problem
 * BBP Type Formula
 * Brent-Salamin Formula
 * Composite Simpson & Double Simpson
