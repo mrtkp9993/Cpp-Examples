@@ -17,28 +17,28 @@
 #include "../src/statistics.h"
 #include "Catch2/catch.hpp"
 
-TEST_CASE("BBP-Type formula", "[bbp]") {
+TEST_CASE("BBP-Type formula", "[BBP]") {
   std::vector<int> A{4, 0, 0, -2, -1, -1, 0, 0};
   REQUIRE((int)(P(1, 16, 8, A, 10) * 10000) / 10000.0 == 3.1415);
   REQUIRE((int)(P(1, 4, 2, std::vector<int>{1, 0}, 10) * 10000) / 10000.0 ==
           1.0986);
 }
 
-TEST_CASE("Binom formula", "[bnm]") { REQUIRE(binomCoef(4, 2) == 6); }
+TEST_CASE("Binom formula", "[Binom]") { REQUIRE(binomCoef(4, 2) == 6); }
 
-TEST_CASE("Brent-Salamin Formula", "[bsf]") {
+TEST_CASE("Brent-Salamin Formula", "[Brent-Salamin]") {
   auto appr_pi = calc_pi<long double>(15);
   REQUIRE(std::abs(M_PI - appr_pi) < 1e-17);
 }
 
-TEST_CASE("/dev/random RNG", "[dev]") {
+TEST_CASE("/dev/random RNG", "[devRandom]") {
   auto randInt = devrandom<int>();
   auto randDouble = devrandom<double>();
   REQUIRE(sizeof(randInt) == 4);
   REQUIRE(sizeof(randDouble) == 8);
 }
 
-TEST_CASE("Fixed point iteration", "[fpi]") {
+TEST_CASE("Fixed point iteration", "[fixedpoint]") {
   double p0 = 2.0;
   double tol = 1e-5;
   unsigned long N0 = 100;
@@ -48,7 +48,7 @@ TEST_CASE("Fixed point iteration", "[fpi]") {
   REQUIRE((int)(fixedPointIter(p0, tol, N0, g) * 100000) / 100000.0 == 1.85558);
 }
 
-TEST_CASE("Golden Section Search", "[gss]") {
+TEST_CASE("Golden Section Search", "[goldensection]") {
   std::function<double(double)> func = [](double x) {
     return std::pow(x - 2, 2);
   };
@@ -65,7 +65,7 @@ TEST_CASE("Linear Congurent Generator", "[lcg]") {
   REQUIRE(rndArr == std::vector<int>{7, 6, 9, 0});
 }
 
-TEST_CASE("Composite Simpson", "[csi]") {
+TEST_CASE("Composite Simpson", "[compositeSimpson]") {
   double a = 0.0;
   double b = M_PI;
   unsigned long n = 6;
@@ -76,7 +76,7 @@ TEST_CASE("Composite Simpson", "[csi]") {
   REQUIRE(std::abs(res - (-6.27)) < 1e-2);
 }
 
-TEST_CASE("Double Simpson", "[dsi]") {
+TEST_CASE("Double Simpson", "[doubleSimpson]") {
   unsigned long m1 = 6;
   unsigned long n1 = 6;
   double a1 = 0.0;
@@ -90,7 +90,7 @@ TEST_CASE("Double Simpson", "[dsi]") {
   REQUIRE(std::abs(res - 0.51) < 1e-2);
 }
 
-TEST_CASE("Polynomial roots", "[pol]") {
+TEST_CASE("Polynomial roots", "[quadraticFormula]") {
   double a = 1;
   double b = -1;
   double c = -1;
@@ -112,7 +112,7 @@ TEST_CASE("Runge Kutta method", "[rk4]") {
   REQUIRE(std::abs(w - 5.30) < 1e-2);
 }
 
-TEST_CASE("Normal random generator", "[nor]") {
+TEST_CASE("Normal random generator", "[normalRandom]") {
   std::vector<double> nums(1000, 0);
   for (unsigned int i = 0; i < nums.size(); i++) {
     nums[i] = rnorm();
@@ -124,7 +124,7 @@ TEST_CASE("Pollard rho algorithm", "[rho]") {
   REQUIRE(rho<long>(455459) == 743);
 }
 
-TEST_CASE("0-1 Knapsack Problem", "[knp]") {
+TEST_CASE("0-1 Knapsack Problem", "[01knapsack]") {
   SECTION("Problem 1") {
     uint n1 = 5;
     uint W1 = 11;
@@ -139,4 +139,23 @@ TEST_CASE("0-1 Knapsack Problem", "[knp]") {
     vec w2({10, 20, 30});
     REQUIRE(Knapsack01(v2, w2, n2, W2) == 220);
   }
+}
+
+TEST_CASE("Monte-Carlo Integration", "[MonteCarloIntegration]") {
+  double a2 = 0.8;
+  double b2 = 3;
+  unsigned long n2 = 100000;
+  std::function<double(double)> func2 = [](double x) {
+      return 1 / (1 + std::sinh(2 * x) * std::pow(std::log(x), 2));
+  };
+  auto res = monteCarloIntegration(a2, b2, n2, func2);
+  REQUIRE(std::abs(res - 0.67) < 1e-2);
+}
+
+TEST_CASE("Metropolis-Hastings Algorithm", "[MetropolishHastings]") {
+  std::function<double(double)> target = [](double x){ return x < 0 ? 0 : std::exp(-x); };
+  std::vector<double> nums = generate(target, 10000, 2500);
+  auto average = std::accumulate(nums.begin(), nums.end(), 0.0) / nums.size();
+  std::cout << average << std::endl;
+  REQUIRE(std::abs(average - 1.0) < 1e-1);
 }
