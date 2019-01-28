@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['lcg_2ecpp',['lcg.cpp',['../lcg_8cpp.html',1,'']]],
-  ['lcg_2eh',['lcg.h',['../lcg_8h.html',1,'']]]
+  ['knapsack_2eh',['knapsack.h',['../knapsack_8h.html',1,'']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['rungekutta_2ecpp',['rungeKutta.cpp',['../runge_kutta_8cpp.html',1,'']]],
-  ['rungekutta_2eh',['rungeKutta.h',['../runge_kutta_8h.html',1,'']]]
+  ['polyroot_2ecpp',['polyroot.cpp',['../polyroot_8cpp.html',1,'']]],
+  ['polyroot_2eh',['polyroot.h',['../polyroot_8h.html',1,'']]]
 ];

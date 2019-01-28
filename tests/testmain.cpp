@@ -8,6 +8,7 @@
 #include "../src/fixedPointIteration.h"
 #include "../src/goldenSectionSearch.h"
 #include "../src/integerFactorization.h"
+#include "../src/knapsack.h"
 #include "../src/lcg.h"
 #include "../src/metropolisHastings.h"
 #include "../src/numericalIntegration.h"
@@ -121,4 +122,21 @@ TEST_CASE("Normal random generator", "[nor]") {
 
 TEST_CASE("Pollard rho algorithm", "[rho]") {
   REQUIRE(rho<long>(455459) == 743);
+}
+
+TEST_CASE("0-1 Knapsack Problem", "[knp]") {
+  SECTION("Problem 1") {
+    uint n1 = 5;
+    uint W1 = 11;
+    vec v1({1, 6, 18, 22, 28});
+    vec w1({1, 2, 5, 6, 7});
+    REQUIRE(Knapsack01(v1, w1, n1, W1) == 40);
+  }
+  SECTION("Problem 2") {
+    uint n2 = 3;
+    uint W2 = 50;
+    vec v2({60, 100, 120});
+    vec w2({10, 20, 30});
+    REQUIRE(Knapsack01(v2, w2, n2, W2) == 220);
+  }
 }

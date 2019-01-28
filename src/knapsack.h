@@ -24,7 +24,6 @@
 #include <iostream>
 #include <vector>
 
-
 /** A type for columns of matrix. */
 typedef std::vector<unsigned int> vec;
 /** A type for store matrix. */
@@ -56,6 +55,6 @@ void printMat(const mat& M);
  * @return Maximum value.
  */
 double Knapsack01(const vec& v, const vec& w, const unsigned int& n,
-                  const unsigned int& W, const bool & print=false);
+                  const unsigned int& W, const bool& print = false);
 
 #endif  // KNAPSACK_H

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['lcg',['lcg',['../lcg_8cpp.html#af6d01b7bf51eb2d0133955f7c70e4179',1,'lcg(const int &amp;seed, const int &amp;mod, const int &amp;mult, const int &amp;incr, const int &amp;count):&#160;lcg.cpp'],['../lcg_8h.html#af6d01b7bf51eb2d0133955f7c70e4179',1,'lcg(const int &amp;seed, const int &amp;mod, const int &amp;mult, const int &amp;incr, const int &amp;count):&#160;lcg.cpp']]],
-  ['lcg_2ecpp',['lcg.cpp',['../lcg_8cpp.html',1,'']]],
-  ['lcg_2eh',['lcg.h',['../lcg_8h.html',1,'']]]
+  ['knapsack_2eh',['knapsack.h',['../knapsack_8h.html',1,'']]],
+  ['knapsack01',['Knapsack01',['../knapsack_8h.html#afe86cd3598eec2260593e788fec52e4c',1,'knapsack.cpp']]]
 ];

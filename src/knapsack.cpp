@@ -55,7 +55,7 @@ void printMat(const mat& M) {
  * @return Maximum value.
  */
 double Knapsack01(const vec& v, const vec& w, const unsigned int& n,
-                  const unsigned int& W, const bool & print) {
+                  const unsigned int& W, const bool& print) {
   mat M(n + 1, vec(W + 1, 0));
 
   for (unsigned int i = 1; i <= n; i++) {
