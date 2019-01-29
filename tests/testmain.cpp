@@ -1,6 +1,5 @@
 #define CATCH_CONFIG_MAIN
 
-#include <cmath>
 #include "../src/bbpTypeFormula.h"
 #include "../src/binom.h"
 #include "../src/brentSalaminFormula.h"
@@ -15,6 +14,7 @@
 #include "../src/polyroot.h"
 #include "../src/rungeKutta.h"
 #include "../src/statistics.h"
+#include "../src/subsetSumProblem.h"
 #include "Catch2/catch.hpp"
 
 TEST_CASE("BBP-Type formula", "[BBP]") {
@@ -146,16 +146,31 @@ TEST_CASE("Monte-Carlo Integration", "[MonteCarloIntegration]") {
   double b2 = 3;
   unsigned long n2 = 100000;
   std::function<double(double)> func2 = [](double x) {
-      return 1 / (1 + std::sinh(2 * x) * std::pow(std::log(x), 2));
+    return 1 / (1 + std::sinh(2 * x) * std::pow(std::log(x), 2));
   };
   auto res = monteCarloIntegration(a2, b2, n2, func2);
   REQUIRE(std::abs(res - 0.67) < 1e-2);
 }
 
 TEST_CASE("Metropolis-Hastings Algorithm", "[MetropolishHastings]") {
-  std::function<double(double)> target = [](double x){ return x < 0 ? 0 : std::exp(-x); };
+  std::function<double(double)> target = [](double x) {
+    return x < 0 ? 0 : std::exp(-x);
+  };
   std::vector<double> nums = generate(target, 10000, 2500);
   auto average = std::accumulate(nums.begin(), nums.end(), 0.0) / nums.size();
   std::cout << average << std::endl;
   REQUIRE(std::abs(average - 1.0) < 1e-1);
+}
+
+TEST_CASE("Subset-sum Problem", "[SubsetSum]") {
+  SECTION("TRUE") {
+    Set set = {1, 2, 4, 6};
+    int target = 10;
+    REQUIRE(subsetSum(set, target) == true);
+  }
+  SECTION("FALSE") {
+    Set set = {1, 5, 7, 11};
+    int target = 3;
+    REQUIRE(subsetSum(set, target) == false);
+  }
 }

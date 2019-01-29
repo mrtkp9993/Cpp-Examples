@@ -23,5 +23,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "rungeKutta.cpp", "runge_kutta_8cpp.html", "runge_kutta_8cpp" ],
     [ "rungeKutta.h", "runge_kutta_8h.html", "runge_kutta_8h" ],
     [ "statistics.cpp", "statistics_8cpp.html", "statistics_8cpp" ],
-    [ "statistics.h", "statistics_8h.html", "statistics_8h" ]
+    [ "statistics.h", "statistics_8h.html", "statistics_8h" ],
+    [ "subsetSumProblem.h", "subset_sum_problem_8h.html", "subset_sum_problem_8h" ]
 ];

@@ -13,7 +13,7 @@
  *
  * @author Murat Koptur <mkoptur3@gmail.com>
  *
- * Last updated: 27/Jan/2019.
+ * Last updated: 29/Jan/2019.
  *
  */
 
@@ -29,20 +29,6 @@ typedef std::vector<unsigned int> vec;
 /** A type for store matrix. */
 typedef std::vector<std::vector<unsigned int>> mat;
 
-/**
- * @brief Maximum of two unsigned integers.
- *
- * @param a An integer.
- * @param b An integer.
- *
- * @return Maximum of a and b.
- */
-unsigned int max(const unsigned int& a, const unsigned int& b);
-/**
- * @brief Helper function for printing matrices.
- * @param M A matrix
- */
-void printMat(const mat& M);
 /**
  * @brief Solve 0-1 Knapsack problem.
  *

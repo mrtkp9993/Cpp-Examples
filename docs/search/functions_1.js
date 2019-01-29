@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['calc_5fpi',['calc_pi',['../brent_salamin_formula_8h.html#a3b5f7732aa9855314ff5e7c98dca91b1',1,'brentSalaminFormula.h']]],
-  ['compositesimpsons',['compositeSimpsons',['../numerical_integration_8cpp.html#af187bd40e6d0e87402185fe83eb9dd84',1,'compositeSimpsons(const double &amp;a, const double &amp;b, const unsigned long &amp;n, const std::function&lt; double(double)&gt; &amp;func):&#160;numericalIntegration.cpp'],['../numerical_integration_8h.html#af187bd40e6d0e87402185fe83eb9dd84',1,'compositeSimpsons(const double &amp;a, const double &amp;b, const unsigned long &amp;n, const std::function&lt; double(double)&gt; &amp;func):&#160;numericalIntegration.cpp']]]
+  ['binomcoef',['binomCoef',['../binom_8cpp.html#ad2a69bb712d8a435760380f8dcf8af27',1,'binomCoef(const unsigned long &amp;n, const unsigned long &amp;k):&#160;binom.cpp'],['../binom_8h.html#ad2a69bb712d8a435760380f8dcf8af27',1,'binomCoef(const unsigned long &amp;n, const unsigned long &amp;k):&#160;binom.cpp']]]
 ];

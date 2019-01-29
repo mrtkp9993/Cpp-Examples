@@ -43,9 +43,7 @@ var NAVTREEINDEX0 =
 "integer_factorization_8h_source.html":[1,0,0,10],
 "knapsack_8h.html":[1,0,0,11],
 "knapsack_8h.html#a0de058d1ee18b2c23ca7b2f49a43d217":[1,0,0,11,1],
-"knapsack_8h.html#a5482f722009a45e1114ae478cc5a0c01":[1,0,0,11,4],
 "knapsack_8h.html#aaa51329b31d4b4ef225e88832923443f":[1,0,0,11,0],
-"knapsack_8h.html#abb76a0805135d33a63fb68d79a9cd316":[1,0,0,11,3],
 "knapsack_8h.html#afe86cd3598eec2260593e788fec52e4c":[1,0,0,11,2],
 "knapsack_8h_source.html":[1,0,0,11],
 "lcg_8cpp.html":[1,0,0,12],
@@ -91,5 +89,11 @@ var NAVTREEINDEX0 =
 "statistics_8h_source.html":[1,0,0,23],
 "struct_result.html":[0,0,0],
 "struct_result.html#ac790d92ce6d4b45e26415bcd904ff966":[0,0,0,1],
-"struct_result.html#ae71a2de0e642ecd81d695d3171d1c577":[0,0,0,0]
+"struct_result.html#ae71a2de0e642ecd81d695d3171d1c577":[0,0,0,0],
+"subset_sum_problem_8h.html":[1,0,0,24],
+"subset_sum_problem_8h.html#a16c299ba6eff6bff94359f7facc9ef32":[1,0,0,24,3],
+"subset_sum_problem_8h.html#a7535c2df84dc06b88178cad0034c9ffa":[1,0,0,24,1],
+"subset_sum_problem_8h.html#a78ffff1c282e3edea8eb8089ef48621c":[1,0,0,24,0],
+"subset_sum_problem_8h.html#aa1e8510570407e1544e934fa3c4dbf40":[1,0,0,24,2],
+"subset_sum_problem_8h_source.html":[1,0,0,24]
 };

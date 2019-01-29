@@ -24,12 +24,13 @@ add_executable(NumericalIntegration ${sourcefiles} examples/NumericalIntegration
 add_executable(PolynomialRoot ${sourcefiles} examples/polyroot/main.cpp)
 add_executable(RandomNumberGeneration ${sourcefiles} examples/RandomNumberGenerators/main.cpp)
 add_executable(RungeKuttaMethod ${sourcefiles} examples/RungeKutta/main.cpp)
+add_executable(SubsetSumProblem ${sourcefiles} examples/SubsetSumProblem/main.cpp)
 
 set(TEST_SOURCES ${PROJECT_SOURCE_DIR}/tests/testmain.cpp)
 add_executable(tests ${sourcefiles} ${TEST_SOURCES})
 target_link_libraries(tests Catch)
-set_target_properties(tests
+#[[set_target_properties(tests
         PROPERTIES
         COMPILE_FLAGS "-ftest-coverage -fprofile-arcs"
         LINK_FLAGS    "-lgcov --coverage"
-        )
+        )]]

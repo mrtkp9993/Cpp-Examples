@@ -22,6 +22,7 @@ Currently I implemented following functions & algorithms:
 * Pollard Rho Algorithm
 * Runge-Kutta 4th Order (RK4)
 * Quadratic Formula
+* Subset-Sum Problem
 * Uniform & Normal Random Number Generators
 
 

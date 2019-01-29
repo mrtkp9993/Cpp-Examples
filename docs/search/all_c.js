@@ -4,6 +4,5 @@ var searchData=
   ['pchisq',['pchisq',['../statistics_8cpp.html#aee334d3af1786d2e88e91f54280baf1f',1,'statistics.cpp']]],
   ['polyroot',['polyroot',['../polyroot_8cpp.html#af12e76b3c49f0f46ab9f8b2aa7a2101d',1,'polyroot(const std::vector&lt; double &gt; &amp;coef):&#160;polyroot.cpp'],['../polyroot_8h.html#af12e76b3c49f0f46ab9f8b2aa7a2101d',1,'polyroot(const std::vector&lt; double &gt; &amp;coef):&#160;polyroot.cpp']]],
   ['polyroot_2ecpp',['polyroot.cpp',['../polyroot_8cpp.html',1,'']]],
-  ['polyroot_2eh',['polyroot.h',['../polyroot_8h.html',1,'']]],
-  ['printmat',['printMat',['../knapsack_8h.html#a5482f722009a45e1114ae478cc5a0c01',1,'knapsack.cpp']]]
+  ['polyroot_2eh',['polyroot.h',['../polyroot_8h.html',1,'']]]
 ];
