@@ -29,8 +29,8 @@ add_executable(SubsetSumProblem ${sourcefiles} examples/SubsetSumProblem/main.cp
 set(TEST_SOURCES ${PROJECT_SOURCE_DIR}/tests/testmain.cpp)
 add_executable(tests ${sourcefiles} ${TEST_SOURCES})
 target_link_libraries(tests Catch)
-#[[set_target_properties(tests
+set_target_properties(tests
         PROPERTIES
         COMPILE_FLAGS "-ftest-coverage -fprofile-arcs"
         LINK_FLAGS    "-lgcov --coverage"
-        )]]
+        )
