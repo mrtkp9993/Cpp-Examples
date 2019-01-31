@@ -16,6 +16,7 @@ Currently I implemented following functions & algorithms:
 * Fixed Point Iteration
 * Golden Section Search
 * Jarque–Bera test
+* Lagrange Interpolation
 * Linear Congruent Generator
 * Metropolis-Hastings Algorithm
 * Monte-Carlo Integration

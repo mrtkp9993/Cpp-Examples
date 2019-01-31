@@ -12,6 +12,8 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "goldenSectionSearch.h", "golden_section_search_8h.html", "golden_section_search_8h" ],
     [ "integerFactorization.h", "integer_factorization_8h.html", "integer_factorization_8h" ],
     [ "knapsack.h", "knapsack_8h.html", "knapsack_8h" ],
+    [ "lagrangeInterpolation.cpp", "lagrange_interpolation_8cpp.html", "lagrange_interpolation_8cpp" ],
+    [ "lagrangeInterpolation.h", "lagrange_interpolation_8h.html", "lagrange_interpolation_8h" ],
     [ "lcg.cpp", "lcg_8cpp.html", "lcg_8cpp" ],
     [ "lcg.h", "lcg_8h.html", "lcg_8h" ],
     [ "metropolisHastings.cpp", "metropolis_hastings_8cpp.html", "metropolis_hastings_8cpp" ],

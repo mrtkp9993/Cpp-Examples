@@ -8,6 +8,7 @@
 #include "../src/goldenSectionSearch.h"
 #include "../src/integerFactorization.h"
 #include "../src/knapsack.h"
+#include "../src/lagrangeInterpolation.h"
 #include "../src/lcg.h"
 #include "../src/metropolisHastings.h"
 #include "../src/numericalIntegration.h"
@@ -172,5 +173,20 @@ TEST_CASE("Subset-sum Problem", "[SubsetSum]") {
     Set set = {1, 5, 7, 11};
     int target = 3;
     REQUIRE(subsetSum(set, target) == false);
+  }
+}
+
+TEST_CASE("Lagrange Interpolation", "[Lagrange]") {
+  SECTION("Data 1") {
+    Data data{std::vector<double>{-2, 5, 10}, std::vector<double>{9, -12, 33}};
+    auto poly = lagrangePoly(data);
+    REQUIRE(poly(2) == -15);
+  }
+
+  SECTION("Data 2") {
+    Data data{std::vector<double>{0, 1, 3, 4, 7},
+              std::vector<double>{1, 3, 49, 129, 813}};
+    auto poly = lagrangePoly(data);
+    REQUIRE(std::abs(poly(0.3) - 1.83) < 1e-2);
   }
 }

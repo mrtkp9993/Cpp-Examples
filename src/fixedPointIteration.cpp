@@ -39,7 +39,6 @@ double fixedPointIter(double p0, const double& tol, const unsigned long& N0,
     if (std::abs(p - p0) < tol) {
       std::cout << "Root found after " << i << " iterations: " << p
                 << std::endl;
-      rootFound = true;
       return p;
     }
     i += 1;
