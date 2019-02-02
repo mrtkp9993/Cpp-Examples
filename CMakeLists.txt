@@ -14,6 +14,7 @@ target_include_directories(Catch INTERFACE ${CATCH_INCLUDE_DIR})
 
 add_executable(BBP ${sourcefiles} examples/BBPTypeFormula/main.cpp)
 add_executable(BrentSalaminFormula ${sourcefiles} examples/BrentSalaminFormula/main.cpp)
+add_executable(DiscreteFourierTransform ${sourcefiles} examples/DiscreteFourierTransform/main.cpp)
 add_executable(EigenExamples examples/EigenExamples/main.cpp)
 add_executable(FixedPointIteration ${sourcefiles} examples/FixedPointIteration/main.cpp)
 add_executable(GoldenSectionSearch ${sourcefiles} examples/GoldenSectionSearch/main.cpp)

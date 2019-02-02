@@ -14,6 +14,7 @@ Currently I implemented following functions & algorithms:
 * Brent-Salamin Formula
 * Composite Simpson & Double Simpson
 * /dev/random Generator
+* Discrete Fourier Transform
 * Fixed Point Iteration
 * Golden Section Search
 * Jarque–Bera test

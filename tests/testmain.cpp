@@ -4,6 +4,7 @@
 #include "../src/binom.h"
 #include "../src/brentSalaminFormula.h"
 #include "../src/devrandom.h"
+#include "../src/discreteFourierTransform.h"
 #include "../src/fixedPointIteration.h"
 #include "../src/goldenSectionSearch.h"
 #include "../src/integerFactorization.h"
@@ -189,4 +190,12 @@ TEST_CASE("Lagrange Interpolation", "[Lagrange]") {
     auto poly = lagrangePoly(data);
     REQUIRE(std::abs(poly(0.3) - 1.83) < 1e-2);
   }
+}
+
+TEST_CASE("Discrete Fourier Transform", "[DFT]") {
+  CVec input({1, 2, 3});
+  auto res = idft(dft(input));
+  REQUIRE(std::abs(input[0].real() - res[0].real()) < 1e-2);
+  REQUIRE(std::abs(input[1].real() - res[1].real()) < 1e-2);
+  REQUIRE(std::abs(input[2].real() - res[2].real()) < 1e-2);
 }
