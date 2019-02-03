@@ -5,6 +5,7 @@
 #include "../src/brentSalaminFormula.h"
 #include "../src/devrandom.h"
 #include "../src/discreteFourierTransform.h"
+#include "../src/dualNumbers.h"
 #include "../src/fixedPointIteration.h"
 #include "../src/goldenSectionSearch.h"
 #include "../src/integerFactorization.h"
@@ -198,4 +199,37 @@ TEST_CASE("Discrete Fourier Transform", "[DFT]") {
   REQUIRE(std::abs(input[0].real() - res[0].real()) < 1e-2);
   REQUIRE(std::abs(input[1].real() - res[1].real()) < 1e-2);
   REQUIRE(std::abs(input[2].real() - res[2].real()) < 1e-2);
+}
+
+TEST_CASE("Auto diff with dual numbers", "[Dual]") {
+  SECTION("Function1") {
+    Dual x1(2, 1);
+    Dual y1(2);
+    Dual f1 = pow(x1, 2) * log(y1);
+    REQUIRE(std::abs(f1.dual - 2.77) < 1e-2);
+  }
+  SECTION("Function2") {
+    Dual x2(1, 1);
+    Dual y2(2);
+    Dual f2 = root(x2, 3) * cosh(x2) * cos(y2);
+    REQUIRE(std::abs(f2.dual + 0.70) < 1e-2);
+  }
+  SECTION("Function3") {
+    Dual x3(1);
+    Dual y3(-1, 1);
+    Dual f3 = sin(x3) * exp(y3) * tan(y3);
+    REQUIRE(std::abs(f3.dual - 0.57) < 1e-2);
+  }
+  SECTION("Function4") {
+    Dual x4(-2);
+    Dual y4(3, 1);
+    Dual f4 = sinh(x4) * tanh(y4);
+    REQUIRE(std::abs(f4.dual + 0.03) < 1e-2);
+  }
+  SECTION("Function5") {
+    Dual x5(0.1, 1);
+    Dual y5(0.1);
+    Dual f5 = asin(x5) * acos(x5) * atan(y5);
+    REQUIRE(std::abs(f5.dual - 0.13) < 1e-2);
+  }
 }

@@ -12,6 +12,7 @@ set(CATCH_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/lib)
 add_library(Catch INTERFACE)
 target_include_directories(Catch INTERFACE ${CATCH_INCLUDE_DIR})
 
+add_executable(AutomaticDifferentiation ${sourcefiles} examples/AutomaticDifferentiation/main.cpp)
 add_executable(BBP ${sourcefiles} examples/BBPTypeFormula/main.cpp)
 add_executable(BrentSalaminFormula ${sourcefiles} examples/BrentSalaminFormula/main.cpp)
 add_executable(DiscreteFourierTransform ${sourcefiles} examples/DiscreteFourierTransform/main.cpp)

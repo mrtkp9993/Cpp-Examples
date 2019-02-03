@@ -10,6 +10,7 @@
 Currently I implemented following functions & algorithms:
 
 * 0-1 Knapsack Problem
+* Automatic differentiation with dual numbers
 * BBP Type Formula
 * Brent-Salamin Formula
 * Composite Simpson & Double Simpson
