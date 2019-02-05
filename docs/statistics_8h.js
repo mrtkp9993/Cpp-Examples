@@ -1,6 +1,6 @@
 var statistics_8h =
 [
-    [ "jb_test", "statistics_8h.html#a94cd222fbd61842fd4dadd5db30401fc", null ],
-    [ "rnorm", "statistics_8h.html#abac9db6ef7119dfc256987d6058fa30e", null ],
-    [ "runif", "statistics_8h.html#a91b9dc30beddd03f49087ff2bd5ef38f", null ]
+    [ "jb_test", "statistics_8h.html#a2b05c840d8c2f659d0e0985fb6cad65a", null ],
+    [ "rnorm", "statistics_8h.html#adbc26f30c08787855613161d64715894", null ],
+    [ "runif", "statistics_8h.html#a0aeb5d9b565f5850b4084a0e6904ccf5", null ]
 ];

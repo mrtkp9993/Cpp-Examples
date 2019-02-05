@@ -26,7 +26,7 @@
  * @return A random number between [a, b].
  *
  */
-double runif(const double& a = 0, const double& b = 1);
+long double runif(const long double &a = 0, const long double &b = 1);
 
 /**
  * @brief Normal number generator with Box–Muller transform.
@@ -43,7 +43,7 @@ double runif(const double& a = 0, const double& b = 1);
  * @return A random number.
  *
  */
-double rnorm(const double& mean = 0, const double& sd = 1);
+long double rnorm(const long double &mean = 0, const long double &sd = 1);
 
 /**
  * @brief Jarque–Bera test.
@@ -57,6 +57,6 @@ double rnorm(const double& mean = 0, const double& sd = 1);
  * @return A boolean which indicates that x is normally distributed or not.
  *
  */
-bool jb_test(const std::vector<double>& x);
+bool jb_test(const std::vector<long double> &x);
 
 #endif  // STATISTICS_H

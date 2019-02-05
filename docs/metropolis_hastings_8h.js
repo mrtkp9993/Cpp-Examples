@@ -1,4 +1,4 @@
 var metropolis_hastings_8h =
 [
-    [ "generate", "metropolis_hastings_8h.html#aa6831799e1b408a3f06b882855c000c1", null ]
+    [ "generate", "metropolis_hastings_8h.html#ad3101184c27d8806759d0823af13489b", null ]
 ];

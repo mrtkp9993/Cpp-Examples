@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mat',['mat',['../knapsack_8h.html#aaa51329b31d4b4ef225e88832923443f',1,'knapsack.h']]]
+  ['complex',['Complex',['../discrete_fourier_transform_8h.html#a82b1ddd6bd8f13b6c3f608af21f830c0',1,'discreteFourierTransform.h']]],
+  ['cvec',['CVec',['../discrete_fourier_transform_8h.html#a243464c1e408e4f15007d9025ecff171',1,'discreteFourierTransform.h']]]
 ];

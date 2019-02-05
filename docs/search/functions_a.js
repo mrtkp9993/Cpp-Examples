@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['p',['P',['../bbp_type_formula_8cpp.html#ae62fb58bcce511f4070b17f29008ad7d',1,'P(const int &amp;s, const int &amp;b, const int &amp;n, const std::vector&lt; int &gt; &amp;A, const int &amp;n_iter):&#160;bbpTypeFormula.cpp'],['../bbp_type_formula_8h.html#ae62fb58bcce511f4070b17f29008ad7d',1,'P(const int &amp;s, const int &amp;b, const int &amp;n, const std::vector&lt; int &gt; &amp;A, const int &amp;n_iter):&#160;bbpTypeFormula.cpp']]],
-  ['pchisq',['pchisq',['../statistics_8cpp.html#aee334d3af1786d2e88e91f54280baf1f',1,'statistics.cpp']]],
-  ['polyroot',['polyroot',['../polyroot_8cpp.html#af12e76b3c49f0f46ab9f8b2aa7a2101d',1,'polyroot(const std::vector&lt; double &gt; &amp;coef):&#160;polyroot.cpp'],['../polyroot_8h.html#af12e76b3c49f0f46ab9f8b2aa7a2101d',1,'polyroot(const std::vector&lt; double &gt; &amp;coef):&#160;polyroot.cpp']]]
+  ['montecarlointegration',['monteCarloIntegration',['../_numerical_integration_8cpp.html#a017cb13f34621723a92a789d14565f83',1,'monteCarloIntegration(const long double &amp;a, const long double &amp;b, const unsigned long &amp;n, std::function&lt; long double(long double)&gt; &amp;func):&#160;NumericalIntegration.cpp'],['../numerical_integration_8h.html#a017cb13f34621723a92a789d14565f83',1,'monteCarloIntegration(const long double &amp;a, const long double &amp;b, const unsigned long &amp;n, std::function&lt; long double(long double)&gt; &amp;func):&#160;NumericalIntegration.cpp']]]
 ];

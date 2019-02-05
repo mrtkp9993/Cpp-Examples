@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['montecarlointegration',['monteCarloIntegration',['../numerical_integration_8cpp.html#ac91f48e5942470f3281613c39615db53',1,'monteCarloIntegration(const double &amp;a, const double &amp;b, const unsigned long &amp;n, std::function&lt; double(double)&gt; &amp;func):&#160;numericalIntegration.cpp'],['../numerical_integration_8h.html#ac91f48e5942470f3281613c39615db53',1,'monteCarloIntegration(const double &amp;a, const double &amp;b, const unsigned long &amp;n, std::function&lt; double(double)&gt; &amp;func):&#160;numericalIntegration.cpp']]]
+  ['lagrangepoly',['lagrangePoly',['../lagrange_interpolation_8cpp.html#a2389ba3792d7f981a731c7a787d8e7d6',1,'lagrangePoly(Data data):&#160;lagrangeInterpolation.cpp'],['../lagrange_interpolation_8h.html#a2389ba3792d7f981a731c7a787d8e7d6',1,'lagrangePoly(Data data):&#160;lagrangeInterpolation.cpp']]],
+  ['lcg',['lcg',['../lcg_8cpp.html#af6d01b7bf51eb2d0133955f7c70e4179',1,'lcg(const int &amp;seed, const int &amp;mod, const int &amp;mult, const int &amp;incr, const int &amp;count):&#160;lcg.cpp'],['../lcg_8h.html#af6d01b7bf51eb2d0133955f7c70e4179',1,'lcg(const int &amp;seed, const int &amp;mod, const int &amp;mult, const int &amp;incr, const int &amp;count):&#160;lcg.cpp']]]
 ];

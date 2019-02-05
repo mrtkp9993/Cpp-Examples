@@ -136,15 +136,15 @@ double doubleIntegral(const double& a, const double& b, const unsigned long& m,
  * @return Approximation to integral.
  *
  */
-double monteCarloIntegration(const double& a, const double& b,
-                             const unsigned long& n,
-                             std::function<double(double)>& func) {
-  std::vector<double> X(n, 0);
-  for (unsigned int i = 0; i < n; i++) {
+long double monteCarloIntegration(const long double &a, const long double &b,
+                                  const unsigned long &n,
+                                  std::function<long double(long double)> &func) {
+  std::vector<long double> X(n, 0);
+  for (auto i = 0; i < n; i++) {
     X[i] = runif(a, b);
   }
 
-  double sum = 0;
+  long double sum = 0;
   for (auto xi : X) {
     sum += func(xi);
   }

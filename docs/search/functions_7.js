@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['knapsack01',['Knapsack01',['../knapsack_8h.html#afe86cd3598eec2260593e788fec52e4c',1,'knapsack.cpp']]]
+  ['jb_5ftest',['jb_test',['../statistics_8cpp.html#a2b05c840d8c2f659d0e0985fb6cad65a',1,'jb_test(const std::vector&lt; long double &gt; &amp;x):&#160;statistics.cpp'],['../statistics_8h.html#a2b05c840d8c2f659d0e0985fb6cad65a',1,'jb_test(const std::vector&lt; long double &gt; &amp;x):&#160;statistics.cpp']]]
 ];

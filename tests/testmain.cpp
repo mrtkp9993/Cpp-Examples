@@ -116,7 +116,7 @@ TEST_CASE("Runge Kutta method", "[rk4]") {
 }
 
 TEST_CASE("Normal random generator", "[normalRandom]") {
-  std::vector<double> nums(1000, 0);
+  std::vector<long double> nums(1000, 0);
   for (unsigned int i = 0; i < nums.size(); i++) {
     nums[i] = rnorm();
   }
@@ -145,10 +145,10 @@ TEST_CASE("0-1 Knapsack Problem", "[01knapsack]") {
 }
 
 TEST_CASE("Monte-Carlo Integration", "[MonteCarloIntegration]") {
-  double a2 = 0.8;
-  double b2 = 3;
+  long double a2 = 0.8;
+  long double b2 = 3;
   unsigned long n2 = 100000;
-  std::function<double(double)> func2 = [](double x) {
+  std::function<long double(long double)> func2 = [](long double x) {
     return 1 / (1 + std::sinh(2 * x) * std::pow(std::log(x), 2));
   };
   auto res = monteCarloIntegration(a2, b2, n2, func2);
