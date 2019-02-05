@@ -156,10 +156,10 @@ TEST_CASE("Monte-Carlo Integration", "[MonteCarloIntegration]") {
 }
 
 TEST_CASE("Metropolis-Hastings Algorithm", "[MetropolishHastings]") {
-  std::function<double(double)> target = [](double x) {
+  std::function<long double(long double)> target = [](long double x) {
     return x < 0 ? 0 : std::exp(-x);
   };
-  std::vector<double> nums = generate(target, 10000, 2500);
+  std::vector<long double> nums = generate(target, 10000, 2500);
   auto average = std::accumulate(nums.begin(), nums.end(), 0.0) / nums.size();
   std::cout << average << std::endl;
   REQUIRE(std::abs(average - 1.0) < 1e-1);
@@ -180,14 +180,14 @@ TEST_CASE("Subset-sum Problem", "[SubsetSum]") {
 
 TEST_CASE("Lagrange Interpolation", "[Lagrange]") {
   SECTION("Data 1") {
-    Data data{std::vector<double>{-2, 5, 10}, std::vector<double>{9, -12, 33}};
+    Data data{std::vector<long double>{-2, 5, 10}, std::vector<long double>{9, -12, 33}};
     auto poly = lagrangePoly(data);
     REQUIRE(poly(2) == -15);
   }
 
   SECTION("Data 2") {
-    Data data{std::vector<double>{0, 1, 3, 4, 7},
-              std::vector<double>{1, 3, 49, 129, 813}};
+    Data data{std::vector<long double>{0, 1, 3, 4, 7},
+              std::vector<long double>{1, 3, 49, 129, 813}};
     auto poly = lagrangePoly(data);
     REQUIRE(std::abs(poly(0.3) - 1.83) < 1e-2);
   }

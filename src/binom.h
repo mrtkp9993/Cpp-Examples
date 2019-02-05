@@ -23,6 +23,6 @@
  * @return Binomial coefficient.
  *
  */
-double binomCoef(const unsigned long& n, const unsigned long& k);
+u_int64_t binomCoef(const unsigned long &n, const unsigned long &k);
 
 #endif /* BINOM_H */

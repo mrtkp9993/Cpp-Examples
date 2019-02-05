@@ -40,7 +40,7 @@ typedef std::vector<std::vector<unsigned int>> mat;
  *
  * @return Maximum value.
  */
-double Knapsack01(const vec& v, const vec& w, const unsigned int& n,
-                  const unsigned int& W, const bool& print = false);
+long double Knapsack01(const vec &v, const vec &w, const unsigned int &n,
+                       const unsigned int &W, const bool &print = false);
 
 #endif  // KNAPSACK_H

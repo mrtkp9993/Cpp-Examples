@@ -19,14 +19,14 @@
 #include <iostream>
 
 struct Dual {
-  double real;
-  double dual;
+  long double real;
+  long double dual;
 
-  Dual(const double& a) {
+  Dual(const long double& a) {
     this->real = a;
     this->dual = 0;
   }
-  Dual(const double& a, const double& b) {
+  Dual(const long double& a, const long double& b) {
     this->real = a;
     this->dual = b;
   }
@@ -38,8 +38,8 @@ struct Dual {
 
   friend std::ostream& operator<<(std::ostream& os, const Dual& d);
 
-  friend Dual pow(const Dual& d, const double& p);
-  friend Dual root(const Dual& d, const double& p);
+  friend Dual pow(const Dual& d, const long double& p);
+  friend Dual root(const Dual& d, const long double& p);
   friend Dual exp(const Dual& d);
   friend Dual log(const Dual& d);
   friend Dual sin(const Dual& d);

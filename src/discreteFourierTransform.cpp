@@ -27,10 +27,10 @@ CVec dft(const CVec& input) {
   const auto N = input.size();
   CVec result(N, (0.0, 0.0));
   for (auto n = 0; n < N; n++) {
-    double real = 0.0;
-    double img = 0.0;
+    auto real = 0.0;
+    auto img = 0.0;
     for (auto k = 0; k < N; k++) {
-      double angle = 2 * M_PI * k * n / N;
+      auto angle = 2 * M_PI * k * n / N;
       real +=
           input[k].real() * std::cos(angle) + input[k].imag() * std::sin(angle);
       img +=
@@ -52,10 +52,10 @@ CVec idft(const CVec& input) {
   const auto N = input.size();
   CVec result(N, (0.0, 0.0));
   for (auto n = 0; n < N; n++) {
-    double real = 0.0;
-    double img = 0.0;
+    auto real = 0.0;
+    auto img = 0.0;
     for (auto k = 0; k < N; k++) {
-      double angle = 2 * M_PI * k * n / N;
+      auto angle = 2 * M_PI * k * n / N;
       real +=
           input[k].real() * std::cos(angle) - input[k].imag() * std::sin(angle);
       img +=

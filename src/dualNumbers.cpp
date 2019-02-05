@@ -36,11 +36,11 @@ std::ostream& operator<<(std::ostream& os, const Dual& d) {
   return os;
 }
 
-Dual pow(const Dual& d, const double& p) {
+Dual pow(const Dual& d, const long double& p) {
   return Dual(std::pow(d.real, p), p * d.dual * std::pow(d.real, p - 1));
 }
 
-Dual root(const Dual& d, const double& p) {
+Dual root(const Dual& d, const long double& p) {
   return Dual(std::pow(d.real, 1.0 / p),
               d.dual * 1 / (p * std::pow(std::pow(d.real, 1.0 / p), p - 1)));
 }

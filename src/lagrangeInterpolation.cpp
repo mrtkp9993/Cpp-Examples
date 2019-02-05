@@ -24,8 +24,8 @@
  *
  * @return Lagrange interpolation polynomial.
  */
-std::function<double(double)> lagrangePoly(Data data) {
-  auto polynomial = [data](double x) {
+std::function<long double(long double)> lagrangePoly(Data data) {
+  auto polynomial = [data](long double x) {
     auto sum = 0.0;
     for (auto j = 0; j < data.size; j++) {
       auto yj = data.y[j];
@@ -37,6 +37,7 @@ std::function<double(double)> lagrangePoly(Data data) {
       }
       sum += yj * inner_prod;
     };
+
     return sum;
   };
 

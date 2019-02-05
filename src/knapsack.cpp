@@ -54,22 +54,22 @@ void printMat(const mat& M) {
  *
  * @return Maximum value.
  */
-double Knapsack01(const vec& v, const vec& w, const unsigned int& n,
-                  const unsigned int& W, const bool& print) {
+long double Knapsack01(const vec &v, const vec &w, const unsigned int &n,
+                       const unsigned int &W, const bool &print) {
   mat M(n + 1, vec(W + 1, 0));
 
-  for (unsigned int i = 1; i <= n; i++) {
-    for (unsigned int j = 1; j <= W; j++) {
+  for (auto i = 1; i <= n; i++) {
+    for (auto j = 1; j <= W; j++) {
       if (w[i - 1] <= j)
         M[i][j] = max(v[i - 1] + M[i - 1][j - w[i - 1]], M[i - 1][j]);
       else
         M[i][j] = M[i - 1][j];
     }
   }
-  uint ww = W;
-  uint res = M[n][W];
+  auto ww = W;
+  auto res = M[n][W];
   // Backtracking for solution set
-  for (uint i = n; i > 0 && res > 0; i--) {
+  for (auto i = n; i > 0 && res > 0; i--) {
     if (res == M[i - 1][ww])
       continue;
     else {

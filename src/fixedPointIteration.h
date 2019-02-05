@@ -36,7 +36,7 @@
  * @return Approximate solution p or message of failure..
  *
  */
-double fixedPointIter(double p0, const double& tol, const unsigned long& N0,
-                      const std::function<double(double)>& g);
+long double fixedPointIter(long double p0, const double &tol, const unsigned long &N0,
+                           const std::function<long double(long double)> &g);
 
 #endif /* FIXEDPOINTITERATION_H */

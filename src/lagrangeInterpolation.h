@@ -25,15 +25,15 @@
 
 /** A struct for storing x and y values. */
 struct Data {
-  Data(std::vector<double> x, std::vector<double> y) {
+  Data(std::vector<long double> x, std::vector<long double> y) {
     assert(x.size() == y.size());
     this->x = x;
     this->y = y;
     this->size = x.size();
   }
 
-  std::vector<double> x;
-  std::vector<double> y;
+  std::vector<long double> x;
+  std::vector<long double> y;
   unsigned long size;
 };
 
@@ -44,6 +44,6 @@ struct Data {
  *
  * @return Lagrange interpolation polynomial.
  */
-std::function<double(double)> lagrangePoly(Data data);
+std::function<long double(long double)> lagrangePoly(Data data);
 
 #endif  // LAGRANGEINTERPOLATION_H

@@ -23,7 +23,7 @@
 #include <vector>
 
 /** A type for complex numbers. */
-typedef std::complex<double> Complex;
+typedef std::complex<long double> Complex;
 /** A type for array of complex numbers. */
 typedef std::vector<Complex> CVec;
 

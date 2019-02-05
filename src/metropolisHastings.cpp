@@ -27,18 +27,18 @@
  * @return Vector of generated numbers.
  *
  */
-std::vector<double> generate(const std::function<double(double)>& target,
-                             const unsigned int& count,
-                             const unsigned int& burn_in_period) {
+std::vector<long double> generate(const std::function<long double(long double)> &target,
+                                  const unsigned int &count,
+                                  const unsigned int &burn_in_period) {
   std::srand(std::clock());
 
-  std::vector<double> x(count + burn_in_period, 0);
+  std::vector<long double> x(count + burn_in_period, 0);
   x[0] = 1;
 
   for (unsigned int i = 1; i < count + burn_in_period; i++) {
-    double current_x = x[i - 1];
-    double proposed_x = current_x + rnorm();
-    double A = target(proposed_x) / target(current_x);
+    auto current_x = x[i - 1];
+    auto proposed_x = current_x + rnorm();
+    auto A = target(proposed_x) / target(current_x);
     if (runif() < A) {
       x[i] = proposed_x;
     } else {

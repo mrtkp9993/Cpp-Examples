@@ -30,12 +30,11 @@
  * @return Approximate solution p or message of failure..
  *
  */
-double fixedPointIter(double p0, const double& tol, const unsigned long& N0,
-                      const std::function<double(double)>& g) {
+long double fixedPointIter(long double p0, const double &tol, const unsigned long &N0,
+                           const std::function<long double(long double)> &g) {
   unsigned long i = 1;
-  bool rootFound = false;
   while (i <= N0) {
-    double p = g(p0);
+    long double p = g(p0);
     if (std::abs(p - p0) < tol) {
       std::cout << "Root found after " << i << " iterations: " << p
                 << std::endl;
@@ -44,8 +43,6 @@ double fixedPointIter(double p0, const double& tol, const unsigned long& N0,
     i += 1;
     p0 = p;
   }
-  if (rootFound != true) {
-    std::cout << "The method failed after " << N0 << " iterations" << std::endl;
-  }
-  return -1;
+  std::cout << "The method failed after " << N0 << " iterations" << std::endl;
+  return 0;
 }

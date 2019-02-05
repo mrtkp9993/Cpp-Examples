@@ -34,8 +34,8 @@
  *  Upper bound.
  */
 struct Result {
-  double a;
-  double b;
+  long double a;
+  long double b;
 };
 
 /**
@@ -49,7 +49,7 @@ struct Result {
  * @return The interval with d-c<=tol.
  *
  */
-Result GoldenSectionSearch(double a, double b, const double& tol,
-                           const std::function<double(double)>& func);
+Result GoldenSectionSearch(long double a, long double b, const long double &tol,
+                           const std::function<long double(long double)> &func);
 
 #endif /* GOLDENSECTIONSEARCH_H */
