@@ -37,15 +37,3 @@ You can find examples in `examples/` folder.
 ### Documentation
 
 You can find the documentation at https://mrtkp9993.github.io/Cpp-Examples/.
-
-### Contribute
-
-You can contribute on the following topics:
-
-* Linear Algebra
-* Optimization
-* Statistics & ML
-* Image Processing
-* Graph Theory
-
-I'm planning to implement algorithms on these topics.
