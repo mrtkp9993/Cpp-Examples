@@ -31,8 +31,9 @@
  * @return The interval with d-c<=tol.
  *
  */
-Result GoldenSectionSearch(long double a, long double b, const long double &tol,
-                           const std::function<long double(long double)> &func) {
+Result GoldenSectionSearch(
+    long double a, long double b, const long double &tol,
+    const std::function<long double(long double)> &func) {
   assert(a < b);
   assert(tol > 0);
   Result result = {.a = 0, .b = 0};

@@ -180,7 +180,8 @@ TEST_CASE("Subset-sum Problem", "[SubsetSum]") {
 
 TEST_CASE("Lagrange Interpolation", "[Lagrange]") {
   SECTION("Data 1") {
-    Data data{std::vector<long double>{-2, 5, 10}, std::vector<long double>{9, -12, 33}};
+    Data data{std::vector<long double>{-2, 5, 10},
+              std::vector<long double>{9, -12, 33}};
     auto poly = lagrangePoly(data);
     REQUIRE(poly(2) == -15);
   }

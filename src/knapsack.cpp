@@ -27,7 +27,7 @@
  *
  * @return Maximum of a and b.
  */
-unsigned int max(const unsigned int& a, const unsigned int& b) {
+unsigned int max(const unsigned int &a, const unsigned int &b) {
   return (a > b) ? a : b;
 }
 
@@ -35,7 +35,7 @@ unsigned int max(const unsigned int& a, const unsigned int& b) {
  * @brief Helper function for printing matrices.
  * @param M A matrix
  */
-void printMat(const mat& M) {
+void printMat(const mat &M) {
   for (auto r : M) {
     for (auto c : r) {
       std::cout << c << "\t";

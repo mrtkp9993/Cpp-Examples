@@ -30,7 +30,8 @@
  * @return Approximate solution p or message of failure..
  *
  */
-long double fixedPointIter(long double p0, const double &tol, const unsigned long &N0,
+long double fixedPointIter(long double p0, const double &tol,
+                           const unsigned long &N0,
                            const std::function<long double(long double)> &g) {
   unsigned long i = 1;
   while (i <= N0) {

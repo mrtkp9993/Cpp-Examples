@@ -27,9 +27,9 @@
  * @return Vector of generated numbers.
  *
  */
-std::vector<long double> generate(const std::function<long double(long double)> &target,
-                                  const unsigned int &count,
-                                  const unsigned int &burn_in_period) {
+std::vector<long double> generate(
+    const std::function<long double(long double)> &target,
+    const unsigned int &count, const unsigned int &burn_in_period) {
   std::srand(std::clock());
 
   std::vector<long double> x(count + burn_in_period, 0);
