@@ -18,7 +18,6 @@ add_executable(BrentSalaminFormula ${sourcefiles} examples/BrentSalaminFormula/m
 add_executable(DiscreteFourierTransform ${sourcefiles} examples/DiscreteFourierTransform/main.cpp)
 add_executable(EigenExamples examples/EigenExamples/main.cpp)
 add_executable(FixedPointIteration ${sourcefiles} examples/FixedPointIteration/main.cpp)
-add_executable(GoldenSectionSearch ${sourcefiles} examples/GoldenSectionSearch/main.cpp)
 add_executable(LagrangeInterpolation ${sourcefiles} examples/LagrangeInterpolation/main.cpp)
 add_executable(Knapsack ${sourcefiles} examples/Knapsack/main.cpp)
 add_executable(IntegerFactorization ${sourcefiles} examples/IntegerFactorization/main.cpp)
