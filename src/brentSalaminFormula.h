@@ -33,7 +33,7 @@ using std::sqrt;
  * @return Approximation of pi.
  *
  */
-template <typename T>
+template <typename T = long double>
 T calc_pi(const unsigned int& n_iter) {
   T appr_pi = 0.0;
   std::vector<T> a(n_iter, 0);

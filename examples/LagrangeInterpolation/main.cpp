@@ -1,7 +1,8 @@
 #include "../../src/lagrangeInterpolation.h"
 
 int main() {
-  Data data1{std::vector<long double>{1, 2, 3}, std::vector<long double>{1, 4, 9}};
+  Data data1{std::vector<long double>{1, 2, 3},
+             std::vector<long double>{1, 4, 9}};
   auto poly1 = lagrangePoly(data1);
   std::cout << poly1(2) << std::endl;
 

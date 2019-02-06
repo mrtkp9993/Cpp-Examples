@@ -195,7 +195,7 @@ TEST_CASE("Lagrange Interpolation", "[Lagrange]") {
 }
 
 TEST_CASE("Discrete Fourier Transform", "[DFT]") {
-  CVec input({1, 2, 3});
+  CVec<> input({1, 2, 3});
   auto res = idft(dft(input));
   REQUIRE(std::abs(input[0].real() - res[0].real()) < 1e-2);
   REQUIRE(std::abs(input[1].real() - res[1].real()) < 1e-2);

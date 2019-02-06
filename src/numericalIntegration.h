@@ -76,8 +76,8 @@ double doubleIntegral(const double& a, const double& b, const unsigned long& m,
  * @return Approximation to integral.
  *
  */
-long double monteCarloIntegration(const long double &a, const long double &b,
-                                  const unsigned long &n,
-                                  std::function<long double(long double)> &func);
+long double monteCarloIntegration(
+    const long double& a, const long double& b, const unsigned long& n,
+    std::function<long double(long double)>& func);
 
 #endif /* NUMERICALINTEGRATION_H */

@@ -12,7 +12,7 @@
 #ifndef BINOM_H
 #define BINOM_H
 
-#include <stdio.h>
+#include <cmath>
 
 /**
  * @brief Calculate binomial coefficient.
@@ -23,6 +23,10 @@
  * @return Binomial coefficient.
  *
  */
-unsigned long binomCoef(const unsigned long &n, const unsigned long &k);
+template <typename T = unsigned long long int>
+T binomCoef(const unsigned long &n, const unsigned long &k) {
+  auto nCk = std::tgamma(n + 1) / (std::tgamma(n - k + 1) * std::tgamma(k + 1));
+  return nCk;
+};
 
 #endif /* BINOM_H */

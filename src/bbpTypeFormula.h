@@ -40,7 +40,23 @@
  * @return Approximation of a number.
  *
  */
-long double P(const int &s, const int &b, const int &n,
-              const std::vector<int> &A, const int &n_iter);
+template <typename T = long double>
+T P(const int &s, const int &b, const int &n, const std::vector<int> &A,
+    const int &n_iter) {
+  assert(n == A.size());
+
+  T result = 0.0;
+
+  for (auto k = 0; k <= n_iter; k++) {
+    T inv_bk = 1 / std::pow(b, k);
+    T inner_sum = 0.0;
+    for (auto j = 1; j <= n; j++) {
+      inner_sum += A.at(j - 1) / std::pow(n * k + j, s);
+    }
+    result += inv_bk * inner_sum;
+  }
+
+  return result;
+};
 
 #endif  // BBPTYPEFORMULA_H
