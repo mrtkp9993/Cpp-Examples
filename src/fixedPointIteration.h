@@ -20,7 +20,6 @@
 #ifndef FIXEDPOINTITERATION_H
 #define FIXEDPOINTITERATION_H
 
-#include <stdio.h>
 #include <cmath>
 #include <functional>
 #include <iostream>
@@ -36,8 +35,22 @@
  * @return Approximate solution p or message of failure..
  *
  */
-long double fixedPointIter(long double p0, const double &tol,
-                           const unsigned long &N0,
-                           const std::function<long double(long double)> &g);
+template <typename T = long double>
+T fixedPointIter(T p0, const T &tol, const unsigned long &N0,
+                 const std::function<T(T)> &g) {
+  auto i = 1;
+  while (i <= N0) {
+    T p = g(p0);
+    if (std::abs(p - p0) < tol) {
+      std::cout << "Root found after " << i << " iterations: " << p
+                << std::endl;
+      return p;
+    }
+    i += 1;
+    p0 = p;
+  }
+  std::cout << "The method failed after " << N0 << " iterations" << std::endl;
+  return 0;
+}
 
 #endif /* FIXEDPOINTITERATION_H */

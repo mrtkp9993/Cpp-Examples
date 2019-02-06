@@ -17,7 +17,6 @@ Currently I implemented following functions & algorithms:
 * /dev/random Generator
 * Discrete Fourier Transform
 * Fixed Point Iteration
-* Golden Section Search
 * Jarque–Bera test
 * Lagrange Interpolation
 * Linear Congruent Generator
@@ -25,7 +24,6 @@ Currently I implemented following functions & algorithms:
 * Monte-Carlo Integration
 * Pollard Rho Algorithm
 * Runge-Kutta 4th Order (RK4)
-* Quadratic Formula
 * Subset-Sum Problem
 * Uniform & Normal Random Number Generators
 

@@ -7,14 +7,12 @@
 #include "../src/discreteFourierTransform.h"
 #include "../src/dualNumbers.h"
 #include "../src/fixedPointIteration.h"
-#include "../src/goldenSectionSearch.h"
 #include "../src/integerFactorization.h"
 #include "../src/knapsack.h"
 #include "../src/lagrangeInterpolation.h"
 #include "../src/lcg.h"
 #include "../src/metropolisHastings.h"
 #include "../src/numericalIntegration.h"
-#include "../src/polyroot.h"
 #include "../src/rungeKutta.h"
 #include "../src/statistics.h"
 #include "../src/subsetSumProblem.h"
@@ -51,18 +49,6 @@ TEST_CASE("Fixed point iteration", "[fixedpoint]") {
   REQUIRE((int)(fixedPointIter(p0, tol, N0, g) * 100000) / 100000.0 == 1.85558);
 }
 
-TEST_CASE("Golden Section Search", "[goldensection]") {
-  std::function<double(double)> func = [](double x) {
-    return std::pow(x - 2, 2);
-  };
-  double a = 1;
-  double b = 5;
-  double tol = 1e-5;
-  Result res = GoldenSectionSearch(a, b, tol, func);
-  REQUIRE(std::abs(res.a - 1.99) < 1e-2);
-  REQUIRE(std::abs(res.b - 2.00) < 1e-2);
-}
-
 TEST_CASE("Linear Congurent Generator", "[lcg]") {
   std::vector<int> rndArr = lcg(7, 10, 7, 7, 4);
   REQUIRE(rndArr == std::vector<int>{7, 6, 9, 0});
@@ -91,16 +77,6 @@ TEST_CASE("Double Simpson", "[doubleSimpson]") {
   };
   double res = doubleIntegral(a1, b1, m1, n1, c, d, func1);
   REQUIRE(std::abs(res - 0.51) < 1e-2);
-}
-
-TEST_CASE("Polynomial roots", "[quadraticFormula]") {
-  double a = 1;
-  double b = -1;
-  double c = -1;
-  std::vector<double> coef = {a, b, c};
-  std::vector<double> roots = polyroot(coef);
-  REQUIRE(std::abs(roots.at(0) - 1.618) < 1e-3);
-  REQUIRE(std::abs(roots.at(1) + 0.618) < 1e-3);
 }
 
 TEST_CASE("Runge Kutta method", "[rk4]") {
