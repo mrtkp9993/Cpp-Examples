@@ -35,7 +35,7 @@ std::vector<long double> generate(
   std::vector<long double> x(count + burn_in_period, 0);
   x[0] = 1;
 
-  for (unsigned int i = 1; i < count + burn_in_period; i++) {
+  for (auto i = 1; i < count + burn_in_period; i++) {
     auto current_x = x[i - 1];
     auto proposed_x = current_x + rnorm();
     auto A = target(proposed_x) / target(current_x);

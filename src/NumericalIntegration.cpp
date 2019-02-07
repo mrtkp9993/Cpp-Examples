@@ -25,20 +25,20 @@
  * @return Approximation to integral.
  *
  */
-double compositeSimpsons(const double& a, const double& b,
-                         const unsigned long& n,
-                         const std::function<double(double)>& func) {
-  double XI = 0.0;
+long double compositeSimpsons(
+    const long double &a, const long double &b, const unsigned long &n,
+    const std::function<long double(long double)> &func) {
+  long double XI = 0.0;
   // STEP 1
-  double h = (b - a) / n;
+  auto h = (b - a) / n;
   // STEP 2
-  double XI0 = func(a) + func(b);
-  double XI1 = 0.0;
-  double XI2 = 0.0;
+  long double XI0 = func(a) + func(b);
+  long double XI1 = 0.0;
+  long double XI2 = 0.0;
   // STEP 3
-  for (int i = 1; i <= n - 1; i++) {
+  for (auto i = 1; i <= n - 1; i++) {
     // STEP 4
-    double X = a + i * h;
+    auto X = a + i * h;
     // STEP 5
     if (i % 2 == 0) {
       XI2 = XI2 + func(X);
@@ -68,34 +68,34 @@ double compositeSimpsons(const double& a, const double& b,
  * @return Approximation to integral.
  *
  */
-double doubleIntegral(const double& a, const double& b, const unsigned long& m,
-                      const unsigned long& n,
-                      const std::function<double(double)>& c,
-                      const std::function<double(double)>& d,
-                      const std::function<double(double, double)>& func) {
+long double doubleIntegral(
+    const long double &a, const long double &b, const unsigned long &m,
+    const unsigned long &n, const std::function<long double(long double)> &c,
+    const std::function<long double(long double)> &d,
+    const std::function<long double(long double, long double)> &func) {
   assert(m % 2 == 0);
   assert(n % 2 == 0);
-  double J = 0.0;
+  long double J = 0.0;
   // STEP 1
-  double h = (b - a) / n;
-  double J1 = 0.0;
-  double J2 = 0.0;
-  double J3 = 0.0;
+  auto h = (b - a) / n;
+  auto J1 = 0.0;
+  auto J2 = 0.0;
+  auto J3 = 0.0;
   // STEP 2
-  for (int i = 0; i <= n; i++) {
+  for (auto i = 0; i <= n; i++) {
     // STEP 3
-    double x = a + i * h;
-    double cx = c(x);
-    double dx = d(x);
-    double HX = (dx - cx) / m;
-    double K1 = func(x, cx) + func(x, dx);
-    double K2 = 0.0;
-    double K3 = 0.0;
+    auto x = a + i * h;
+    auto cx = c(x);
+    auto dx = d(x);
+    auto HX = (dx - cx) / m;
+    auto K1 = func(x, cx) + func(x, dx);
+    auto K2 = 0.0;
+    auto K3 = 0.0;
     // STEP 4
-    for (int j = 1; j <= m - 1; j++) {
+    for (auto j = 1; j <= m - 1; j++) {
       // STEP 5
-      double y = cx + j * HX;
-      double Q = func(x, y);
+      auto y = cx + j * HX;
+      auto Q = func(x, y);
       // STEP 6
       if (j % 2 == 0) {
         K2 += Q;
@@ -104,7 +104,7 @@ double doubleIntegral(const double& a, const double& b, const unsigned long& m,
       }
     }
     // STEP 7
-    double L = (K1 + 2 * K2 + 4 * K3) * HX / 3;
+    auto L = (K1 + 2 * K2 + 4 * K3) * HX / 3;
     // STEP 8
     if (i == 0 || i == n) {
       J1 += L;
@@ -137,8 +137,8 @@ double doubleIntegral(const double& a, const double& b, const unsigned long& m,
  *
  */
 long double monteCarloIntegration(
-    const long double& a, const long double& b, const unsigned long& n,
-    std::function<long double(long double)>& func) {
+    const long double &a, const long double &b, const unsigned long &n,
+    std::function<long double(long double)> &func) {
   std::vector<long double> X(n, 0);
   for (auto i = 0; i < n; i++) {
     X[i] = runif(a, b);

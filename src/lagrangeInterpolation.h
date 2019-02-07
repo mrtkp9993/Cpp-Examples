@@ -24,16 +24,17 @@
 #include <vector>
 
 /** A struct for storing x and y values. */
+template <typename T = long double>
 struct Data {
-  Data(std::vector<long double> x, std::vector<long double> y) {
+  Data(std::vector<T> x, std::vector<T> y) {
     assert(x.size() == y.size());
     this->x = x;
     this->y = y;
     this->size = x.size();
   }
 
-  std::vector<long double> x;
-  std::vector<long double> y;
+  std::vector<T> x;
+  std::vector<T> y;
   unsigned long size;
 };
 
@@ -44,6 +45,25 @@ struct Data {
  *
  * @return Lagrange interpolation polynomial.
  */
-std::function<long double(long double)> lagrangePoly(Data data);
+template <typename T>
+std::function<T(T)> lagrangePoly(const Data<T> &data) {
+  auto polynomial = [data](T x) {
+    auto sum = 0.0;
+    for (auto j = 0; j < data.size; j++) {
+      auto yj = data.y[j];
+      auto inner_prod = 1.0;
+      for (auto k = 0; k < data.size; k++) {
+        if (k != j) {
+          inner_prod *= (x - data.x[k]) / (data.x[j] - data.x[k]);
+        }
+      }
+      sum += yj * inner_prod;
+    };
+
+    return sum;
+  };
+
+  return polynomial;
+}
 
 #endif  // LAGRANGEINTERPOLATION_H

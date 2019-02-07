@@ -46,7 +46,7 @@ T calc_pi(const unsigned int& n_iter) {
   t[0] = 1 / 4.0;
   p[0] = 1;
 
-  for (int i = 1; i < n_iter; i++) {
+  for (auto i = 1; i < n_iter; i++) {
     a[i] = (a[i - 1] + b[i - 1]) / 2.0;
     b[i] = sqrt(a[i - 1] * b[i - 1]);
     t[i] = t[i - 1] - p[i - 1] * pow(a[i - 1] - a[i], 2);

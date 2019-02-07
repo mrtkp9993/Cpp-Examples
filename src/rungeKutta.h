@@ -35,8 +35,9 @@
  * @return Approximation to exact solution.
  *
  */
-double RK4(const double& a, const double& b, const unsigned int& N,
-           const double& init,
-           const std::function<double(double, double)>& func);
+long double RK4(
+    const long double &a, const long double &b, const unsigned int &N,
+    const long double &init,
+    const std::function<long double(long double, long double)> &func);
 
 #endif /* RUNGEKUTTA_H */

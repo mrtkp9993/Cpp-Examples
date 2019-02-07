@@ -33,9 +33,9 @@
  * @return Approximation to integral.
  *
  */
-double compositeSimpsons(const double& a, const double& b,
-                         const unsigned long& n,
-                         const std::function<double(double)>& func);
+long double compositeSimpsons(
+    const long double &a, const long double &b, const unsigned long &n,
+    const std::function<long double(long double)> &func);
 
 /**
  * @brief Double Simpson’s Integration.
@@ -54,11 +54,11 @@ double compositeSimpsons(const double& a, const double& b,
  * @return Approximation to integral.
  *
  */
-double doubleIntegral(const double& a, const double& b, const unsigned long& m,
-                      const unsigned long& n,
-                      const std::function<double(double)>& c,
-                      const std::function<double(double)>& d,
-                      const std::function<double(double, double)>& func);
+long double doubleIntegral(
+    const long double &a, const long double &b, const unsigned long &m,
+    const unsigned long &n, const std::function<long double(long double)> &c,
+    const std::function<long double(long double)> &d,
+    const std::function<long double(long double, long double)> &func);
 
 /**
  * @brief Monte-Carlo Integration.
@@ -77,7 +77,7 @@ double doubleIntegral(const double& a, const double& b, const unsigned long& m,
  *
  */
 long double monteCarloIntegration(
-    const long double& a, const long double& b, const unsigned long& n,
-    std::function<long double(long double)>& func);
+    const long double &a, const long double &b, const unsigned long &n,
+    std::function<long double(long double)> &func);
 
 #endif /* NUMERICALINTEGRATION_H */

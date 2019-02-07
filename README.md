@@ -9,7 +9,6 @@
 
 Currently I implemented following functions & algorithms:
 
-* 0-1 Knapsack Problem
 * Automatic differentiation with dual numbers
 * BBP Type Formula
 * Brent-Salamin Formula
@@ -24,7 +23,6 @@ Currently I implemented following functions & algorithms:
 * Monte-Carlo Integration
 * Pollard Rho Algorithm
 * Runge-Kutta 4th Order (RK4)
-* Subset-Sum Problem
 * Uniform & Normal Random Number Generators
 
 

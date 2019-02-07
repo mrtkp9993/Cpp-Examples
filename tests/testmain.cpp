@@ -8,14 +8,12 @@
 #include "../src/dualNumbers.h"
 #include "../src/fixedPointIteration.h"
 #include "../src/integerFactorization.h"
-#include "../src/knapsack.h"
 #include "../src/lagrangeInterpolation.h"
 #include "../src/lcg.h"
 #include "../src/metropolisHastings.h"
 #include "../src/numericalIntegration.h"
 #include "../src/rungeKutta.h"
 #include "../src/statistics.h"
-#include "../src/subsetSumProblem.h"
 #include "Catch2/catch.hpp"
 
 TEST_CASE("BBP-Type formula", "[BBP]") {
@@ -103,23 +101,6 @@ TEST_CASE("Pollard rho algorithm", "[rho]") {
   REQUIRE(rho<long>(455459) == 743);
 }
 
-TEST_CASE("0-1 Knapsack Problem", "[01knapsack]") {
-  SECTION("Problem 1") {
-    uint n1 = 5;
-    uint W1 = 11;
-    vec v1({1, 6, 18, 22, 28});
-    vec w1({1, 2, 5, 6, 7});
-    REQUIRE(Knapsack01(v1, w1, n1, W1) == 40);
-  }
-  SECTION("Problem 2") {
-    uint n2 = 3;
-    uint W2 = 50;
-    vec v2({60, 100, 120});
-    vec w2({10, 20, 30});
-    REQUIRE(Knapsack01(v2, w2, n2, W2) == 220);
-  }
-}
-
 TEST_CASE("Monte-Carlo Integration", "[MonteCarloIntegration]") {
   long double a2 = 0.8;
   long double b2 = 3;
@@ -141,30 +122,17 @@ TEST_CASE("Metropolis-Hastings Algorithm", "[MetropolishHastings]") {
   REQUIRE(std::abs(average - 1.0) < 1e-1);
 }
 
-TEST_CASE("Subset-sum Problem", "[SubsetSum]") {
-  SECTION("TRUE") {
-    Set set = {1, 2, 4, 6};
-    int target = 10;
-    REQUIRE(subsetSum(set, target) == true);
-  }
-  SECTION("FALSE") {
-    Set set = {1, 5, 7, 11};
-    int target = 3;
-    REQUIRE(subsetSum(set, target) == false);
-  }
-}
-
 TEST_CASE("Lagrange Interpolation", "[Lagrange]") {
   SECTION("Data 1") {
-    Data data{std::vector<long double>{-2, 5, 10},
-              std::vector<long double>{9, -12, 33}};
+    Data<long double> data{std::vector<long double>{-2, 5, 10},
+                           std::vector<long double>{9, -12, 33}};
     auto poly = lagrangePoly(data);
     REQUIRE(poly(2) == -15);
   }
 
   SECTION("Data 2") {
-    Data data{std::vector<long double>{0, 1, 3, 4, 7},
-              std::vector<long double>{1, 3, 49, 129, 813}};
+    Data<long double> data{std::vector<long double>{0, 1, 3, 4, 7},
+                           std::vector<long double>{1, 3, 49, 129, 813}};
     auto poly = lagrangePoly(data);
     REQUIRE(std::abs(poly(0.3) - 1.83) < 1e-2);
   }

@@ -19,13 +19,11 @@ add_executable(DiscreteFourierTransform ${sourcefiles} examples/DiscreteFourierT
 add_executable(EigenExamples examples/EigenExamples/main.cpp)
 add_executable(FixedPointIteration ${sourcefiles} examples/FixedPointIteration/main.cpp)
 add_executable(LagrangeInterpolation ${sourcefiles} examples/LagrangeInterpolation/main.cpp)
-add_executable(Knapsack ${sourcefiles} examples/Knapsack/main.cpp)
 add_executable(IntegerFactorization ${sourcefiles} examples/IntegerFactorization/main.cpp)
 add_executable(MetropolisHastings ${sourcefiles} examples/MetropolisHastings/main.cpp)
 add_executable(NumericalIntegration ${sourcefiles} examples/NumericalIntegration/main.cpp)
 add_executable(RandomNumberGeneration ${sourcefiles} examples/RandomNumberGenerators/main.cpp)
 add_executable(RungeKuttaMethod ${sourcefiles} examples/RungeKutta/main.cpp)
-add_executable(SubsetSumProblem ${sourcefiles} examples/SubsetSumProblem/main.cpp)
 
 set(TEST_SOURCES ${PROJECT_SOURCE_DIR}/tests/testmain.cpp)
 add_executable(tests ${sourcefiles} ${TEST_SOURCES})
