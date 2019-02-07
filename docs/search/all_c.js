@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['p',['P',['../bbp_type_formula_8cpp.html#ae62fb58bcce511f4070b17f29008ad7d',1,'P(const int &amp;s, const int &amp;b, const int &amp;n, const std::vector&lt; int &gt; &amp;A, const int &amp;n_iter):&#160;bbpTypeFormula.cpp'],['../bbp_type_formula_8h.html#ae62fb58bcce511f4070b17f29008ad7d',1,'P(const int &amp;s, const int &amp;b, const int &amp;n, const std::vector&lt; int &gt; &amp;A, const int &amp;n_iter):&#160;bbpTypeFormula.cpp']]],
-  ['pchisq',['pchisq',['../statistics_8cpp.html#a134529a21f4976c167ca97eaaf310a3e',1,'statistics.cpp']]],
-  ['polyroot',['polyroot',['../polyroot_8cpp.html#af12e76b3c49f0f46ab9f8b2aa7a2101d',1,'polyroot(const std::vector&lt; double &gt; &amp;coef):&#160;polyroot.cpp'],['../polyroot_8h.html#af12e76b3c49f0f46ab9f8b2aa7a2101d',1,'polyroot(const std::vector&lt; double &gt; &amp;coef):&#160;polyroot.cpp']]],
-  ['polyroot_2ecpp',['polyroot.cpp',['../polyroot_8cpp.html',1,'']]],
-  ['polyroot_2eh',['polyroot.h',['../polyroot_8h.html',1,'']]]
+  ['result',['Result',['../struct_result.html',1,'']]],
+  ['rho',['rho',['../integer_factorization_8h.html#a78298440d6bfc9f2cc7eb1dc790dc429',1,'integerFactorization.h']]],
+  ['rk4',['RK4',['../runge_kutta_8cpp.html#a9255c9662ed42d1740a1c223b8581d98',1,'RK4(const long double &amp;a, const long double &amp;b, const unsigned int &amp;N, const long double &amp;init, const std::function&lt; long double(long double, long double)&gt; &amp;func):&#160;rungeKutta.cpp'],['../runge_kutta_8h.html#a9255c9662ed42d1740a1c223b8581d98',1,'RK4(const long double &amp;a, const long double &amp;b, const unsigned int &amp;N, const long double &amp;init, const std::function&lt; long double(long double, long double)&gt; &amp;func):&#160;rungeKutta.cpp']]],
+  ['rnorm',['rnorm',['../statistics_8cpp.html#a1994b2d115f8daaab6cf904763fc2846',1,'rnorm(const long double &amp;mean, const long double &amp;sd):&#160;statistics.cpp'],['../statistics_8h.html#adbc26f30c08787855613161d64715894',1,'rnorm(const long double &amp;mean=0, const long double &amp;sd=1):&#160;statistics.cpp']]],
+  ['rungekutta_2ecpp',['rungeKutta.cpp',['../runge_kutta_8cpp.html',1,'']]],
+  ['rungekutta_2eh',['rungeKutta.h',['../runge_kutta_8h.html',1,'']]],
+  ['runif',['runif',['../statistics_8cpp.html#a6023a4811d245e4abe3319d6630ece01',1,'runif(const long double &amp;a, const long double &amp;b):&#160;statistics.cpp'],['../statistics_8h.html#a0aeb5d9b565f5850b4084a0e6904ccf5',1,'runif(const long double &amp;a=0, const long double &amp;b=1):&#160;statistics.cpp']]]
 ];

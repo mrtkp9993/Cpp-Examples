@@ -7,6 +7,7 @@
 #include "../src/discreteFourierTransform.h"
 #include "../src/dualNumbers.h"
 #include "../src/fixedPointIteration.h"
+#include "../src/goldenSectionSearch.h"
 #include "../src/integerFactorization.h"
 #include "../src/lagrangeInterpolation.h"
 #include "../src/lcg.h"
@@ -45,6 +46,16 @@ TEST_CASE("Fixed point iteration", "[fixedpoint]") {
     return std::pow(x + 10, 0.25);
   };
   REQUIRE((int)(fixedPointIter(p0, tol, N0, g) * 100000) / 100000.0 == 1.85558);
+}
+
+TEST_CASE("Golden Section Search", "[golden]") {
+  long double a = 0;
+  long double b = 1;
+  const long double tol = 1e-12;
+  auto func = [](long double x) { return std::pow(x, 2) - std::sin(x); };
+  auto res = GoldenSectionSearch(a, b, tol, func);
+  REQUIRE(std::abs(res.a - 0.4501836113524) < 1e-12);
+  REQUIRE(std::abs(res.b - 0.4501836113532) < 1e-12);
 }
 
 TEST_CASE("Linear Congurent Generator", "[lcg]") {

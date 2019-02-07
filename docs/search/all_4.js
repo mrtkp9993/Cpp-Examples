@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['fixedpointiter',['fixedPointIter',['../fixed_point_iteration_8cpp.html#a9b7e939ecb20350312af19f1851b27d4',1,'fixedPointIter(long double p0, const double &amp;tol, const unsigned long &amp;N0, const std::function&lt; long double(long double)&gt; &amp;g):&#160;fixedPointIteration.cpp'],['../fixed_point_iteration_8h.html#a9b7e939ecb20350312af19f1851b27d4',1,'fixedPointIter(long double p0, const double &amp;tol, const unsigned long &amp;N0, const std::function&lt; long double(long double)&gt; &amp;g):&#160;fixedPointIteration.cpp']]],
-  ['fixedpointiteration_2ecpp',['fixedPointIteration.cpp',['../fixed_point_iteration_8cpp.html',1,'']]],
+  ['fixedpointiter',['fixedPointIter',['../fixed_point_iteration_8h.html#aaf9f035e8febfeea962a34a78b93f689',1,'fixedPointIteration.h']]],
   ['fixedpointiteration_2eh',['fixedPointIteration.h',['../fixed_point_iteration_8h.html',1,'']]]
 ];

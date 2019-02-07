@@ -95,8 +95,7 @@ $(document).ready(function(){initNavTree('fixed_point_iteration_8h.html','');});
 
 <p>Fixed point iteration.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
+<div class="textblock"><code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div>
@@ -104,9 +103,10 @@ $(document).ready(function(){initNavTree('fixed_point_iteration_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9b7e939ecb20350312af19f1851b27d4"><td class="memItemLeft" align="right" valign="top">long double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixed_point_iteration_8h.html#a9b7e939ecb20350312af19f1851b27d4">fixedPointIter</a> (long double p0, const double &amp;tol, const unsigned long &amp;N0, const std::function&lt; long double(long double)&gt; &amp;<a class="el" href="integer_factorization_8h.html#a04c9bfd9ad8855a08d4a860652560e76">g</a>)</td></tr>
-<tr class="memdesc:a9b7e939ecb20350312af19f1851b27d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a solution to p = g(p) given an initial approximation p0.  <a href="#a9b7e939ecb20350312af19f1851b27d4">More...</a><br /></td></tr>
-<tr class="separator:a9b7e939ecb20350312af19f1851b27d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9f035e8febfeea962a34a78b93f689"><td class="memTemplParams" colspan="2">template&lt;typename T  = long double&gt; </td></tr>
+<tr class="memitem:aaf9f035e8febfeea962a34a78b93f689"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fixed_point_iteration_8h.html#aaf9f035e8febfeea962a34a78b93f689">fixedPointIter</a> (T p0, const T &amp;tol, const unsigned long &amp;N0, const std::function&lt; T(T)&gt; &amp;<a class="el" href="integer_factorization_8h.html#a04c9bfd9ad8855a08d4a860652560e76">g</a>)</td></tr>
+<tr class="memdesc:aaf9f035e8febfeea962a34a78b93f689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a solution to p = g(p) given an initial approximation p0.  <a href="#aaf9f035e8febfeea962a34a78b93f689">More...</a><br /></td></tr>
+<tr class="separator:aaf9f035e8febfeea962a34a78b93f689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fixed point iteration. </p>
@@ -115,22 +115,24 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Murat Koptur <a href="#" onclick="location.href='mai'+'lto:'+'mko'+'pt'+'ur3'+'@g'+'mai'+'l.'+'com'; return false;">mkopt<span style="display: none;">.nosp@m.</span>ur3@<span style="display: none;">.nosp@m.</span>gmail<span style="display: none;">.nosp@m.</span>.com</a></dd></dl>
 <p>Last updated: 22/Jan/2019. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a9b7e939ecb20350312af19f1851b27d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b7e939ecb20350312af19f1851b27d4">&#9670;&nbsp;</a></span>fixedPointIter()</h2>
+<a id="aaf9f035e8febfeea962a34a78b93f689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9f035e8febfeea962a34a78b93f689">&#9670;&nbsp;</a></span>fixedPointIter()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = long double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">long double fixedPointIter </td>
+          <td class="memname">T fixedPointIter </td>
           <td>(</td>
-          <td class="paramtype">long double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>p0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>tol</em>, </td>
         </tr>
         <tr>
@@ -142,7 +144,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::function&lt; long double(long double)&gt; &amp;&#160;</td>
+          <td class="paramtype">const std::function&lt; T(T)&gt; &amp;&#160;</td>
           <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>

@@ -1,24 +1,15 @@
 var dir_68267d1309a1af8e8297ef4c3efbcdba =
 [
-    [ "bbpTypeFormula.cpp", "bbp_type_formula_8cpp.html", "bbp_type_formula_8cpp" ],
     [ "bbpTypeFormula.h", "bbp_type_formula_8h.html", "bbp_type_formula_8h" ],
-    [ "binom.cpp", "binom_8cpp.html", "binom_8cpp" ],
     [ "binom.h", "binom_8h.html", "binom_8h" ],
     [ "brentSalaminFormula.h", "brent_salamin_formula_8h.html", "brent_salamin_formula_8h" ],
     [ "devrandom.h", "devrandom_8h.html", "devrandom_8h" ],
-    [ "discreteFourierTransform.cpp", "discrete_fourier_transform_8cpp.html", "discrete_fourier_transform_8cpp" ],
     [ "discreteFourierTransform.h", "discrete_fourier_transform_8h.html", "discrete_fourier_transform_8h" ],
-    [ "dualNumbers.cpp", "dual_numbers_8cpp.html", "dual_numbers_8cpp" ],
-    [ "dualNumbers.h", "dual_numbers_8h.html", [
-      [ "Dual", "struct_dual.html", "struct_dual" ]
-    ] ],
-    [ "fixedPointIteration.cpp", "fixed_point_iteration_8cpp.html", "fixed_point_iteration_8cpp" ],
+    [ "dualNumbers.h", "dual_numbers_8h.html", "dual_numbers_8h" ],
     [ "fixedPointIteration.h", "fixed_point_iteration_8h.html", "fixed_point_iteration_8h" ],
     [ "goldenSectionSearch.cpp", "golden_section_search_8cpp.html", "golden_section_search_8cpp" ],
     [ "goldenSectionSearch.h", "golden_section_search_8h.html", "golden_section_search_8h" ],
     [ "integerFactorization.h", "integer_factorization_8h.html", "integer_factorization_8h" ],
-    [ "knapsack.h", "knapsack_8h.html", "knapsack_8h" ],
-    [ "lagrangeInterpolation.cpp", "lagrange_interpolation_8cpp.html", "lagrange_interpolation_8cpp" ],
     [ "lagrangeInterpolation.h", "lagrange_interpolation_8h.html", "lagrange_interpolation_8h" ],
     [ "lcg.cpp", "lcg_8cpp.html", "lcg_8cpp" ],
     [ "lcg.h", "lcg_8h.html", "lcg_8h" ],
@@ -26,11 +17,8 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "metropolisHastings.h", "metropolis_hastings_8h.html", "metropolis_hastings_8h" ],
     [ "NumericalIntegration.cpp", "_numerical_integration_8cpp.html", "_numerical_integration_8cpp" ],
     [ "numericalIntegration.h", "numerical_integration_8h.html", "numerical_integration_8h" ],
-    [ "polyroot.cpp", "polyroot_8cpp.html", "polyroot_8cpp" ],
-    [ "polyroot.h", "polyroot_8h.html", "polyroot_8h" ],
     [ "rungeKutta.cpp", "runge_kutta_8cpp.html", "runge_kutta_8cpp" ],
     [ "rungeKutta.h", "runge_kutta_8h.html", "runge_kutta_8h" ],
     [ "statistics.cpp", "statistics_8cpp.html", "statistics_8cpp" ],
-    [ "statistics.h", "statistics_8h.html", "statistics_8h" ],
-    [ "subsetSumProblem.h", "subset_sum_problem_8h.html", "subset_sum_problem_8h" ]
+    [ "statistics.h", "statistics_8h.html", "statistics_8h" ]
 ];

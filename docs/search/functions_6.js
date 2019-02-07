@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['idft',['idft',['../discrete_fourier_transform_8cpp.html#ad3073d538a0c5d035b74e8e2f87f3268',1,'idft(const CVec &amp;input):&#160;discreteFourierTransform.cpp'],['../discrete_fourier_transform_8h.html#ad3073d538a0c5d035b74e8e2f87f3268',1,'idft(const CVec &amp;input):&#160;discreteFourierTransform.cpp']]]
+  ['jb_5ftest',['jb_test',['../statistics_8cpp.html#a2b05c840d8c2f659d0e0985fb6cad65a',1,'jb_test(const std::vector&lt; long double &gt; &amp;x):&#160;statistics.cpp'],['../statistics_8h.html#a2b05c840d8c2f659d0e0985fb6cad65a',1,'jb_test(const std::vector&lt; long double &gt; &amp;x):&#160;statistics.cpp']]]
 ];

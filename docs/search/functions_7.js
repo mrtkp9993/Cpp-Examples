@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['jb_5ftest',['jb_test',['../statistics_8cpp.html#a2b05c840d8c2f659d0e0985fb6cad65a',1,'jb_test(const std::vector&lt; long double &gt; &amp;x):&#160;statistics.cpp'],['../statistics_8h.html#a2b05c840d8c2f659d0e0985fb6cad65a',1,'jb_test(const std::vector&lt; long double &gt; &amp;x):&#160;statistics.cpp']]]
+  ['lagrangepoly',['lagrangePoly',['../lagrange_interpolation_8h.html#aad726fcf5685b281362fd5b8339a7345',1,'lagrangeInterpolation.h']]],
+  ['lcg',['lcg',['../lcg_8cpp.html#af6d01b7bf51eb2d0133955f7c70e4179',1,'lcg(const int &amp;seed, const int &amp;mod, const int &amp;mult, const int &amp;incr, const int &amp;count):&#160;lcg.cpp'],['../lcg_8h.html#af6d01b7bf51eb2d0133955f7c70e4179',1,'lcg(const int &amp;seed, const int &amp;mod, const int &amp;mult, const int &amp;incr, const int &amp;count):&#160;lcg.cpp']]]
 ];

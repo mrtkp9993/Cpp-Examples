@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['lagrangeinterpolation_2ecpp',['lagrangeInterpolation.cpp',['../lagrange_interpolation_8cpp.html',1,'']]],
-  ['lagrangeinterpolation_2eh',['lagrangeInterpolation.h',['../lagrange_interpolation_8h.html',1,'']]],
-  ['lagrangepoly',['lagrangePoly',['../lagrange_interpolation_8cpp.html#a2389ba3792d7f981a731c7a787d8e7d6',1,'lagrangePoly(Data data):&#160;lagrangeInterpolation.cpp'],['../lagrange_interpolation_8h.html#a2389ba3792d7f981a731c7a787d8e7d6',1,'lagrangePoly(Data data):&#160;lagrangeInterpolation.cpp']]],
-  ['lcg',['lcg',['../lcg_8cpp.html#af6d01b7bf51eb2d0133955f7c70e4179',1,'lcg(const int &amp;seed, const int &amp;mod, const int &amp;mult, const int &amp;incr, const int &amp;count):&#160;lcg.cpp'],['../lcg_8h.html#af6d01b7bf51eb2d0133955f7c70e4179',1,'lcg(const int &amp;seed, const int &amp;mod, const int &amp;mult, const int &amp;incr, const int &amp;count):&#160;lcg.cpp']]],
-  ['lcg_2ecpp',['lcg.cpp',['../lcg_8cpp.html',1,'']]],
-  ['lcg_2eh',['lcg.h',['../lcg_8h.html',1,'']]]
+  ['metropolishastings_2ecpp',['metropolisHastings.cpp',['../metropolis_hastings_8cpp.html',1,'']]],
+  ['metropolishastings_2eh',['metropolisHastings.h',['../metropolis_hastings_8h.html',1,'']]],
+  ['montecarlointegration',['monteCarloIntegration',['../_numerical_integration_8cpp.html#a017cb13f34621723a92a789d14565f83',1,'monteCarloIntegration(const long double &amp;a, const long double &amp;b, const unsigned long &amp;n, std::function&lt; long double(long double)&gt; &amp;func):&#160;NumericalIntegration.cpp'],['../numerical_integration_8h.html#a017cb13f34621723a92a789d14565f83',1,'monteCarloIntegration(const long double &amp;a, const long double &amp;b, const unsigned long &amp;n, std::function&lt; long double(long double)&gt; &amp;func):&#160;NumericalIntegration.cpp']]]
 ];

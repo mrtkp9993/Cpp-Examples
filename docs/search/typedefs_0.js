@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['complex',['Complex',['../discrete_fourier_transform_8h.html#a82b1ddd6bd8f13b6c3f608af21f830c0',1,'discreteFourierTransform.h']]],
-  ['cvec',['CVec',['../discrete_fourier_transform_8h.html#a243464c1e408e4f15007d9025ecff171',1,'discreteFourierTransform.h']]]
+  ['complex',['Complex',['../discrete_fourier_transform_8h.html#a710b388b1d92514f461cb65049859d67',1,'discreteFourierTransform.h']]],
+  ['cvec',['CVec',['../discrete_fourier_transform_8h.html#a37973646ed6a7ed0b0cf2287bdaef0e8',1,'discreteFourierTransform.h']]]
 ];

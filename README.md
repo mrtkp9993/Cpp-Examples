@@ -16,6 +16,7 @@ Currently I implemented following functions & algorithms:
 * /dev/random Generator
 * Discrete Fourier Transform
 * Fixed Point Iteration
+* Golden Section Search
 * Jarque–Bera test
 * Lagrange Interpolation
 * Linear Congruent Generator
