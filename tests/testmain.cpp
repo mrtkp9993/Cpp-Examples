@@ -54,8 +54,8 @@ TEST_CASE("Golden Section Search", "[golden]") {
   const long double tol = 1e-12;
   auto func = [](long double x) { return std::pow(x, 2) - std::sin(x); };
   auto res = GoldenSectionSearch(a, b, tol, func);
-  REQUIRE(std::abs(res.a - 0.4501836113524) < 1e-12);
-  REQUIRE(std::abs(res.b - 0.4501836113532) < 1e-12);
+  REQUIRE(std::abs(res.a - 0.4501836113524) < 1e-10);
+  REQUIRE(std::abs(res.b - 0.4501836113532) < 1e-10);
 }
 
 TEST_CASE("Linear Congurent Generator", "[lcg]") {
