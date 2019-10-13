@@ -98,18 +98,25 @@ $(document).ready(function(){initNavTree('statistics_8h.html','');});
 <div class="textblock"><code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;numeric&gt;</code><br />
+<code>#include &lt;random&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="statistics_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0aeb5d9b565f5850b4084a0e6904ccf5"><td class="memItemLeft" align="right" valign="top">long double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="statistics_8h.html#a0aeb5d9b565f5850b4084a0e6904ccf5">runif</a> (const long double &amp;a=0, const long double &amp;b=1)</td></tr>
-<tr class="memdesc:a0aeb5d9b565f5850b4084a0e6904ccf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uniform number generator.  <a href="#a0aeb5d9b565f5850b4084a0e6904ccf5">More...</a><br /></td></tr>
-<tr class="separator:a0aeb5d9b565f5850b4084a0e6904ccf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc26f30c08787855613161d64715894"><td class="memItemLeft" align="right" valign="top">long double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="statistics_8h.html#adbc26f30c08787855613161d64715894">rnorm</a> (const long double &amp;mean=0, const long double &amp;sd=1)</td></tr>
-<tr class="memdesc:adbc26f30c08787855613161d64715894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal number generator with Box–Muller transform.  <a href="#adbc26f30c08787855613161d64715894">More...</a><br /></td></tr>
-<tr class="separator:adbc26f30c08787855613161d64715894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99282c9573327898307cbd3492de0bdc"><td class="memTemplParams" colspan="2">template&lt;typename T  = long double&gt; </td></tr>
+<tr class="memitem:a99282c9573327898307cbd3492de0bdc"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="statistics_8h.html#a99282c9573327898307cbd3492de0bdc">runif</a> (const T &amp;a=0, const T &amp;b=1)</td></tr>
+<tr class="memdesc:a99282c9573327898307cbd3492de0bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uniform number generator.  <a href="#a99282c9573327898307cbd3492de0bdc">More...</a><br /></td></tr>
+<tr class="separator:a99282c9573327898307cbd3492de0bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96ad8747ff6dabc632d0e262c9c7bb2"><td class="memTemplParams" colspan="2">template&lt;typename T  = long double&gt; </td></tr>
+<tr class="memitem:ad96ad8747ff6dabc632d0e262c9c7bb2"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="statistics_8h.html#ad96ad8747ff6dabc632d0e262c9c7bb2">rnorm</a> (const T &amp;mean=0, const T &amp;sd=1)</td></tr>
+<tr class="memdesc:ad96ad8747ff6dabc632d0e262c9c7bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal number generator with Box–Muller transform.  <a href="#ad96ad8747ff6dabc632d0e262c9c7bb2">More...</a><br /></td></tr>
+<tr class="separator:ad96ad8747ff6dabc632d0e262c9c7bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4368c6ff543bcea59b8608f494f55651"><td class="memTemplParams" colspan="2">template&lt;typename T  = long double&gt; </td></tr>
+<tr class="memitem:a4368c6ff543bcea59b8608f494f55651"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="statistics_8h.html#a4368c6ff543bcea59b8608f494f55651">pchisq</a> (const T &amp;stat, const unsigned int &amp;k)</td></tr>
+<tr class="memdesc:a4368c6ff543bcea59b8608f494f55651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Chi-Squared distribution.  <a href="#a4368c6ff543bcea59b8608f494f55651">More...</a><br /></td></tr>
+<tr class="separator:a4368c6ff543bcea59b8608f494f55651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b05c840d8c2f659d0e0985fb6cad65a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="statistics_8h.html#a2b05c840d8c2f659d0e0985fb6cad65a">jb_test</a> (const std::vector&lt; long double &gt; &amp;x)</td></tr>
 <tr class="memdesc:a2b05c840d8c2f659d0e0985fb6cad65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jarque–Bera test.  <a href="#a2b05c840d8c2f659d0e0985fb6cad65a">More...</a><br /></td></tr>
 <tr class="separator:a2b05c840d8c2f659d0e0985fb6cad65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,23 +154,65 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adbc26f30c08787855613161d64715894"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbc26f30c08787855613161d64715894">&#9670;&nbsp;</a></span>rnorm()</h2>
+<a id="a4368c6ff543bcea59b8608f494f55651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4368c6ff543bcea59b8608f494f55651">&#9670;&nbsp;</a></span>pchisq()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = long double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">long double rnorm </td>
+          <td class="memname">T pchisq </td>
           <td>(</td>
-          <td class="paramtype">const long double &amp;&#160;</td>
-          <td class="paramname"><em>mean</em>, </td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>stat</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const long double &amp;&#160;</td>
-          <td class="paramname"><em>sd</em>&#160;</td>
+          <td class="paramtype">const unsigned int &amp;&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Chi-Squared distribution. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stat</td><td>Test statistic. </td></tr>
+    <tr><td class="paramname">k</td><td>Degrees of freedom.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A probability. </dd></dl>
+
+</div>
+</div>
+<a id="ad96ad8747ff6dabc632d0e262c9c7bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad96ad8747ff6dabc632d0e262c9c7bb2">&#9670;&nbsp;</a></span>rnorm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = long double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T rnorm </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>mean</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>sd</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -186,23 +235,25 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0aeb5d9b565f5850b4084a0e6904ccf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0aeb5d9b565f5850b4084a0e6904ccf5">&#9670;&nbsp;</a></span>runif()</h2>
+<a id="a99282c9573327898307cbd3492de0bdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99282c9573327898307cbd3492de0bdc">&#9670;&nbsp;</a></span>runif()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = long double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">long double runif </td>
+          <td class="memname">T runif </td>
           <td>(</td>
-          <td class="paramtype">const long double &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const long double &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>b</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

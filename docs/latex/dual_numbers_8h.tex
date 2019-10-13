@@ -1,0 +1,82 @@
+\hypertarget{dual_numbers_8h}{}\section{src/dual\+Numbers.h File Reference}
+\label{dual_numbers_8h}\index{src/dualNumbers.h@{src/dualNumbers.h}}
+
+
+Implementation of dual numbers.  
+
+
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_dual}{Dual}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_a7e876df68c9fcebc82457238215694da}\label{dual_numbers_8h_a7e876df68c9fcebc82457238215694da}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries operator+} (const \mbox{\hyperlink{struct_dual}{Dual}} \&u, const \mbox{\hyperlink{struct_dual}{Dual}} \&v)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_a8f1cdd4183d913fe44983dc3aa3c3050}\label{dual_numbers_8h_a8f1cdd4183d913fe44983dc3aa3c3050}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries operator-\/} (const \mbox{\hyperlink{struct_dual}{Dual}} \&u, const \mbox{\hyperlink{struct_dual}{Dual}} \&v)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_aa100fce02604176a8731f1997032ff4b}\label{dual_numbers_8h_aa100fce02604176a8731f1997032ff4b}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries operator $\ast$} (const \mbox{\hyperlink{struct_dual}{Dual}} \&u, const \mbox{\hyperlink{struct_dual}{Dual}} \&v)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_a2f24c51c6b7d90a5d8c0bfea18eba147}\label{dual_numbers_8h_a2f24c51c6b7d90a5d8c0bfea18eba147}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries operator/} (const \mbox{\hyperlink{struct_dual}{Dual}} \&u, const \mbox{\hyperlink{struct_dual}{Dual}} \&v)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_a4bd6c01d6e43f564da01f1b22056d993}\label{dual_numbers_8h_a4bd6c01d6e43f564da01f1b22056d993}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{struct_dual}{Dual}} \&d)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_ab6f6742bed07872104bb4f6642223407}\label{dual_numbers_8h_ab6f6742bed07872104bb4f6642223407}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries pow} (const \mbox{\hyperlink{struct_dual}{Dual}} \&d, const long double \&p)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_a485addef41a1b3955b9fc2993e51b376}\label{dual_numbers_8h_a485addef41a1b3955b9fc2993e51b376}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries root} (const \mbox{\hyperlink{struct_dual}{Dual}} \&d, const long double \&p)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_abb6cc335a04bddd22cc5da673eb72378}\label{dual_numbers_8h_abb6cc335a04bddd22cc5da673eb72378}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries exp} (const \mbox{\hyperlink{struct_dual}{Dual}} \&d)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_a201b19edf887bdc1e3a1fa7f5fd6aa8a}\label{dual_numbers_8h_a201b19edf887bdc1e3a1fa7f5fd6aa8a}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries log} (const \mbox{\hyperlink{struct_dual}{Dual}} \&d)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_a0aa3b51c693e3ad5156b09bb41c762c1}\label{dual_numbers_8h_a0aa3b51c693e3ad5156b09bb41c762c1}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries sin} (const \mbox{\hyperlink{struct_dual}{Dual}} \&d)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_a51720522ba2ebe6400829e5464ac83d5}\label{dual_numbers_8h_a51720522ba2ebe6400829e5464ac83d5}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries cos} (const \mbox{\hyperlink{struct_dual}{Dual}} \&d)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_acaa46dca6569d5348a542a7dd8df2996}\label{dual_numbers_8h_acaa46dca6569d5348a542a7dd8df2996}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries tan} (const \mbox{\hyperlink{struct_dual}{Dual}} \&d)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_ac744360314e266d4378a24295c5701a0}\label{dual_numbers_8h_ac744360314e266d4378a24295c5701a0}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries asin} (const \mbox{\hyperlink{struct_dual}{Dual}} \&d)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_a58dfb3b5cd7adf92b9600de6a634cf03}\label{dual_numbers_8h_a58dfb3b5cd7adf92b9600de6a634cf03}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries acos} (const \mbox{\hyperlink{struct_dual}{Dual}} \&d)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_aad929d60f1ee2abc0b17c87cd361139d}\label{dual_numbers_8h_aad929d60f1ee2abc0b17c87cd361139d}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries atan} (const \mbox{\hyperlink{struct_dual}{Dual}} \&d)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_aac6dfef617937b661461065fd4449899}\label{dual_numbers_8h_aac6dfef617937b661461065fd4449899}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries sinh} (const \mbox{\hyperlink{struct_dual}{Dual}} \&d)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_ab3bcd4179893314472bf166a07e93d53}\label{dual_numbers_8h_ab3bcd4179893314472bf166a07e93d53}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries cosh} (const \mbox{\hyperlink{struct_dual}{Dual}} \&d)
+\item 
+\mbox{\Hypertarget{dual_numbers_8h_ae8926c8a959de76f9a1fdbd9ce81aafa}\label{dual_numbers_8h_ae8926c8a959de76f9a1fdbd9ce81aafa}} 
+\mbox{\hyperlink{struct_dual}{Dual}} {\bfseries tanh} (const \mbox{\hyperlink{struct_dual}{Dual}} \&d)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of dual numbers. 
+
+In linear algebra, the dual numbers extend the real numbers by adjoining one new element ε with the property ε$^\wedge$2 = 0 (ε is nilpotent).
+
+\begin{DoxyAuthor}{Author}
+Murat Koptur \href{mailto:mkoptur3@gmail.com}{\texttt{ mkoptur3@gmail.\+com}}
+\end{DoxyAuthor}
+Last updated\+: 3/\+Feb/2019. 

@@ -1,6 +1,6 @@
 var numerical_integration_8h =
 [
-    [ "compositeSimpsons", "numerical_integration_8h.html#aa6efda2fcf775fc079c9c4fc809b035e", null ],
-    [ "doubleIntegral", "numerical_integration_8h.html#a2c0b0418fa5b1481669d937b005c92b6", null ],
-    [ "monteCarloIntegration", "numerical_integration_8h.html#a017cb13f34621723a92a789d14565f83", null ]
+    [ "compositeSimpsons", "numerical_integration_8h.html#a2a49b6efd60f3f4bd9b132455392127a", null ],
+    [ "doubleIntegral", "numerical_integration_8h.html#a8a2700261385eec68fa80882704ea6de", null ],
+    [ "monteCarloIntegration", "numerical_integration_8h.html#a032561911785237d600ba4bd287f6f05", null ]
 ];

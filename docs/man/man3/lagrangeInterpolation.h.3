@@ -1,0 +1,63 @@
+.TH "src/lagrangeInterpolation.h" 3 "Sun Oct 13 2019" "Cpp Examples" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/lagrangeInterpolation.h \- Lagrange Interpolation\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cassert>\fP
+.br
+\fC#include <functional>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <vector>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBData< T >\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename T > std::function< T(T)> \fBlagrangePoly\fP (const \fBData\fP< T > &data)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Lagrange Interpolation\&. 
+
+In numerical analysis, Lagrange polynomials are used for polynomial interpolation\&. For a given set of points {\\displaystyle (x_{j},y_{j})} with no two x_{j} values equal, the Lagrange polynomial is the polynomial of lowest degree that assumes at each value x_{j} the corresponding value y_{j} (i\&.e\&. the functions coincide at each point)\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Murat Koptur mkoptur3@gmail.com
+.RE
+.PP
+Last updated: 31/Jan/2019\&. 
+.SH "Function Documentation"
+.PP 
+.SS "template<typename T > std::function<T(T)> lagrangePoly (const \fBData\fP< T > & data)"
+Lagrange polynomial\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdata\fP A data\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Lagrange interpolation polynomial\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cpp Examples from the source code\&.

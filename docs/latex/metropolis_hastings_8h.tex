@@ -1,0 +1,52 @@
+\hypertarget{metropolis_hastings_8h}{}\section{src/metropolis\+Hastings.h File Reference}
+\label{metropolis_hastings_8h}\index{src/metropolisHastings.h@{src/metropolisHastings.h}}
+
+
+Metropolis-\/\+Hastings algorithm.  
+
+
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}statistics.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T  = long double$>$ }\\std\+::vector$<$ T $>$ \mbox{\hyperlink{metropolis_hastings_8h_a679aa5f574c9cae53e917238746133df}{generate}} (const std\+::function$<$ T(T)$>$ \&target, const unsigned int \&count, const unsigned int \&burn\+\_\+in\+\_\+period)
+\begin{DoxyCompactList}\small\item\em Metropolis-\/\+Hastings algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Metropolis-\/\+Hastings algorithm. 
+
+Metropolis-\/\+Hastings Algorithm is a Markov chain Monte Carlo (M\+C\+MC) method for obtaining a sequence of random samples from a probability distribution from which direct sampling is difficult. This sequence can be used to approximate the distribution or to compute an integral.
+
+\begin{DoxyAuthor}{Author}
+Murat Koptur \href{mailto:mkoptur3@gmail.com}{\texttt{ mkoptur3@gmail.\+com}}
+\end{DoxyAuthor}
+Last updated\+: 22/\+Jan/2019. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{metropolis_hastings_8h_a679aa5f574c9cae53e917238746133df}\label{metropolis_hastings_8h_a679aa5f574c9cae53e917238746133df}} 
+\index{metropolisHastings.h@{metropolisHastings.h}!generate@{generate}}
+\index{generate@{generate}!metropolisHastings.h@{metropolisHastings.h}}
+\subsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily template$<$typename T  = long double$>$ \\
+std\+::vector$<$T$>$ generate (\begin{DoxyParamCaption}\item[{const std\+::function$<$ T(T)$>$ \&}]{target,  }\item[{const unsigned int \&}]{count,  }\item[{const unsigned int \&}]{burn\+\_\+in\+\_\+period }\end{DoxyParamCaption})}
+
+
+
+Metropolis-\/\+Hastings algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target distribution. \\
+\hline
+{\em count} & Count of generated numbers. \\
+\hline
+{\em burn\+\_\+in\+\_\+period} & Burn-\/in period.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of generated numbers. 
+\end{DoxyReturn}

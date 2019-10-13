@@ -1,0 +1,87 @@
+\hypertarget{discrete_fourier_transform_8h}{}\section{src/discrete\+Fourier\+Transform.h File Reference}
+\label{discrete_fourier_transform_8h}\index{src/discreteFourierTransform.h@{src/discreteFourierTransform.h}}
+
+
+Functions for D\+FT and I\+D\+FT.  
+
+
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$complex$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T  = long double$>$ }\\using \mbox{\hyperlink{discrete_fourier_transform_8h_a710b388b1d92514f461cb65049859d67}{Complex}} = std\+::complex$<$ T $>$
+\item 
+{\footnotesize template$<$typename T  = long double$>$ }\\using \mbox{\hyperlink{discrete_fourier_transform_8h_a37973646ed6a7ed0b0cf2287bdaef0e8}{C\+Vec}} = std\+::vector$<$ std\+::complex$<$ T $>$ $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{discrete_fourier_transform_8h_a37973646ed6a7ed0b0cf2287bdaef0e8}{C\+Vec}} \mbox{\hyperlink{discrete_fourier_transform_8h_aba405a29a7c12bd7d8b996c96978c880}{dft}} (const \mbox{\hyperlink{discrete_fourier_transform_8h_a37973646ed6a7ed0b0cf2287bdaef0e8}{C\+Vec}}$<$$>$ \&input)
+\item 
+\mbox{\hyperlink{discrete_fourier_transform_8h_a37973646ed6a7ed0b0cf2287bdaef0e8}{C\+Vec}} \mbox{\hyperlink{discrete_fourier_transform_8h_afda9df10dcfa62a6ee9723898af8ff58}{idft}} (const \mbox{\hyperlink{discrete_fourier_transform_8h_a37973646ed6a7ed0b0cf2287bdaef0e8}{C\+Vec}}$<$$>$ \&input)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for D\+FT and I\+D\+FT. 
+
+In mathematics, the discrete Fourier transform (D\+FT) converts a finite sequence of equally-\/spaced samples of a function into a same-\/length sequence of equally-\/spaced samples of the discrete-\/time Fourier transform (D\+T\+FT), which is a complex-\/valued function of frequency.
+
+\begin{DoxyAuthor}{Author}
+Murat Koptur \href{mailto:mkoptur3@gmail.com}{\texttt{ mkoptur3@gmail.\+com}}
+\end{DoxyAuthor}
+Last updated\+: 2/\+Feb/2019. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{discrete_fourier_transform_8h_a710b388b1d92514f461cb65049859d67}\label{discrete_fourier_transform_8h_a710b388b1d92514f461cb65049859d67}} 
+\index{discreteFourierTransform.h@{discreteFourierTransform.h}!Complex@{Complex}}
+\index{Complex@{Complex}!discreteFourierTransform.h@{discreteFourierTransform.h}}
+\subsubsection{\texorpdfstring{Complex}{Complex}}
+{\footnotesize\ttfamily template$<$typename T  = long double$>$ \\
+using \mbox{\hyperlink{discrete_fourier_transform_8h_a710b388b1d92514f461cb65049859d67}{Complex}} =  std\+::complex$<$T$>$}
+
+A type for complex numbers. \mbox{\Hypertarget{discrete_fourier_transform_8h_a37973646ed6a7ed0b0cf2287bdaef0e8}\label{discrete_fourier_transform_8h_a37973646ed6a7ed0b0cf2287bdaef0e8}} 
+\index{discreteFourierTransform.h@{discreteFourierTransform.h}!CVec@{CVec}}
+\index{CVec@{CVec}!discreteFourierTransform.h@{discreteFourierTransform.h}}
+\subsubsection{\texorpdfstring{CVec}{CVec}}
+{\footnotesize\ttfamily template$<$typename T  = long double$>$ \\
+using \mbox{\hyperlink{discrete_fourier_transform_8h_a37973646ed6a7ed0b0cf2287bdaef0e8}{C\+Vec}} =  std\+::vector$<$std\+::complex$<$T$>$ $>$}
+
+A type for array of complex numbers. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{discrete_fourier_transform_8h_aba405a29a7c12bd7d8b996c96978c880}\label{discrete_fourier_transform_8h_aba405a29a7c12bd7d8b996c96978c880}} 
+\index{discreteFourierTransform.h@{discreteFourierTransform.h}!dft@{dft}}
+\index{dft@{dft}!discreteFourierTransform.h@{discreteFourierTransform.h}}
+\subsubsection{\texorpdfstring{dft()}{dft()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{discrete_fourier_transform_8h_a37973646ed6a7ed0b0cf2287bdaef0e8}{C\+Vec}} dft (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{discrete_fourier_transform_8h_a37973646ed6a7ed0b0cf2287bdaef0e8}{C\+Vec}}$<$$>$ \&}]{input }\end{DoxyParamCaption})}
+
+Calculate D\+FT for given input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Vector of complex numbers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+D\+FT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{discrete_fourier_transform_8h_afda9df10dcfa62a6ee9723898af8ff58}\label{discrete_fourier_transform_8h_afda9df10dcfa62a6ee9723898af8ff58}} 
+\index{discreteFourierTransform.h@{discreteFourierTransform.h}!idft@{idft}}
+\index{idft@{idft}!discreteFourierTransform.h@{discreteFourierTransform.h}}
+\subsubsection{\texorpdfstring{idft()}{idft()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{discrete_fourier_transform_8h_a37973646ed6a7ed0b0cf2287bdaef0e8}{C\+Vec}} idft (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{discrete_fourier_transform_8h_a37973646ed6a7ed0b0cf2287bdaef0e8}{C\+Vec}}$<$$>$ \&}]{input }\end{DoxyParamCaption})}
+
+Calculate I\+D\+FT for given input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Vector of complex numbers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+D\+FT. 
+\end{DoxyReturn}

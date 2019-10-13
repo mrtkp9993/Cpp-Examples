@@ -1,0 +1,89 @@
+.TH "src/discreteFourierTransform.h" 3 "Sun Oct 13 2019" "Cpp Examples" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/discreteFourierTransform.h \- Functions for DFT and IDFT\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cmath>\fP
+.br
+\fC#include <complex>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <vector>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "template<typename T  = long double> using \fBComplex\fP = std::complex< T >"
+.br
+.ti -1c
+.RI "template<typename T  = long double> using \fBCVec\fP = std::vector< std::complex< T > >"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCVec\fP \fBdft\fP (const \fBCVec\fP<> &input)"
+.br
+.ti -1c
+.RI "\fBCVec\fP \fBidft\fP (const \fBCVec\fP<> &input)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Functions for DFT and IDFT\&. 
+
+In mathematics, the discrete Fourier transform (DFT) converts a finite sequence of equally-spaced samples of a function into a same-length sequence of equally-spaced samples of the discrete-time Fourier transform (DTFT), which is a complex-valued function of frequency\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Murat Koptur mkoptur3@gmail.com
+.RE
+.PP
+Last updated: 2/Feb/2019\&. 
+.SH "Typedef Documentation"
+.PP 
+.SS "template<typename T  = long double> using \fBComplex\fP =  std::complex<T>"
+A type for complex numbers\&. 
+.SS "template<typename T  = long double> using \fBCVec\fP =  std::vector<std::complex<T> >"
+A type for array of complex numbers\&. 
+.SH "Function Documentation"
+.PP 
+.SS "\fBCVec\fP dft (const \fBCVec\fP<> & input)"
+Calculate DFT for given input\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIinput\fP Vector of complex numbers\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+DFT\&. 
+.RE
+.PP
+
+.SS "\fBCVec\fP idft (const \fBCVec\fP<> & input)"
+Calculate IDFT for given input\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIinput\fP Vector of complex numbers\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+IDFT\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cpp Examples from the source code\&.

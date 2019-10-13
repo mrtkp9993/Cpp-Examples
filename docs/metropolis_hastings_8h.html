@@ -98,15 +98,16 @@ $(document).ready(function(){initNavTree('metropolis_hastings_8h.html','');});
 <div class="textblock"><code>#include &lt;ctime&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="el" href="statistics_8h_source.html">../src/statistics.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="statistics_8h_source.html">statistics.h</a>&quot;</code><br />
 </div>
 <p><a href="metropolis_hastings_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad3101184c27d8806759d0823af13489b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; long double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="metropolis_hastings_8h.html#ad3101184c27d8806759d0823af13489b">generate</a> (const std::function&lt; long double(long double)&gt; &amp;target, const unsigned int &amp;count, const unsigned int &amp;burn_in_period)</td></tr>
-<tr class="memdesc:ad3101184c27d8806759d0823af13489b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metropolis-Hastings algorithm.  <a href="#ad3101184c27d8806759d0823af13489b">More...</a><br /></td></tr>
-<tr class="separator:ad3101184c27d8806759d0823af13489b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a679aa5f574c9cae53e917238746133df"><td class="memTemplParams" colspan="2">template&lt;typename T  = long double&gt; </td></tr>
+<tr class="memitem:a679aa5f574c9cae53e917238746133df"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="metropolis_hastings_8h.html#a679aa5f574c9cae53e917238746133df">generate</a> (const std::function&lt; T(T)&gt; &amp;target, const unsigned int &amp;count, const unsigned int &amp;burn_in_period)</td></tr>
+<tr class="memdesc:a679aa5f574c9cae53e917238746133df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metropolis-Hastings algorithm.  <a href="#a679aa5f574c9cae53e917238746133df">More...</a><br /></td></tr>
+<tr class="separator:a679aa5f574c9cae53e917238746133df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Metropolis-Hastings algorithm. </p>
@@ -114,16 +115,18 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Murat Koptur <a href="#" onclick="location.href='mai'+'lto:'+'mko'+'pt'+'ur3'+'@g'+'mai'+'l.'+'com'; return false;">mkopt<span style="display: none;">.nosp@m.</span>ur3@<span style="display: none;">.nosp@m.</span>gmail<span style="display: none;">.nosp@m.</span>.com</a></dd></dl>
 <p>Last updated: 22/Jan/2019. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ad3101184c27d8806759d0823af13489b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3101184c27d8806759d0823af13489b">&#9670;&nbsp;</a></span>generate()</h2>
+<a id="a679aa5f574c9cae53e917238746133df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a679aa5f574c9cae53e917238746133df">&#9670;&nbsp;</a></span>generate()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = long double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;long double&gt; generate </td>
+          <td class="memname">std::vector&lt;T&gt; generate </td>
           <td>(</td>
-          <td class="paramtype">const std::function&lt; long double(long double)&gt; &amp;&#160;</td>
+          <td class="paramtype">const std::function&lt; T(T)&gt; &amp;&#160;</td>
           <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>

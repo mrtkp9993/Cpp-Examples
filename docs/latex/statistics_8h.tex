@@ -1,0 +1,119 @@
+\hypertarget{statistics_8h}{}\section{src/statistics.h File Reference}
+\label{statistics_8h}\index{src/statistics.h@{src/statistics.h}}
+
+
+Statistics related functions.  
+
+
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T  = long double$>$ }\\T \mbox{\hyperlink{statistics_8h_a99282c9573327898307cbd3492de0bdc}{runif}} (const T \&a=0, const T \&b=1)
+\begin{DoxyCompactList}\small\item\em Uniform number generator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T  = long double$>$ }\\T \mbox{\hyperlink{statistics_8h_ad96ad8747ff6dabc632d0e262c9c7bb2}{rnorm}} (const T \&mean=0, const T \&sd=1)
+\begin{DoxyCompactList}\small\item\em Normal number generator with Box–\+Muller transform. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T  = long double$>$ }\\T \mbox{\hyperlink{statistics_8h_a4368c6ff543bcea59b8608f494f55651}{pchisq}} (const T \&stat, const unsigned int \&k)
+\begin{DoxyCompactList}\small\item\em Chi-\/\+Squared distribution. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{statistics_8h_a2b05c840d8c2f659d0e0985fb6cad65a}{jb\+\_\+test}} (const std\+::vector$<$ long double $>$ \&x)
+\begin{DoxyCompactList}\small\item\em Jarque–\+Bera test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Statistics related functions. 
+
+\begin{DoxyAuthor}{Author}
+Murat Koptur \href{mailto:mkoptur3@gmail.com}{\texttt{ mkoptur3@gmail.\+com}}
+\end{DoxyAuthor}
+Last updated\+: 22/\+Jan/2019. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{statistics_8h_a2b05c840d8c2f659d0e0985fb6cad65a}\label{statistics_8h_a2b05c840d8c2f659d0e0985fb6cad65a}} 
+\index{statistics.h@{statistics.h}!jb\_test@{jb\_test}}
+\index{jb\_test@{jb\_test}!statistics.h@{statistics.h}}
+\subsubsection{\texorpdfstring{jb\_test()}{jb\_test()}}
+{\footnotesize\ttfamily bool jb\+\_\+test (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long double $>$ \&}]{x }\end{DoxyParamCaption})}
+
+
+
+Jarque–\+Bera test. 
+
+Jarque–\+Bera test is a goodness-\/of-\/fit test of whether sample data have the skewness and kurtosis matching a normal distribution.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Vector of numbers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean which indicates that x is normally distributed or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{statistics_8h_a4368c6ff543bcea59b8608f494f55651}\label{statistics_8h_a4368c6ff543bcea59b8608f494f55651}} 
+\index{statistics.h@{statistics.h}!pchisq@{pchisq}}
+\index{pchisq@{pchisq}!statistics.h@{statistics.h}}
+\subsubsection{\texorpdfstring{pchisq()}{pchisq()}}
+{\footnotesize\ttfamily template$<$typename T  = long double$>$ \\
+T pchisq (\begin{DoxyParamCaption}\item[{const T \&}]{stat,  }\item[{const unsigned int \&}]{k }\end{DoxyParamCaption})}
+
+
+
+Chi-\/\+Squared distribution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stat} & Test statistic. \\
+\hline
+{\em k} & Degrees of freedom.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A probability. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{statistics_8h_ad96ad8747ff6dabc632d0e262c9c7bb2}\label{statistics_8h_ad96ad8747ff6dabc632d0e262c9c7bb2}} 
+\index{statistics.h@{statistics.h}!rnorm@{rnorm}}
+\index{rnorm@{rnorm}!statistics.h@{statistics.h}}
+\subsubsection{\texorpdfstring{rnorm()}{rnorm()}}
+{\footnotesize\ttfamily template$<$typename T  = long double$>$ \\
+T rnorm (\begin{DoxyParamCaption}\item[{const T \&}]{mean = {\ttfamily 0},  }\item[{const T \&}]{sd = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Normal number generator with Box–\+Muller transform. 
+
+Box–\+Muller transform is a pseudo-\/random number sampling method for generating pairs of independent, standard, normally distributed (zero expectation, unit variance) random numbers, given a source of uniformly distributed random numbers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mean} & Mean of distribution. \\
+\hline
+{\em sd} & Standart deviation of distribution.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{statistics_8h_a99282c9573327898307cbd3492de0bdc}\label{statistics_8h_a99282c9573327898307cbd3492de0bdc}} 
+\index{statistics.h@{statistics.h}!runif@{runif}}
+\index{runif@{runif}!statistics.h@{statistics.h}}
+\subsubsection{\texorpdfstring{runif()}{runif()}}
+{\footnotesize\ttfamily template$<$typename T  = long double$>$ \\
+T runif (\begin{DoxyParamCaption}\item[{const T \&}]{a = {\ttfamily 0},  }\item[{const T \&}]{b = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Uniform number generator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Lower bound. \\
+\hline
+{\em b} & Upper bound.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random number between \mbox{[}a, b\mbox{]}. 
+\end{DoxyReturn}

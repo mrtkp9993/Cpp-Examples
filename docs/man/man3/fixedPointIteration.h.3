@@ -1,0 +1,65 @@
+.TH "src/fixedPointIteration.h" 3 "Sun Oct 13 2019" "Cpp Examples" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/fixedPointIteration.h \- Fixed point iteration\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cmath>\fP
+.br
+\fC#include <functional>\fP
+.br
+\fC#include <iostream>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename T  = long double> T \fBfixedPointIter\fP (T p0, const T &tol, const unsigned long &N0, const std::function< T(T)> &\fBg\fP)"
+.br
+.RI "Find a solution to p = g(p) given an initial approximation p0\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Fixed point iteration\&. 
+
+Fixed Point Iteration is a method of computing fixed points of iterated functions\&. We can write an equation f(x)=0 in x=g(x) form and we can find this equation’s fixed point and solve first equation\&.
+.PP
+Algorithm 2\&.2 (Numerical Analysis, Ninth Edition, Burden, Faires)
+.PP
+\fBAuthor:\fP
+.RS 4
+Murat Koptur mkoptur3@gmail.com
+.RE
+.PP
+Last updated: 22/Jan/2019\&. 
+.SH "Function Documentation"
+.PP 
+.SS "template<typename T  = long double> T fixedPointIter (T p0, const T & tol, const unsigned long & N0, const std::function< T(T)> & g)"
+
+.PP
+Find a solution to p = g(p) given an initial approximation p0\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIp0\fP Initial approximation\&. 
+.br
+\fItol\fP Tolerance\&. 
+.br
+\fIN0\fP Maximum number of iterations\&. 
+.br
+\fIg\fP The function\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Approximate solution p or message of failure\&.\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cpp Examples from the source code\&.

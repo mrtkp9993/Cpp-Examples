@@ -1,0 +1,106 @@
+\hypertarget{integer_factorization_8h}{}\section{src/integer\+Factorization.h File Reference}
+\label{integer_factorization_8h}\index{src/integerFactorization.h@{src/integerFactorization.h}}
+
+
+Implements Pollard rho algorithm.  
+
+
+{\ttfamily \#include $<$cmath$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{integer_factorization_8h_a04c9bfd9ad8855a08d4a860652560e76}{g}} (T x, T n)
+\begin{DoxyCompactList}\small\item\em Helper function for generate a pseudo-\/random sequence. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{integer_factorization_8h_a6d0c00ce731e98f3789b4f14ce95cf85}{gcd}} (T x, T y)
+\begin{DoxyCompactList}\small\item\em Greatest common divisor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{integer_factorization_8h_a78298440d6bfc9f2cc7eb1dc790dc429}{rho}} (T n)
+\begin{DoxyCompactList}\small\item\em Pollard rho algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements Pollard rho algorithm. 
+
+Pollard\textquotesingle{}s rho algorithm is an algorithm for integer factorization. It was invented by John Pollard in 1975.\mbox{[}1\mbox{]} It uses only a small amount of space, and its expected running time is proportional to the square root of the size of the smallest prime factor of the composite number being factorized.
+
+\begin{DoxyAuthor}{Author}
+Murat Koptur \href{mailto:mkoptur3@gmail.com}{\texttt{ mkoptur3@gmail.\+com}}
+\end{DoxyAuthor}
+Last updated\+: 26/\+Jan/2019. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{integer_factorization_8h_a04c9bfd9ad8855a08d4a860652560e76}\label{integer_factorization_8h_a04c9bfd9ad8855a08d4a860652560e76}} 
+\index{integerFactorization.h@{integerFactorization.h}!g@{g}}
+\index{g@{g}!integerFactorization.h@{integerFactorization.h}}
+\subsubsection{\texorpdfstring{g()}{g()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T g (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{n }\end{DoxyParamCaption})}
+
+
+
+Helper function for generate a pseudo-\/random sequence. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & A type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Input. \\
+\hline
+{\em n} & The number which will be factorized.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pseudo-\/random number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{integer_factorization_8h_a6d0c00ce731e98f3789b4f14ce95cf85}\label{integer_factorization_8h_a6d0c00ce731e98f3789b4f14ce95cf85}} 
+\index{integerFactorization.h@{integerFactorization.h}!gcd@{gcd}}
+\index{gcd@{gcd}!integerFactorization.h@{integerFactorization.h}}
+\subsubsection{\texorpdfstring{gcd()}{gcd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T gcd (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{y }\end{DoxyParamCaption})}
+
+
+
+Greatest common divisor. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & A type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Number 1. \\
+\hline
+{\em y} & Number 2.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+G\+CD of x and y. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{integer_factorization_8h_a78298440d6bfc9f2cc7eb1dc790dc429}\label{integer_factorization_8h_a78298440d6bfc9f2cc7eb1dc790dc429}} 
+\index{integerFactorization.h@{integerFactorization.h}!rho@{rho}}
+\index{rho@{rho}!integerFactorization.h@{integerFactorization.h}}
+\subsubsection{\texorpdfstring{rho()}{rho()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T rho (\begin{DoxyParamCaption}\item[{T}]{n }\end{DoxyParamCaption})}
+
+
+
+Pollard rho algorithm. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & A type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The number which will be factorized.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A non-\/trivial factor of n. 
+\end{DoxyReturn}

@@ -1,0 +1,63 @@
+.TH "src/metropolisHastings.h" 3 "Sun Oct 13 2019" "Cpp Examples" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/metropolisHastings.h \- Metropolis-Hastings algorithm\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <ctime>\fP
+.br
+\fC#include <functional>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include 'statistics\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename T  = long double> std::vector< T > \fBgenerate\fP (const std::function< T(T)> &target, const unsigned int &count, const unsigned int &burn_in_period)"
+.br
+.RI "Metropolis-Hastings algorithm\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Metropolis-Hastings algorithm\&. 
+
+Metropolis-Hastings Algorithm is a Markov chain Monte Carlo (MCMC) method for obtaining a sequence of random samples from a probability distribution from which direct sampling is difficult\&. This sequence can be used to approximate the distribution or to compute an integral\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Murat Koptur mkoptur3@gmail.com
+.RE
+.PP
+Last updated: 22/Jan/2019\&. 
+.SH "Function Documentation"
+.PP 
+.SS "template<typename T  = long double> std::vector<T> generate (const std::function< T(T)> & target, const unsigned int & count, const unsigned int & burn_in_period)"
+
+.PP
+Metropolis-Hastings algorithm\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItarget\fP The target distribution\&. 
+.br
+\fIcount\fP Count of generated numbers\&. 
+.br
+\fIburn_in_period\fP Burn-in period\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Vector of generated numbers\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cpp Examples from the source code\&.

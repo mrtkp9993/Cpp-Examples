@@ -1,0 +1,94 @@
+.TH "src/dualNumbers.h" 3 "Sun Oct 13 2019" "Cpp Examples" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/dualNumbers.h \- Implementation of dual numbers\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cmath>\fP
+.br
+\fC#include <iostream>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBDual\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDual\fP \fBoperator+\fP (const \fBDual\fP &u, const \fBDual\fP &v)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBoperator\-\fP (const \fBDual\fP &u, const \fBDual\fP &v)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBoperator *\fP (const \fBDual\fP &u, const \fBDual\fP &v)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBoperator/\fP (const \fBDual\fP &u, const \fBDual\fP &v)"
+.br
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &os, const \fBDual\fP &d)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBpow\fP (const \fBDual\fP &d, const long double &p)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBroot\fP (const \fBDual\fP &d, const long double &p)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBexp\fP (const \fBDual\fP &d)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBlog\fP (const \fBDual\fP &d)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBsin\fP (const \fBDual\fP &d)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBcos\fP (const \fBDual\fP &d)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBtan\fP (const \fBDual\fP &d)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBasin\fP (const \fBDual\fP &d)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBacos\fP (const \fBDual\fP &d)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBatan\fP (const \fBDual\fP &d)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBsinh\fP (const \fBDual\fP &d)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBcosh\fP (const \fBDual\fP &d)"
+.br
+.ti -1c
+.RI "\fBDual\fP \fBtanh\fP (const \fBDual\fP &d)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of dual numbers\&. 
+
+In linear algebra, the dual numbers extend the real numbers by adjoining one new element ε with the property ε^2 = 0 (ε is nilpotent)\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Murat Koptur mkoptur3@gmail.com
+.RE
+.PP
+Last updated: 3/Feb/2019\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cpp Examples from the source code\&.

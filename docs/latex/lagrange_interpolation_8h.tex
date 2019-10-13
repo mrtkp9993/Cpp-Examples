@@ -1,0 +1,51 @@
+\hypertarget{lagrange_interpolation_8h}{}\section{src/lagrange\+Interpolation.h File Reference}
+\label{lagrange_interpolation_8h}\index{src/lagrangeInterpolation.h@{src/lagrangeInterpolation.h}}
+
+
+Lagrange Interpolation.  
+
+
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_data}{Data$<$ T $>$}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::function$<$ T(T)$>$ \mbox{\hyperlink{lagrange_interpolation_8h_aad726fcf5685b281362fd5b8339a7345}{lagrange\+Poly}} (const \mbox{\hyperlink{struct_data}{Data}}$<$ T $>$ \&data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lagrange Interpolation. 
+
+In numerical analysis, Lagrange polynomials are used for polynomial interpolation. For a given set of points \{\textbackslash{}displaystyle (x\+\_\+\{j\},y\+\_\+\{j\})\} with no two x\+\_\+\{j\} values equal, the Lagrange polynomial is the polynomial of lowest degree that assumes at each value x\+\_\+\{j\} the corresponding value y\+\_\+\{j\} (i.\+e. the functions coincide at each point).
+
+\begin{DoxyAuthor}{Author}
+Murat Koptur \href{mailto:mkoptur3@gmail.com}{\texttt{ mkoptur3@gmail.\+com}}
+\end{DoxyAuthor}
+Last updated\+: 31/\+Jan/2019. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{lagrange_interpolation_8h_aad726fcf5685b281362fd5b8339a7345}\label{lagrange_interpolation_8h_aad726fcf5685b281362fd5b8339a7345}} 
+\index{lagrangeInterpolation.h@{lagrangeInterpolation.h}!lagrangePoly@{lagrangePoly}}
+\index{lagrangePoly@{lagrangePoly}!lagrangeInterpolation.h@{lagrangeInterpolation.h}}
+\subsubsection{\texorpdfstring{lagrangePoly()}{lagrangePoly()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::function$<$T(T)$>$ lagrange\+Poly (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_data}{Data}}$<$ T $>$ \&}]{data }\end{DoxyParamCaption})}
+
+Lagrange polynomial.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & A data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lagrange interpolation polynomial. 
+\end{DoxyReturn}

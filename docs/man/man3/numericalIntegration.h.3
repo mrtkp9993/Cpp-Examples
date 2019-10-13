@@ -1,0 +1,127 @@
+.TH "src/numericalIntegration.h" 3 "Sun Oct 13 2019" "Cpp Examples" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/numericalIntegration.h \- Numerical integration methods\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cassert>\fP
+.br
+\fC#include <cstdio>\fP
+.br
+\fC#include <functional>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <numeric>\fP
+.br
+\fC#include 'statistics\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename T  = long double> T \fBcompositeSimpsons\fP (const T &a, const T &b, const unsigned long &n, const std::function< T(T)> &func)"
+.br
+.RI "Composite Simpson’s Integration\&. "
+.ti -1c
+.RI "template<typename T  = long double> T \fBdoubleIntegral\fP (const T &a, const T &b, const unsigned long &m, const unsigned long &n, const std::function< T(T)> &c, const std::function< T(T)> &d, const std::function< T(T, T)> &func)"
+.br
+.RI "Double Simpson’s Integration\&. "
+.ti -1c
+.RI "template<typename T  = long double> T \fBmonteCarloIntegration\fP (const T &a, const T &b, const unsigned long &n, std::function< T(T)> &func)"
+.br
+.RI "Monte-Carlo Integration\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Numerical integration methods\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Murat Koptur mkoptur3@gmail.com
+.RE
+.PP
+Last updated: 22/Jan/2019\&. 
+.SH "Function Documentation"
+.PP 
+.SS "template<typename T  = long double> T compositeSimpsons (const T & a, const T & b, const unsigned long & n, const std::function< T(T)> & func)"
+
+.PP
+Composite Simpson’s Integration\&. Composite Simpson is a method for the numerical approximation of definite integrals\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Endpoint\&. 
+.br
+\fIb\fP Endpoint\&. 
+.br
+\fIn\fP Iteration count\&. 
+.br
+\fIfunc\fP The function that will be integrated\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Approximation to integral\&. 
+.RE
+.PP
+
+.SS "template<typename T  = long double> T doubleIntegral (const T & a, const T & b, const unsigned long & m, const unsigned long & n, const std::function< T(T)> & c, const std::function< T(T)> & d, const std::function< T(T, T)> & func)"
+
+.PP
+Double Simpson’s Integration\&. Double Simpson is a method for the numerical approximation of double integrals\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Endpoint\&. 
+.br
+\fIb\fP Endpoint\&. 
+.br
+\fIm\fP Iteration count\&. 
+.br
+\fIn\fP Iteration count\&. 
+.br
+\fIc\fP A function\&. 
+.br
+\fId\fP A function\&. 
+.br
+\fIfunc\fP The function that will be integrated\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Approximation to integral\&. 
+.RE
+.PP
+
+.SS "template<typename T  = long double> T monteCarloIntegration (const T & a, const T & b, const unsigned long & n, std::function< T(T)> & func)"
+
+.PP
+Monte-Carlo Integration\&. Monte-Carlo Integration is a technique for numerical integration using random numbers\&. It is a particular Monte Carlo method that numerically computes a definite integral\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Endpoint\&. 
+.br
+\fIb\fP Endpoint\&. 
+.br
+\fIn\fP Iteration count\&. 
+.br
+\fIfunc\fP The function that will be integrated\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Approximation to integral\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cpp Examples from the source code\&.
