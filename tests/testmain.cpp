@@ -14,6 +14,7 @@
 #include "../src/metropolisHastings.h"
 #include "../src/numericalIntegration.h"
 #include "../src/rungeKutta.h"
+#include "../src/statistics.h"
 #include "Catch2/catch.hpp"
 
 TEST_CASE("BBP-Type formula", "[BBP]") {
