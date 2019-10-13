@@ -35,6 +35,6 @@ int main(int argc, const char* argv[]) {
   std::function<long double(long double)> func2 = [](long double x) {
     return 1 / (1 + std::sinh(2 * x) * std::pow(std::log(x), 2));
   };
-  monteCarloIntegration(a2, b2, n2, func2);
+  monteCarloIntegration<long double>(a2, b2, n2, func2);
   return 0;
 }

@@ -35,7 +35,19 @@
  * @return Vector of generated numbers.
  *
  */
-std::vector<int> lcg(const int& seed, const int& mod, const int& mult,
-                     const int& incr, const int& count);
+template <typename T = int>
+std::vector<T> lcg(const int& seed, const int& mod, const int& mult,
+                   const int& incr, const int& count) {
+  assert(mod > 0);
+  assert(0 < mult < mod);
+  assert(0 <= incr < mod);
+  assert(0 <= seed < mod);
+  std::vector<T> randInts(count);
+  randInts[0] = seed;
+  for (int n = 1; n < count; n++) {
+    randInts[n] = (mult * randInts[n - 1] + incr) % mod;
+  }
+  return randInts;
+}
 
 #endif /* LCG_H */

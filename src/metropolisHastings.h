@@ -21,7 +21,7 @@
 #include <ctime>
 #include <functional>
 #include <vector>
-#include "../src/statistics.h"
+#include "statistics.h"
 
 /**
  * @brief Metropolis-Hastings algorithm.
@@ -33,8 +33,28 @@
  * @return Vector of generated numbers.
  *
  */
-std::vector<long double> generate(
-    const std::function<long double(long double)> &target,
-    const unsigned int &count, const unsigned int &burn_in_period);
+template <typename T = long double>
+std::vector<T> generate(const std::function<T(T)> &target,
+                        const unsigned int &count,
+                        const unsigned int &burn_in_period) {
+  std::srand(std::clock());
+
+  std::vector<T> x(count + burn_in_period, 0);
+  x[0] = 1;
+
+  for (auto i = 1; i < count + burn_in_period; i++) {
+    auto current_x = x[i - 1];
+    auto proposed_x = current_x + rnorm();
+    auto A = target(proposed_x) / target(current_x);
+    if (runif() < A) {
+      x[i] = proposed_x;
+    } else {
+      x[i] = current_x;
+    }
+  }
+  x.erase(x.begin(), x.begin() + burn_in_period);
+
+  return x;
+}
 
 #endif  // METROPOLISHASTINGS_H

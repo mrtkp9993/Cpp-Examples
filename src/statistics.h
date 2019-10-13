@@ -15,6 +15,7 @@
 #include <cmath>
 #include <cstdlib>
 #include <numeric>
+#include <random>
 #include <vector>
 
 /**
@@ -26,7 +27,10 @@
  * @return A random number between [a, b].
  *
  */
-long double runif(const long double &a = 0, const long double &b = 1);
+template <typename T = long double>
+T runif(const T &a = 0, const T &b = 1) {
+  return a + (b - a) * (rand() / ((T)(RAND_MAX) + 1));
+}
 
 /**
  * @brief Normal number generator with Box–Muller transform.
@@ -43,7 +47,29 @@ long double runif(const long double &a = 0, const long double &b = 1);
  * @return A random number.
  *
  */
-long double rnorm(const long double &mean = 0, const long double &sd = 1);
+template <typename T = long double>
+T rnorm(const T &mean = 0, const T &sd = 1) {
+  // Box-Muller transform
+  auto u = runif<T>(0, 1);
+  auto v = runif<T>(0, 1);
+  return sd * (std::sqrt(-2 * std::log(u)) * std::cos(2 * M_PI * v)) + mean;
+}
+
+/**
+ * @brief Chi-Squared distribution.
+ *
+ *
+ * @param stat Test statistic.
+ * @param k Degrees of freedom.
+ *
+ * @return A probability.
+ *
+ */
+template <typename T = long double>
+T pchisq(const T &stat, const unsigned int &k) {
+  return (1 / ((std::pow(2, k / 2) * std::tgamma(k / 2)))) *
+         std::pow(stat, k / 2 - 1) * std::exp(-stat / 2);
+}
 
 /**
  * @brief Jarque–Bera test.
@@ -57,6 +83,31 @@ long double rnorm(const long double &mean = 0, const long double &sd = 1);
  * @return A boolean which indicates that x is normally distributed or not.
  *
  */
-bool jb_test(const std::vector<long double> &x);
+template <typename T = long double>
+T jb_test(const std::vector<T> &x) {
+  const unsigned long n = x.size();
+  auto m1 = std::accumulate(x.begin(), x.end(), (T)0.0) / n;
+  auto m2 = 0;
+  auto m3 = 0;
+  auto m4 = 0;
+  for (auto xi : x) {
+    m2 += std::pow(xi - m1, 2);
+    m3 += std::pow(xi - m1, 3);
+    m4 += std::pow(xi - m1, 4);
+  }
+  m2 /= n;
+  m3 /= n;
+  m4 /= n;
+
+  auto S = std::pow(m3 / std::pow(m2, 3 / 2), 2);
+  auto K = m4 / std::pow(m2, 2);
+  auto stat = n * (S / 6 + std::pow(K - 3, 2) / 24);
+  auto p_val = 1 - pchisq(stat, 2);
+  if (p_val > 0.05) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 #endif  // STATISTICS_H

@@ -23,6 +23,10 @@
 #include <functional>
 #include <iostream>
 
+void formattedPrint(long double t, long double w) {
+  std::cout << t << "\t" << w << std::endl;
+}
+
 /**
  * @brief Runge-Kutta Order Four.
  *
@@ -35,9 +39,28 @@
  * @return Approximation to exact solution.
  *
  */
-long double RK4(
-    const long double &a, const long double &b, const unsigned int &N,
-    const long double &init,
-    const std::function<long double(long double, long double)> &func);
+template <typename T = long double>
+T RK4(const T &a, const T &b, const unsigned int &N, const T &init,
+      const std::function<T(T, T)> &func) {
+  // STEP 1
+  auto h = (b - a) / N;
+  auto t = a;
+  auto w = init;
+  formattedPrint(t, w);
+  // STEP 2
+  for (auto i = 1; i <= N; i++) {
+    // STEP 3
+    auto K1 = h * func(t, w);
+    auto K2 = h * func(t + h / 2, w + K1 / 2);
+    auto K3 = h * func(t + h / 2, w + K2 / 2);
+    auto K4 = h * func(t + h, w + K3);
+    // STEP 4
+    w += (K1 + 2 * K2 + 2 * K3 + K4) / 6;
+    t = a + i * h;
+    // STEP 5
+    formattedPrint(t, w);
+  }
+  return w;
+}
 
 #endif /* RUNGEKUTTA_H */
