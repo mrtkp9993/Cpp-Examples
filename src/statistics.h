@@ -83,10 +83,9 @@ T pchisq(const T &stat, const unsigned int &k) {
  * @return A boolean which indicates that x is normally distributed or not.
  *
  */
-template <typename T = long double>
-bool jb_test(const std::vector<T> &x) {
+bool jb_test(const std::vector<long double> &x) {
   const unsigned long n = x.size();
-  auto m1 = std::accumulate(x.begin(), x.end(), (T)0.0) / n;
+  auto m1 = std::accumulate(x.begin(), x.end(), 0.0) / n;
   auto m2 = 0;
   auto m3 = 0;
   auto m4 = 0;
@@ -103,11 +102,7 @@ bool jb_test(const std::vector<T> &x) {
   auto K = m4 / std::pow(m2, 2);
   auto stat = n * (S / 6 + std::pow(K - 3, 2) / 24);
   auto p_val = 1 - pchisq(stat, 2);
-  if (p_val > 0.05) {
-    return true;
-  } else {
-    return false;
-  }
+  return p_val > 0.05;
 }
 
 #endif  // STATISTICS_H
