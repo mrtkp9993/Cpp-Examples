@@ -84,7 +84,7 @@ T pchisq(const T &stat, const unsigned int &k) {
  *
  */
 template <typename T = long double>
-T jb_test(const std::vector<T> &x) {
+bool jb_test(const std::vector<T> &x) {
   const unsigned long n = x.size();
   auto m1 = std::accumulate(x.begin(), x.end(), (T)0.0) / n;
   auto m2 = 0;
