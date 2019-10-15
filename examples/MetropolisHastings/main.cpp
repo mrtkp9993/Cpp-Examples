@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../../src/metropolisHastings.h"
+#include "../../lib/numericCppExamplesLib/metropolisHastings.h"
 
 double target(const double& x) { return x < 0 ? 0 : std::exp(-x); }
 

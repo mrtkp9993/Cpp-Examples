@@ -5,8 +5,8 @@
 //
 
 #include <iostream>
-#include "../../src/devrandom.h"
-#include "../../src/lcg.h"
+#include "../../lib/numericCppExamplesLib/devrandom.h"
+#include "../../lib/numericCppExamplesLib/lcg.h"
 
 int main(int argc, const char* argv[]) {
   // Linear congruential generator

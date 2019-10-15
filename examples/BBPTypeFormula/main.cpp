@@ -1,6 +1,6 @@
 #include <iomanip>
 #include <iostream>
-#include "../../src/bbpTypeFormula.h"
+#include "../../lib/numericCppExamplesLib/bbpTypeFormula.h"
 
 int main() {
   std::cout << "BBP Type formula implementation" << std::endl;

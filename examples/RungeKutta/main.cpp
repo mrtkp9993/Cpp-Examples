@@ -5,7 +5,7 @@
 //
 
 #include <iostream>
-#include "../../src/rungeKutta.h"
+#include "../../lib/numericCppExamplesLib/rungeKutta.h"
 
 int main(int argc, const char* argv[]) {
   // define problem

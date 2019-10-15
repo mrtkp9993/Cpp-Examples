@@ -5,10 +5,10 @@ project(numericCpp)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
-file(GLOB sourcefiles src/*.cpp src/*.h)
-include_directories(lib)
+file(GLOB sourcefiles lib/*.hpp)
+include_directories(include)
 
-set(CATCH_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/lib)
+set(CATCH_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
 add_library(Catch INTERFACE)
 target_include_directories(Catch INTERFACE ${CATCH_INCLUDE_DIR})
 

@@ -1,4 +1,4 @@
-#include "../../src/dualNumbers.h"
+#include "../../lib/numericCppExamplesLib/dualNumbers.h"
 
 int main() {
   Dual x(2, 1);

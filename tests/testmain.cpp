@@ -1,20 +1,6 @@
 #define CATCH_CONFIG_MAIN
 
-#include "../src/bbpTypeFormula.h"
-#include "../src/binom.h"
-#include "../src/brentSalaminFormula.h"
-#include "../src/devrandom.h"
-#include "../src/discreteFourierTransform.h"
-#include "../src/dualNumbers.h"
-#include "../src/fixedPointIteration.h"
-#include "../src/goldenSectionSearch.h"
-#include "../src/integerFactorization.h"
-#include "../src/lagrangeInterpolation.h"
-#include "../src/lcg.h"
-#include "../src/metropolisHastings.h"
-#include "../src/numericalIntegration.h"
-#include "../src/rungeKutta.h"
-#include "../src/statistics.h"
+#include "../lib/numericCppExamples.hpp"
 #include "Catch2/catch.hpp"
 
 TEST_CASE("BBP-Type formula", "[BBP]") {

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../../src/integerFactorization.h"
+#include "../../lib/numericCppExamplesLib/integerFactorization.h"
 
 int main() {
   std::cout << "A non-trivial factor of " << 455459

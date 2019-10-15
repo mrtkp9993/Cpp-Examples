@@ -1,4 +1,4 @@
-#include "../../src/lagrangeInterpolation.h"
+#include "../../lib/numericCppExamplesLib/lagrangeInterpolation.h"
 
 int main() {
   Data<long double> data1{std::vector<long double>{1, 2, 3},
