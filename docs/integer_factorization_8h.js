@@ -1,6 +1,6 @@
 var integer_factorization_8h =
 [
-    [ "g", "integer_factorization_8h.html#a04c9bfd9ad8855a08d4a860652560e76", null ],
-    [ "gcd", "integer_factorization_8h.html#a6d0c00ce731e98f3789b4f14ce95cf85", null ],
-    [ "rho", "integer_factorization_8h.html#a78298440d6bfc9f2cc7eb1dc790dc429", null ]
+    [ "g", "integer_factorization_8h.html#aa526912831fd0b32c4e85f112c664749", null ],
+    [ "gcd", "integer_factorization_8h.html#a4b3b43630dadeaa64d3e5cc201d78534", null ],
+    [ "rho", "integer_factorization_8h.html#a01985a0f7e0141a5c7fa328149ac9ace", null ]
 ];

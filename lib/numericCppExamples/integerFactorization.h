@@ -19,6 +19,7 @@
 
 #include <cmath>
 
+namespace IntegerFactorization {
 /**
  * @brief Helper function for generate a pseudo-random sequence.
  *
@@ -72,5 +73,5 @@ T rho(T n) {
     return d;
   }
 }
-
+}  // namespace IntegerFactorization
 #endif  // INTEGERFACTORIZATION_H

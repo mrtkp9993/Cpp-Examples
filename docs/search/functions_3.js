@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fixedpointiter',['fixedPointIter',['../fixed_point_iteration_8h.html#aaf9f035e8febfeea962a34a78b93f689',1,'fixedPointIteration.h']]]
+  ['fixedpointiter',['fixedPointIter',['../fixed_point_iteration_8h.html#a870850fabe07ec55c3544b4672e9021b',1,'RootFinding']]]
 ];

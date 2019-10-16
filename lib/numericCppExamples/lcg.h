@@ -23,6 +23,7 @@
 #include <cmath>
 #include <vector>
 
+namespace RandomNumberGenerators {
 /**
  * @brief Linear Congruential Generator.
  *
@@ -49,5 +50,5 @@ std::vector<T> lcg(const int& seed, const int& mod, const int& mult,
   }
   return randInts;
 }
-
+}  // namespace RandomNumberGenerators
 #endif /* LCG_H */

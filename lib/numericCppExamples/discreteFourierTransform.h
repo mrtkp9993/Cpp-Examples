@@ -22,6 +22,7 @@
 #include <iostream>
 #include <vector>
 
+namespace IntegralTransforms {
 /** A type for complex numbers. */
 template <typename T = long double>
 using Complex = std::complex<T>;
@@ -78,5 +79,5 @@ CVec<> idft(const CVec<>& input) {
   }
   return result;
 }
-
+}  // namespace IntegralTransforms
 #endif  // DISCRETEFOURIERTRANSFORM_H

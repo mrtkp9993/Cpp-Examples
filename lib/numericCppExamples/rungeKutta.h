@@ -23,6 +23,8 @@
 #include <functional>
 #include <iostream>
 
+namespace ODE {
+
 void formattedPrint(long double t, long double w) {
   std::cout << t << "\t" << w << std::endl;
 }
@@ -62,5 +64,5 @@ T RK4(const T &a, const T &b, const unsigned int &N, const T &init,
   }
   return w;
 }
-
+}  // namespace ODE
 #endif /* RUNGEKUTTA_H */

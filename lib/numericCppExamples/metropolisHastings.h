@@ -23,6 +23,7 @@
 #include <vector>
 #include "statistics.h"
 
+namespace MCMC {
 /**
  * @brief Metropolis-Hastings algorithm.
  *
@@ -44,9 +45,9 @@ std::vector<T> generate(const std::function<T(T)> &target,
 
   for (auto i = 1; i < count + burn_in_period; i++) {
     auto current_x = x[i - 1];
-    auto proposed_x = current_x + rnorm();
+    auto proposed_x = current_x + Statistics::rnorm();
     auto A = target(proposed_x) / target(current_x);
-    if (runif() < A) {
+    if (Statistics::runif() < A) {
       x[i] = proposed_x;
     } else {
       x[i] = current_x;
@@ -56,5 +57,5 @@ std::vector<T> generate(const std::function<T(T)> &target,
 
   return x;
 }
-
+}  // namespace MCMC
 #endif  // METROPOLISHASTINGS_H

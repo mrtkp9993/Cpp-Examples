@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['devrandom',['devrandom',['../devrandom_8h.html#ad3a63441da329a84f7ceb34aa1487400',1,'devrandom.h']]],
-  ['dft',['dft',['../discrete_fourier_transform_8h.html#aba405a29a7c12bd7d8b996c96978c880',1,'discreteFourierTransform.h']]],
-  ['doubleintegral',['doubleIntegral',['../numerical_integration_8h.html#a8a2700261385eec68fa80882704ea6de',1,'numericalIntegration.h']]]
+  ['devrandom',['devrandom',['../devrandom_8h.html#a7da99c897ffbf24931555d7be02c7ff6',1,'RandomNumberGenerators']]],
+  ['dft',['dft',['../discrete_fourier_transform_8h.html#af47a9e4dcf4a8140a6b6580ad95de61b',1,'IntegralTransforms']]],
+  ['doubleintegral',['doubleIntegral',['../numerical_integration_8h.html#a3f6e5d69ad08e849512c0717305c41dd',1,'NumericalIntegration']]]
 ];

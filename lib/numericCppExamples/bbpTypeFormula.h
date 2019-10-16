@@ -28,6 +28,7 @@
 #include <cmath>
 #include <vector>
 
+namespace Spigot {
 /**
  * @brief BPP Type formula calculation.
  *
@@ -57,6 +58,7 @@ T P(const int &s, const int &b, const int &n, const std::vector<int> &A,
   }
 
   return result;
-};
+}
+}  // namespace Spigot
 
 #endif  // BBPTYPEFORMULA_H

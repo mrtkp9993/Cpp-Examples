@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['data',['Data',['../struct_data.html',1,'']]],
-  ['dual',['Dual',['../struct_dual.html',1,'']]]
+  ['data',['Data',['../struct_interpolation_1_1_data.html',1,'Interpolation']]],
+  ['dual',['Dual',['../struct_auto_diff_1_1_dual.html',1,'AutoDiff']]]
 ];

@@ -23,6 +23,7 @@
 #include <iostream>
 #include <vector>
 
+namespace Interpolation {
 /** A struct for storing x and y values. */
 template <typename T = long double>
 struct Data {
@@ -65,5 +66,5 @@ std::function<T(T)> lagrangePoly(const Data<T> &data) {
 
   return polynomial;
 }
-
+}  // namespace Interpolation
 #endif  // LAGRANGEINTERPOLATION_H

@@ -1,7 +1,7 @@
 var statistics_8h =
 [
-    [ "jb_test", "statistics_8h.html#a2b05c840d8c2f659d0e0985fb6cad65a", null ],
-    [ "pchisq", "statistics_8h.html#a4368c6ff543bcea59b8608f494f55651", null ],
-    [ "rnorm", "statistics_8h.html#ad96ad8747ff6dabc632d0e262c9c7bb2", null ],
-    [ "runif", "statistics_8h.html#a99282c9573327898307cbd3492de0bdc", null ]
+    [ "jb_test", "statistics_8h.html#a1518ff4401fd83f58e6f0b67f185b7dc", null ],
+    [ "pchisq", "statistics_8h.html#a027a33acc5f9aaedee6c3c81c8bd0bae", null ],
+    [ "rnorm", "statistics_8h.html#a73c2bf1eef16a529e48b473e99d5dd14", null ],
+    [ "runif", "statistics_8h.html#a5f5fe8a2a3555ff017c506d28155484e", null ]
 ];

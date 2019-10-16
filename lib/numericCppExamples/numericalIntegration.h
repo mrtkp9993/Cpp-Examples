@@ -19,6 +19,7 @@
 #include <numeric>
 #include "statistics.h"
 
+namespace NumericalIntegration {
 /**
  * @brief Composite Simpson’s Integration.
  *
@@ -149,7 +150,7 @@ T monteCarloIntegration(const T &a, const T &b, const unsigned long &n,
                         std::function<T(T)> &func) {
   std::vector<T> X(n, 0);
   for (auto i = 0; i < n; i++) {
-    X[i] = runif(a, b);
+    X[i] = Statistics::runif(a, b);
   }
 
   T sum = 0;
@@ -162,5 +163,5 @@ T monteCarloIntegration(const T &a, const T &b, const unsigned long &n,
   std::cout << "Approximation to integral: " << result << std::endl;
   return result;
 }
-
+}  // namespace NumericalIntegration
 #endif /* NUMERICALINTEGRATION_H */

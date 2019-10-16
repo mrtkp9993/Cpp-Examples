@@ -21,6 +21,7 @@
 #include <fstream>
 #include <iostream>
 
+namespace RandomNumberGenerators {
 /**
  * @brief A function template which takes a type as argument
  * and returns an random element of that type.
@@ -48,5 +49,5 @@ T devrandom() {
   }
   return random_value;
 }
-
+}  // namespace RandomNumberGenerators
 #endif /* DEVRANDOM_H */

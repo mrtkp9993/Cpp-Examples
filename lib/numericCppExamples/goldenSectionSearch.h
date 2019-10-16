@@ -26,6 +26,7 @@
 #include <cmath>
 #include <functional>
 
+namespace RootFinding {
 /** @struct Result
  *  @brief The struct that stores result.
  *  @var Result::a
@@ -96,5 +97,5 @@ Result GoldenSectionSearch(
     return result;
   }
 }
-
+}  // namespace RootFinding
 #endif /* GOLDENSECTIONSEARCH_H */

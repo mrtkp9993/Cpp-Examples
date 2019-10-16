@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['g',['g',['../integer_factorization_8h.html#a04c9bfd9ad8855a08d4a860652560e76',1,'integerFactorization.h']]],
-  ['gcd',['gcd',['../integer_factorization_8h.html#a6d0c00ce731e98f3789b4f14ce95cf85',1,'integerFactorization.h']]],
-  ['generate',['generate',['../metropolis_hastings_8h.html#a679aa5f574c9cae53e917238746133df',1,'metropolisHastings.h']]],
-  ['goldensectionsearch',['GoldenSectionSearch',['../golden_section_search_8h.html#a68d217c205739ac83c123723b3bb8a78',1,'goldenSectionSearch.h']]],
+  ['g',['g',['../integer_factorization_8h.html#aa526912831fd0b32c4e85f112c664749',1,'IntegerFactorization']]],
+  ['gcd',['gcd',['../integer_factorization_8h.html#a4b3b43630dadeaa64d3e5cc201d78534',1,'IntegerFactorization']]],
+  ['generate',['generate',['../metropolis_hastings_8h.html#abe023887af1073b39a0a9644d7fa64fe',1,'MCMC']]],
+  ['goldensectionsearch',['GoldenSectionSearch',['../golden_section_search_8h.html#ab2abdf4801c7030c59dbf231d5fc7669',1,'RootFinding']]],
   ['goldensectionsearch_2eh',['goldenSectionSearch.h',['../golden_section_search_8h.html',1,'']]]
 ];

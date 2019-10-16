@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['idft',['idft',['../discrete_fourier_transform_8h.html#afda9df10dcfa62a6ee9723898af8ff58',1,'discreteFourierTransform.h']]]
+  ['idft',['idft',['../discrete_fourier_transform_8h.html#aa8590c8eac08e4dbf8f77cfc4a8e6401',1,'IntegralTransforms']]]
 ];

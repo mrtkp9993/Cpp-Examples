@@ -24,6 +24,7 @@
 #include <functional>
 #include <iostream>
 
+namespace RootFinding {
 /**
  * @brief Find a solution to p = g(p) given an initial approximation p0.
  *
@@ -52,5 +53,5 @@ T fixedPointIter(T p0, const T &tol, const unsigned long &N0,
   std::cout << "The method failed after " << N0 << " iterations" << std::endl;
   return 0;
 }
-
+}  // namespace RootFinding
 #endif /* FIXEDPOINTITERATION_H */

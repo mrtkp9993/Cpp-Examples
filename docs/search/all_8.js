@@ -1,7 +1,7 @@
 var searchData=
 [
   ['lagrangeinterpolation_2eh',['lagrangeInterpolation.h',['../lagrange_interpolation_8h.html',1,'']]],
-  ['lagrangepoly',['lagrangePoly',['../lagrange_interpolation_8h.html#aad726fcf5685b281362fd5b8339a7345',1,'lagrangeInterpolation.h']]],
-  ['lcg',['lcg',['../lcg_8h.html#aedbaa5d71f32ced097260807afd850e5',1,'lcg.h']]],
+  ['lagrangepoly',['lagrangePoly',['../lagrange_interpolation_8h.html#ac35a382a53a8e14de7284ea166fce30b',1,'Interpolation']]],
+  ['lcg',['lcg',['../lcg_8h.html#adf3cf23918bd3aae29aa4c6820d8e0ba',1,'RandomNumberGenerators']]],
   ['lcg_2eh',['lcg.h',['../lcg_8h.html',1,'']]]
 ];

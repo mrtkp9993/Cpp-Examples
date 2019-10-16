@@ -18,6 +18,7 @@
 #include <random>
 #include <vector>
 
+namespace Statistics {
 /**
  * @brief Uniform number generator.
  *
@@ -104,5 +105,5 @@ bool jb_test(const std::vector<long double> &x) {
   auto p_val = 1 - pchisq(stat, 2);
   return p_val > 0.05;
 }
-
+}  // namespace Statistics
 #endif  // STATISTICS_H

@@ -18,6 +18,8 @@
 #include <cmath>
 #include <iostream>
 
+namespace AutoDiff {
+
 struct Dual {
   long double real;
   long double dual;
@@ -105,4 +107,5 @@ Dual tanh(const Dual& d) {
   return {std::tanh(d.real), d.dual / std::pow(std::cosh(d.real), 2)};
 }
 
+}  // namespace AutoDiff
 #endif  // DUALNUMBERS_H

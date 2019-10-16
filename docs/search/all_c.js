@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['result',['Result',['../struct_result.html',1,'']]],
-  ['rho',['rho',['../integer_factorization_8h.html#a78298440d6bfc9f2cc7eb1dc790dc429',1,'integerFactorization.h']]],
-  ['rk4',['RK4',['../runge_kutta_8h.html#a24a416ea1925a669f4887e06e071d562',1,'rungeKutta.h']]],
-  ['rnorm',['rnorm',['../statistics_8h.html#ad96ad8747ff6dabc632d0e262c9c7bb2',1,'statistics.h']]],
+  ['result',['Result',['../struct_root_finding_1_1_result.html',1,'RootFinding']]],
+  ['rho',['rho',['../integer_factorization_8h.html#a01985a0f7e0141a5c7fa328149ac9ace',1,'IntegerFactorization']]],
+  ['rk4',['RK4',['../runge_kutta_8h.html#a07f15e2ff63266b599a9ff8302ccaa42',1,'ODE']]],
+  ['rnorm',['rnorm',['../statistics_8h.html#a73c2bf1eef16a529e48b473e99d5dd14',1,'Statistics']]],
   ['rungekutta_2eh',['rungeKutta.h',['../runge_kutta_8h.html',1,'']]],
-  ['runif',['runif',['../statistics_8h.html#a99282c9573327898307cbd3492de0bdc',1,'statistics.h']]]
+  ['runif',['runif',['../statistics_8h.html#a5f5fe8a2a3555ff017c506d28155484e',1,'Statistics']]]
 ];

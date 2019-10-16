@@ -23,6 +23,7 @@
 using std::pow;
 using std::sqrt;
 
+namespace Approximations {
 /**
  * @brief Brent-Salamin Formula.
  *
@@ -55,6 +56,6 @@ T calc_pi(const unsigned int& n_iter) {
 
   appr_pi = pow(a[n_iter - 1] + b[n_iter - 1], 2) / (4 * t[n_iter - 1]);
   return appr_pi;
-};
-
+}
+}  // namespace Approximations
 #endif  // BRENTSALAMINFORMULA_H

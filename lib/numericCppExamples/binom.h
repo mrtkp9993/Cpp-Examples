@@ -14,6 +14,7 @@
 
 #include <cmath>
 
+namespace CommonMath {
 /**
  * @brief Calculate binomial coefficient.
  *
@@ -27,6 +28,6 @@ template <typename T = unsigned long long int>
 T binomCoef(const unsigned long &n, const unsigned long &k) {
   auto nCk = std::tgamma(n + 1) / (std::tgamma(n - k + 1) * std::tgamma(k + 1));
   return nCk;
-};
-
+}
+}  // namespace CommonMath
 #endif /* BINOM_H */

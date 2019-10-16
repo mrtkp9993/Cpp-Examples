@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jb_5ftest',['jb_test',['../statistics_8h.html#a2b05c840d8c2f659d0e0985fb6cad65a',1,'statistics.h']]]
+  ['jb_5ftest',['jb_test',['../statistics_8h.html#a1518ff4401fd83f58e6f0b67f185b7dc',1,'Statistics']]]
 ];
