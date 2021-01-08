@@ -2,6 +2,8 @@
 [![codecov](https://codecov.io/gh/mrtkp9993/Cpp-Examples/branch/master/graph/badge.svg)](https://codecov.io/gh/mrtkp9993/Cpp-Examples)
 [![CodeFactor](https://www.codefactor.io/repository/github/mrtkp9993/cpp-examples/badge/master)](https://www.codefactor.io/repository/github/mrtkp9993/cpp-examples/overview/master)
 ![](https://img.shields.io/github/license/mrtkp9993/Cpp-Examples.svg)
+[![DOI](https://zenodo.org/badge/133697197.svg)](https://zenodo.org/badge/latestdoi/133697197)
+
 ***
 
 ### Functions & Algorithms
